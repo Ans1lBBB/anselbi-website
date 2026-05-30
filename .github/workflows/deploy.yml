@@ -29,22 +29,6 @@ jobs:
           command: pages project create anselbi-website --production-branch=main
         continue-on-error: true
 
-      - name: Bind custom domains
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages domain add www.anselbi.com --project-name=anselbi-website
-        continue-on-error: true
-
-      - name: Bind apex domain
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages domain add anselbi.com --project-name=anselbi-website
-        continue-on-error: true
-
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
