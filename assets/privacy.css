@@ -1,0 +1,41 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #121212;
+    color: #e6e2da;
+    line-height: 1.6;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 60px 32px; }
+.header { margin-bottom: 48px; border-bottom: 1px solid rgba(230,226,218,0.15); padding-bottom: 24px; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px; }
+.header h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 500; margin-bottom: 12px; color: #c9aa7b; }
+.header p { font-size: 0.85rem; color: #9e9589; }
+.lang-switch { display: flex; gap: 6px; background: rgba(255,255,255,0.04); padding: 4px 12px; border-radius: 48px; }
+.lang-btn { background: transparent; border: none; font-size: 0.7rem; font-weight: 500; padding: 5px 14px; border-radius: 40px; cursor: pointer; color: #9e9589; transition: 0.2s; text-decoration: none; }
+.lang-btn.active { background: #c9aa7b; color: #121212; }
+.back-link { display: inline-block; margin-bottom: 32px; color: #c9aa7b; text-decoration: none; font-size: 0.8rem; border-bottom: 1px solid rgba(201,170,123,0.4); }
+.back-link:hover { color: #e6e2da; }
+h2 { font-size: 1.3rem; font-weight: 600; margin: 32px 0 16px; color: #c9aa7b; }
+p, li { font-size: 0.9rem; color: #b8b0a2; line-height: 1.7; margin-bottom: 12px; }
+a.inline-link { color: #c9aa7b; }
+hr { border: none; border-top: 1px solid rgba(230,226,218,0.1); margin: 32px 0; }
+.contact-btn {
+    display: inline-block;
+    background: transparent;
+    border: 1px solid #c9aa7b;
+    padding: 12px 28px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    color: #c9aa7b;
+    text-decoration: none;
+    transition: 0.2s;
+    border-radius: 40px;
+    margin-top: 8px;
+}
+.contact-btn:hover { background: #c9aa7b; color: #121212; }
+footer { text-align: center; margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(230,226,218,0.1); font-size: 0.75rem; color: #6a6258; }
+.privacy-footer-note { font-size: 0.85rem; text-align: center; margin-top: 24px; }
+@media (max-width: 768px) {
+    .container { padding: 40px 24px; }
+    .header h1 { font-size: 2rem; }
+    .header { flex-direction: column; align-items: flex-start; }
+}

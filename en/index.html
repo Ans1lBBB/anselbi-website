@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Ansel Bi — Curator / App Developer</title>
+    <meta name="description" content="Curator and indie app developer Ansel Bi. Nearly 20 years curating ~60 exhibitions across four continents. Bringing curatorial aesthetics to original apps and iMessage stickers.">
+    <meta name="keywords" content="Ansel Bi, curator, indie developer, ProfitFairy, RubyDays, AIOS Realm, Taiger Shiba, MeowCAT">
+    <link rel="alternate" hreflang="zh-Hant" href="https://www.anselbi.com/zh-tw/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://www.anselbi.com/zh-cn/">
+    <link rel="alternate" hreflang="en" href="https://www.anselbi.com/en/">
+    <link rel="alternate" hreflang="x-default" href="https://www.anselbi.com/zh-tw/">
+    <link rel="canonical" href="https://www.anselbi.com/en/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.anselbi.com/en/">
+    <meta property="og:title" content="Ansel Bi — Curator / App Developer">
+    <meta property="og:description" content="Curator and indie app developer Ansel Bi. Nearly 20 years curating ~60 exhibitions across four continents. Bringing curatorial aesthetics to original apps and iMessage stickers.">
+    <meta property="og:locale" content="en_US">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <style>* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #121212;
+    color: #e6e2da;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&display=swap');
+.chinese-name {
+    font-family: 'Noto Serif TC', 'Cormorant Garamond', serif;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.container { max-width: 1400px; margin: 0 auto; padding: 0 72px; }
+.navbar {
+    padding: 28px 0;
+    position: sticky;
+    top: 0;
+    background: rgba(18, 18, 18, 0.92);
+    backdrop-filter: blur(16px);
+    z-index: 100;
+    border-bottom: 1px solid rgba(230, 226, 218, 0.06);
+}
+.nav-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #9e9589;
+    transition: 0.2s;
+    position: relative;
+    padding-bottom: 2px;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #c9aa7b;
+    transition: width 0.25s ease;
+}
+.nav-link:hover { color: #c9aa7b; }
+.nav-link:hover::after { width: 100%; }
+.lang-switch {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.lang-divider { color: #4a453f; font-size: 0.7rem; }
+.lang-btn {
+    background: transparent;
+    border: none;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 0;
+    cursor: pointer;
+    color: #9e9589;
+    transition: 0.2s;
+    text-decoration: none;
+}
+.lang-btn:hover { color: #c9aa7b; }
+.lang-btn.active { color: #c9aa7b; }
+.hero { padding: 60px 0 40px; }
+.hero-photo { margin-bottom: 2.5rem; }
+.portrait-frame {
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgba(230, 226, 218, 0.2);
+    overflow: hidden;
+    background: #1a1a1a;
+}
+.portrait-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+.portrait-frame:hover img { transform: scale(1.02); }
+.hero-slogan {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    color: #c9aa7b;
+    margin-bottom: 1.25rem;
+    font-weight: 300;
+}
+.name-title { margin-bottom: 1.25rem; }
+.name-title h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #e6e2da;
+    margin-bottom: 0.5rem;
+}
+.name-title h1 .chinese-name { color: #c9aa7b; }
+.title-role {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    color: #9e9589;
+}
+.hero-desc {
+    font-size: 1rem;
+    color: #b8b0a2;
+    line-height: 1.7;
+    white-space: pre-line;
+    margin: 2rem 0 1.5rem;
+    max-width: 680px;
+}
+.stat-row {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+.stat-item { font-size: 0.75rem; letter-spacing: 1px; color: #9e9589; }
+.stat-number {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #c9aa7b;
+    font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 0.25rem;
+}
+.section-header {
+    margin: 80px 0 40px;
+    border-bottom: 1px solid rgba(230,226,218,0.12);
+    padding-bottom: 16px;
+    scroll-margin-top: 90px;
+}
+.section-header h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+}
+.curator-head {
+    margin: 80px 0 32px;
+    scroll-margin-top: 90px;
+}
+.curator-head h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+.curator-head .sub {
+    font-size: 0.7rem;
+    color: #c9aa7b;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+.work-card { background: #1a1a1a; border: 1px solid rgba(230,226,218,0.08); transition: all 0.3s ease; }
+.work-card:hover { border-color: rgba(201,170,123,0.4); transform: translateY(-4px); }
+.card-media { background: #1e1e1e; display: flex; justify-content: center; align-items: center; padding: 40px 32px; border-bottom: 1px solid rgba(230,226,218,0.06); }
+.app-icon { width: 110px; height: 110px; border-radius: 24px; object-fit: cover; }
+.card-info { padding: 24px 24px 28px; }
+.work-title { font-size: 1.25rem; font-weight: 600; margin-bottom: 4px; }
+.work-sub { font-size: 0.7rem; color: #c9aa7b; margin-bottom: 12px; letter-spacing: 0.5px; }
+.work-desc { font-size: 0.85rem; color: #b8b0a2; line-height: 1.6; margin-bottom: 20px; }
+.store-badge img { height: 42px; width: auto; border-radius: 10px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+.sticker-card { background: #1a1a1a; border: 1px solid rgba(230,226,218,0.08); padding: 24px 20px; transition: 0.2s; }
+.sticker-card:hover { border-color: rgba(201,170,123,0.4); }
+.sticker-icon { width: 70px; height: 70px; border-radius: 18px; margin-bottom: 16px; object-fit: cover; }
+.sticker-name-zh { font-weight: 600; font-size: 0.95rem; margin-bottom: 4px; }
+.sticker-sub { font-size: 0.7rem; color: #9e9589; margin-bottom: 16px; line-height: 1.4; }
+.curator-block { background: #161616; border: 1px solid rgba(230,226,218,0.06); padding: 60px 56px; margin: 40px 0 80px; }
+.curator-inner { max-width: 980px; margin: 0 auto; }
+.curator-text { font-size: 1rem; line-height: 1.8; color: #d4cdc0; margin-bottom: 24px; white-space: pre-line; }
+.curated-list { margin: 48px 0 20px; border-top: 1px solid rgba(201,170,123,0.25); padding-top: 40px; }
+.list-grid { display: flex; flex-direction: column; gap: 24px; }
+.list-item { display: flex; flex-wrap: wrap; gap: 28px; border-bottom: 1px solid rgba(230,226,218,0.06); padding-bottom: 20px; }
+.list-role { width: 210px; font-size: 0.8rem; font-weight: 500; color: #c9aa7b; letter-spacing: 1px; }
+.list-detail { flex: 1; font-size: 0.85rem; color: #b8b0a2; line-height: 1.6; }
+.list-detail span { display: inline-block; margin-right: 10px; }
+.list-note { margin-top: 28px; font-size: 0.7rem; color: #7e6f5e; text-align: right; }
+.contact-area { text-align: center; padding: 48px 0; border-top: 1px solid rgba(230,226,218,0.1); margin: 40px 0 32px; }
+.contact-email-link { display: inline-block; background: transparent; border: 1px solid #c9aa7b; padding: 12px 36px; font-size: 0.8rem; letter-spacing: 2px; color: #c9aa7b; text-decoration: none; transition: 0.2s; border-radius: 40px; }
+.contact-email-link:hover { background: #c9aa7b; color: #121212; }
+.contact-note { margin-top: 16px; font-size: 0.7rem; color: #9e9589; }
+.privacy-footer { text-align: center; margin-top: 16px; padding-bottom: 32px; }
+.privacy-link { color: #9e9589; text-decoration: none; font-size: 0.7rem; border-bottom: 1px dashed rgba(201,170,123,0.4); }
+footer { text-align: center; padding: 24px 0 40px; font-size: 0.7rem; color: #6a6258; border-top: 1px solid rgba(230,226,218,0.08); }
+@media (max-width: 1024px) {
+    .container { padding: 0 32px; }
+    .grid-3 { grid-template-columns: 1fr 1fr; gap: 28px; }
+    .grid-4 { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .portrait-frame { width: 160px; height: 160px; }
+    .name-title h1 { font-size: 2.5rem; }
+}
+@media (max-width: 780px) {
+    .container { padding: 0 24px; }
+    .nav-flex { justify-content: center; gap: 1rem; }
+    .nav-menu { gap: 1.5rem; }
+    .nav-link { font-size: 0.7rem; letter-spacing: 1.5px; }
+    .lang-btn { font-size: 0.65rem; }
+    .lang-divider { font-size: 0.6rem; }
+    .hero-photo { text-align: center; }
+    .portrait-frame { width: 140px; height: 140px; margin: 0 auto; }
+    .hero-slogan { text-align: center; font-size: 0.7rem; }
+    .name-title { text-align: center; }
+    .title-role { text-align: center; font-size: 0.7rem; }
+    .hero-desc { text-align: left; font-size: 0.9rem; margin-top: 1.5rem; }
+    .stat-row { justify-content: center; gap: 2rem; }
+    .stat-number { font-size: 1.3rem; }
+    .section-header { margin: 50px 0 28px; scroll-margin-top: 80px; }
+    .section-header h2 { font-size: 1.2rem; }
+    .curator-head { margin: 50px 0 24px; scroll-margin-top: 80px; }
+    .curator-head h3 { font-size: 1.4rem; text-align: center; }
+    .curator-head .sub { text-align: center; font-size: 0.65rem; }
+    .grid-3, .grid-4 { grid-template-columns: 1fr; }
+    .curator-block { padding: 32px 24px; }
+    .curator-text { font-size: 0.9rem; }
+    .list-role { width: 100%; font-size: 0.75rem; }
+    .list-detail { font-size: 0.8rem; }
+    .list-item { gap: 12px; }
+    .work-title { font-size: 1.15rem; }
+    .work-desc { font-size: 0.8rem; }
+    .sticker-name-zh { font-size: 0.9rem; }
+    .sticker-sub { font-size: 0.65rem; }
+    .contact-email-link { font-size: 0.75rem; padding: 10px 28px; }
+    .privacy-link { font-size: 0.65rem; }
+    footer { font-size: 0.65rem; }
+}
+</style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container nav-flex">
+        <div class="nav-menu">
+            <a href="#apps-title" class="nav-link">Works</a>
+            <a href="#stickers-title" class="nav-link">Stickers</a>
+            <a href="#curator-title" class="nav-link">Curating</a>
+        </div>
+        <div class="lang-switch">
+            <a href="/zh-tw/" class="lang-btn" hreflang="zh-Hant">繁中</a><span class="lang-divider">/</span>
+            <a href="/zh-cn/" class="lang-btn" hreflang="zh-Hans">簡中</a><span class="lang-divider">/</span>
+            <a href="/en/" class="lang-btn active" hreflang="en">EN</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <div class="container">
+        <div class="hero">
+            <div class="hero-photo">
+                <div class="portrait-frame">
+                    <img src="/images/ansel_portrait.png" alt="Ansel Bi">
+                </div>
+            </div>
+            <div class="hero-slogan">Compiling curatorial silence into digital poetry</div>
+            <div class="name-title">
+                <h1>Ansel Bi</h1>
+                <div class="title-role">Curator / App Developer</div>
+            </div>
+            <div class="hero-desc">Taiwan
+Inside a warehouse
+
+My father's work
+Before me
+
+Not to admire it
+To pack it
+
+Palletizing nailing crates taping labels wrapping tape
+
+Then
+Those crates flew halfway across the world
+
+Until they arrived
+In New York Manhattan
+
+That year was 2009
+
+Inside the gallery unpacking wiping
+Placing each piece gently on the wall
+
+Waiting for the lights to come up
+
+That was my first exhibition as a curator
+The curator was a son
+The artist was his father
+
+From my father's work I learned to listen
+Not to applause
+But to the faint almost inaudible breath
+Of a piece being lifted from its crate
+
+And after the lights came up
+Someone would walk in
+And stand quietly in front of the work
+That silence
+Was more honest than any words
+
+Nearly twenty years have passed
+
+I have curated nearly sixty exhibitions
+Traveling across Asia Europe the Americas and Australia
+Served as a private museum advisor
+Curated solo and group shows for artists
+And offered consultation to collectors and institutions
+
+But I have never forgotten that warehouse
+
+Never forgotten the sound of hammering nails into crates
+
+Now
+I bring that same listening that same delicate rhythm
+Into apps and stickers
+They are the silent resonance
+Between me and every user
+
+Like that light
+Softly falling on my father's work
+
+Then
+Someone stopped
+
+Quietly
+Looked for a long long time
+
+Perhaps
+That someone is you</div>
+            <div class="stat-row">
+                <div><div class="stat-number">20</div><div class="stat-item">Years</div></div>
+                <div><div class="stat-number">≈60</div><div class="stat-item">Exhibitions</div></div>
+                <div><div class="stat-number">4</div><div class="stat-item">Continents</div></div>
+            </div>
+        </div>
+
+        <div id="apps-title" class="section-header">
+            <h2>Original Apps</h2>
+        </div>
+        <div class="grid-3">
+            <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/ProfitFairy_icon.png" alt="ProfitFairy"></div><div class="card-info"><div class="work-title">ProfitFairy: Gross Margin &amp; Pricing</div><div class="work-sub">Business · Productivity</div><div class="work-desc">Profit management for e-commerce &amp; retail. Split costs, shipping, taxes, platform fees instantly, calculate multiple mixed parameters in real time with history log support. Precision for every decision.</div><div class="store-badge"><a href="https://apps.apple.com/app/id6740332215" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
+            <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/RubyDays_icon.png" alt="RubyDays"></div><div class="card-info"><div class="work-title">RubyDays: TCM Herbal Wellness Calendar</div><div class="work-sub">Period Tracker, Ovulation Calculator &amp; Private Diary</div><div class="work-desc">Accurate period &amp; ovulation calendar, plus a lockable private diary. Integrates 4 TCM classics, acupressure, and medicinal recipes. Record daily moods, photos, and physical changes.</div><div class="store-badge"><a href="https://apps.apple.com/app/id6752606069" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
+            <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/AIOS_icon.png" alt="AIOS Realm"></div><div class="card-info"><div class="work-title">AIOS Realm: Divinity Reborn</div><div class="work-sub">Puzzle · Cards · Story</div><div class="work-desc">A 2048-evolution puzzle game. Merge goddess cards, unlock epic oceanic narrative. Strategic brain-teaser meets card collection.</div><div class="store-badge"><a href="https://apps.apple.com/app/id6745821288" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
+        </div>
+
+        <div id="stickers-title" class="section-header">
+            <h2>iMessage Stickers</h2>
+        </div>
+        <div class="grid-4">
+            <div class="sticker-card"><img class="sticker-icon" src="/images/shiba_icon.png" alt="Taiger Shiba"><div class="sticker-name-zh">Taiger Shiba: Jianghu Daily</div><div class="sticker-sub">Blue slippers + retro helmet + gangster phrases. Looks fierce but hilariously silly</div><div class="store-badge"><a href="https://apps.apple.com/app/id6761126835" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
+            <div class="sticker-card"><img class="sticker-icon" src="/images/MeowCAT-1_icon.png" alt="MeowCAT-1"><div class="sticker-name-zh">MeowCAT-1: Office Paws</div><div class="sticker-sub">Your Daily Dose of Cuteness</div><div class="store-badge"><a href="https://apps.apple.com/app/id6755613138" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
+            <div class="sticker-card"><img class="sticker-icon" src="/images/MeowCAT-2_icon.png" alt="MeowCAT-2"><div class="sticker-name-zh">MeowCAT-2: Corporate Meltdown</div><div class="sticker-sub">Sassy &amp; Stressed-out</div><div class="store-badge"><a href="https://apps.apple.com/app/id6755665538" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
+            <div class="sticker-card"><img class="sticker-icon" src="/images/MeowCAT-3_icon.png" alt="MeowCAT-3"><div class="sticker-name-zh">MeowCAT-3: Cubicle Tails</div><div class="sticker-sub">Say It with a Meow</div><div class="store-badge"><a href="https://apps.apple.com/app/id6755676294" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
+        </div>
+
+        <div id="curator-title" class="curator-head">
+            <h3>Listen, Then Resonate</h3>
+            <div class="sub">Curatorial Notes · From Galleries to Screens</div>
+        </div>
+        <div class="curator-block">
+            <div class="curator-inner">
+                <div class="curator-text">Curating is a long river
+
+What I learned was not how to display
+But how to listen
+To listen to the language of the work
+The breath of the space
+The silent gaze of the viewer
+
+A true exhibition
+Is where these three find a frequency of resonance</div>
+                <div class="curator-text">Later
+That listening found its way into the digital world
+
+Every app every sticker
+Is no longer just a one-sided design
+Just as I once listened to artworks
+I now listen to every user's voice
+Their thoughts their confusions their hopes
+Seeping into the code drop by drop
+
+These works
+Are shapes co-created by users and the creator
+
+I am never the one who shapes the atmosphere alone
+I try to stand in different positions
+To feel to empathize to resonate
+
+RubyDays is one example
+
+How does a man design a tool
+To accompany women through their cycles
+I don't have the answer
+I can only listen read
+And imagine the daily realities I will never experience firsthand
+
+It is precisely this unknown
+That gives creation its gentle possibility
+
+Apps are the same
+They are not sealed finished products
+They are things waiting to be heard to be resonated with to be completed together
+
+Just like that night in Manhattan
+After the lights came up
+
+Someone stood quietly in front of my father's work
+
+And looked for a long time
+
+Curating is like this
+Creation is like this
+
+It never ends</div>
+                <div class="curated-list">
+                    <div class="list-grid">
+                        <div class="list-item"><div class="list-role">Solo Exhibitions</div><div class="list-detail">Spanning Asia Europe Americas Australia curated solo shows for multiple artists</div></div>
+                        <div class="list-item"><div class="list-role">Group Shows</div><div class="list-detail">Organized thematic group exhibitions articulating dialogues within collective creations</div></div>
+                        <div class="list-item"><div class="list-role">Art Fairs</div><div class="list-detail"><span>Including </span><span>ArtExpo New York </span><span>Art Shopping – Carrousel du Louvre </span><span>Art Taipei </span><span>AArt Shanghai </span><span> among others</span></div></div>
+                        <div class="list-item"><div class="list-role">Art Advisor</div><div class="list-detail">Consulting for private museums collectors and art institutions</div></div>
+                    </div>
+                    <div class="list-note">Spanning four continents nearly sixty curated exhibitions</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-area">
+            <a href="mailto:hi@anselbi.com" class="contact-email-link">Contact / Collaborate</a>
+            <div class="contact-note">Curatorial · Development · Brand Collaboration · Feedback</div>
+        </div>
+
+        <div class="privacy-footer">
+            <a href="/en/privacy/" class="privacy-link">Privacy Policy</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Ansel Bi</p>
+    </div>
+</footer>
+</body>
+</html>

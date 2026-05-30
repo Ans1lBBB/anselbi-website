@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>毕弘伟 Ansel Bi — 策展人 / App 程序员</title>
+    <meta name="description" content="策展人 Ansel Bi，近二十年策展经历，策划近六十场展览，足迹遍及亚洲、欧洲、美洲、澳洲。将策展美学注入独立开发的 APP 与贴图。">
+    <meta name="keywords" content="毕弘伟, Ansel Bi, 策展人, 独立开发者, ProfitFairy, 小主私密日记, 艾奥斯, 台客柴, MeowCAT">
+    <link rel="alternate" hreflang="zh-Hant" href="https://www.anselbi.com/zh-tw/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://www.anselbi.com/zh-cn/">
+    <link rel="alternate" hreflang="en" href="https://www.anselbi.com/en/">
+    <link rel="alternate" hreflang="x-default" href="https://www.anselbi.com/zh-tw/">
+    <link rel="canonical" href="https://www.anselbi.com/zh-cn/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.anselbi.com/zh-cn/">
+    <meta property="og:title" content="毕弘伟 Ansel Bi — 策展人 / App 程序员">
+    <meta property="og:description" content="策展人 Ansel Bi，近二十年策展经历，策划近六十场展览，足迹遍及亚洲、欧洲、美洲、澳洲。将策展美学注入独立开发的 APP 与贴图。">
+    <meta property="og:locale" content="zh_CN">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <style>* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #121212;
+    color: #e6e2da;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&display=swap');
+.chinese-name {
+    font-family: 'Noto Serif TC', 'Cormorant Garamond', serif;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.container { max-width: 1400px; margin: 0 auto; padding: 0 72px; }
+.navbar {
+    padding: 28px 0;
+    position: sticky;
+    top: 0;
+    background: rgba(18, 18, 18, 0.92);
+    backdrop-filter: blur(16px);
+    z-index: 100;
+    border-bottom: 1px solid rgba(230, 226, 218, 0.06);
+}
+.nav-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #9e9589;
+    transition: 0.2s;
+    position: relative;
+    padding-bottom: 2px;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #c9aa7b;
+    transition: width 0.25s ease;
+}
+.nav-link:hover { color: #c9aa7b; }
+.nav-link:hover::after { width: 100%; }
+.lang-switch {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.lang-divider { color: #4a453f; font-size: 0.7rem; }
+.lang-btn {
+    background: transparent;
+    border: none;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 0;
+    cursor: pointer;
+    color: #9e9589;
+    transition: 0.2s;
+    text-decoration: none;
+}
+.lang-btn:hover { color: #c9aa7b; }
+.lang-btn.active { color: #c9aa7b; }
+.hero { padding: 60px 0 40px; }
+.hero-photo { margin-bottom: 2.5rem; }
+.portrait-frame {
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgba(230, 226, 218, 0.2);
+    overflow: hidden;
+    background: #1a1a1a;
+}
+.portrait-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+.portrait-frame:hover img { transform: scale(1.02); }
+.hero-slogan {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    color: #c9aa7b;
+    margin-bottom: 1.25rem;
+    font-weight: 300;
+}
+.name-title { margin-bottom: 1.25rem; }
+.name-title h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #e6e2da;
+    margin-bottom: 0.5rem;
+}
+.name-title h1 .chinese-name { color: #c9aa7b; }
+.title-role {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    color: #9e9589;
+}
+.hero-desc {
+    font-size: 1rem;
+    color: #b8b0a2;
+    line-height: 1.7;
+    white-space: pre-line;
+    margin: 2rem 0 1.5rem;
+    max-width: 680px;
+}
+.stat-row {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+.stat-item { font-size: 0.75rem; letter-spacing: 1px; color: #9e9589; }
+.stat-number {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #c9aa7b;
+    font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 0.25rem;
+}
+.section-header {
+    margin: 80px 0 40px;
+    border-bottom: 1px solid rgba(230,226,218,0.12);
+    padding-bottom: 16px;
+    scroll-margin-top: 90px;
+}
+.section-header h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+}
+.curator-head {
+    margin: 80px 0 32px;
+    scroll-margin-top: 90px;
+}
+.curator-head h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+.curator-head .sub {
+    font-size: 0.7rem;
+    color: #c9aa7b;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+.work-card { background: #1a1a1a; border: 1px solid rgba(230,226,218,0.08); transition: all 0.3s ease; }
+.work-card:hover { border-color: rgba(201,170,123,0.4); transform: translateY(-4px); }
+.card-media { background: #1e1e1e; display: flex; justify-content: center; align-items: center; padding: 40px 32px; border-bottom: 1px solid rgba(230,226,218,0.06); }
+.app-icon { width: 110px; height: 110px; border-radius: 24px; object-fit: cover; }
+.card-info { padding: 24px 24px 28px; }
+.work-title { font-size: 1.25rem; font-weight: 600; margin-bottom: 4px; }
+.work-sub { font-size: 0.7rem; color: #c9aa7b; margin-bottom: 12px; letter-spacing: 0.5px; }
+.work-desc { font-size: 0.85rem; color: #b8b0a2; line-height: 1.6; margin-bottom: 20px; }
+.store-badge img { height: 42px; width: auto; border-radius: 10px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+.sticker-card { background: #1a1a1a; border: 1px solid rgba(230,226,218,0.08); padding: 24px 20px; transition: 0.2s; }
+.sticker-card:hover { border-color: rgba(201,170,123,0.4); }
+.sticker-icon { width: 70px; height: 70px; border-radius: 18px; margin-bottom: 16px; object-fit: cover; }
+.sticker-name-zh { font-weight: 600; font-size: 0.95rem; margin-bottom: 4px; }
+.sticker-sub { font-size: 0.7rem; color: #9e9589; margin-bottom: 16px; line-height: 1.4; }
+.curator-block { background: #161616; border: 1px solid rgba(230,226,218,0.06); padding: 60px 56px; margin: 40px 0 80px; }
+.curator-inner { max-width: 980px; margin: 0 auto; }
+.curator-text { font-size: 1rem; line-height: 1.8; color: #d4cdc0; margin-bottom: 24px; white-space: pre-line; }
+.curated-list { margin: 48px 0 20px; border-top: 1px solid rgba(201,170,123,0.25); padding-top: 40px; }
+.list-grid { display: flex; flex-direction: column; gap: 24px; }
+.list-item { display: flex; flex-wrap: wrap; gap: 28px; border-bottom: 1px solid rgba(230,226,218,0.06); padding-bottom: 20px; }
+.list-role { width: 210px; font-size: 0.8rem; font-weight: 500; color: #c9aa7b; letter-spacing: 1px; }
+.list-detail { flex: 1; font-size: 0.85rem; color: #b8b0a2; line-height: 1.6; }
+.list-detail span { display: inline-block; margin-right: 10px; }
+.list-note { margin-top: 28px; font-size: 0.7rem; color: #7e6f5e; text-align: right; }
+.contact-area { text-align: center; padding: 48px 0; border-top: 1px solid rgba(230,226,218,0.1); margin: 40px 0 32px; }
+.contact-email-link { display: inline-block; background: transparent; border: 1px solid #c9aa7b; padding: 12px 36px; font-size: 0.8rem; letter-spacing: 2px; color: #c9aa7b; text-decoration: none; transition: 0.2s; border-radius: 40px; }
+.contact-email-link:hover { background: #c9aa7b; color: #121212; }
+.contact-note { margin-top: 16px; font-size: 0.7rem; color: #9e9589; }
+.privacy-footer { text-align: center; margin-top: 16px; padding-bottom: 32px; }
+.privacy-link { color: #9e9589; text-decoration: none; font-size: 0.7rem; border-bottom: 1px dashed rgba(201,170,123,0.4); }
+footer { text-align: center; padding: 24px 0 40px; font-size: 0.7rem; color: #6a6258; border-top: 1px solid rgba(230,226,218,0.08); }
+@media (max-width: 1024px) {
+    .container { padding: 0 32px; }
+    .grid-3 { grid-template-columns: 1fr 1fr; gap: 28px; }
+    .grid-4 { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .portrait-frame { width: 160px; height: 160px; }
+    .name-title h1 { font-size: 2.5rem; }
+}
+@media (max-width: 780px) {
+    .container { padding: 0 24px; }
+    .nav-flex { justify-content: center; gap: 1rem; }
+    .nav-menu { gap: 1.5rem; }
+    .nav-link { font-size: 0.7rem; letter-spacing: 1.5px; }
+    .lang-btn { font-size: 0.65rem; }
+    .lang-divider { font-size: 0.6rem; }
+    .hero-photo { text-align: center; }
+    .portrait-frame { width: 140px; height: 140px; margin: 0 auto; }
+    .hero-slogan { text-align: center; font-size: 0.7rem; }
+    .name-title { text-align: center; }
+    .title-role { text-align: center; font-size: 0.7rem; }
+    .hero-desc { text-align: left; font-size: 0.9rem; margin-top: 1.5rem; }
+    .stat-row { justify-content: center; gap: 2rem; }
+    .stat-number { font-size: 1.3rem; }
+    .section-header { margin: 50px 0 28px; scroll-margin-top: 80px; }
+    .section-header h2 { font-size: 1.2rem; }
+    .curator-head { margin: 50px 0 24px; scroll-margin-top: 80px; }
+    .curator-head h3 { font-size: 1.4rem; text-align: center; }
+    .curator-head .sub { text-align: center; font-size: 0.65rem; }
+    .grid-3, .grid-4 { grid-template-columns: 1fr; }
+    .curator-block { padding: 32px 24px; }
+    .curator-text { font-size: 0.9rem; }
+    .list-role { width: 100%; font-size: 0.75rem; }
+    .list-detail { font-size: 0.8rem; }
+    .list-item { gap: 12px; }
+    .work-title { font-size: 1.15rem; }
+    .work-desc { font-size: 0.8rem; }
+    .sticker-name-zh { font-size: 0.9rem; }
+    .sticker-sub { font-size: 0.65rem; }
+    .contact-email-link { font-size: 0.75rem; padding: 10px 28px; }
+    .privacy-link { font-size: 0.65rem; }
+    footer { font-size: 0.65rem; }
+}
+</style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container nav-flex">
+        <div class="nav-menu">
+            <a href="#apps-title" class="nav-link">作品</a>
+            <a href="#stickers-title" class="nav-link">贴图</a>
+            <a href="#curator-title" class="nav-link">策展</a>
+        </div>
+        <div class="lang-switch">
+            <a href="/zh-tw/" class="lang-btn" hreflang="zh-Hant">繁中</a><span class="lang-divider">/</span>
+            <a href="/zh-cn/" class="lang-btn active" hreflang="zh-Hans">簡中</a><span class="lang-divider">/</span>
+            <a href="/en/" class="lang-btn" hreflang="en">EN</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <div class="container">
+        <div class="hero">
+            <div class="hero-photo">
+                <div class="portrait-frame">
+                    <img src="/images/ansel_portrait.png" alt="Ansel Bi">
+                </div>
+            </div>
+            <div class="hero-slogan">将策展的沉默，编译为数字的诗行</div>
+            <div class="name-title">
+                <h1><span class="chinese-name">毕弘伟</span> <span>Ansel Bi</span></h1>
+                <div class="title-role">策展人 / App 程序员</div>
+            </div>
+            <div class="hero-desc">台湾
+一个仓库里
+
+父亲的作品
+在我面前
+
+不是欣赏
+是打包
+
+打栈板 钉木箱 贴标签 缠胶带
+
+然后
+那些木箱飞越半个地球
+
+直到它们抵达
+纽约 曼哈顿
+
+那年是2009
+
+展场里 拆封 擦拭
+小心翼翼地安放在墙上
+
+等待灯光亮起
+
+那是我策划的第一场展览
+策展人是儿子
+艺术家是父亲
+
+我从父亲的作品里学会了聆听
+不是聆听掌声
+而是聆听一件作品从木箱里被取出时
+那道细微的 几乎听不见的呼吸声
+
+还有灯亮之后
+有人走进来
+安静地站在作品前
+那份沉默
+比任何话语都诚实
+
+近二十年过去了
+
+我策划了近六十场展览
+足迹走过亚洲 欧洲 美洲 澳洲
+做过私人美术馆顾问
+为艺术家策划过个展与联展
+也为藏家与机构提供咨询
+
+但我始终没有忘记那个仓库
+
+没有忘记钉木箱敲打的声音
+
+如今
+我将那份聆听那份细腻的节奏
+带进App与贴图里
+它们是我与使用者之间
+一次次无声的共振
+
+就像当年那盏灯
+轻轻落在父亲的作品上
+
+然后
+有人停下来
+
+安静地
+看了很久
+
+或许
+那个人就是你</div>
+            <div class="stat-row">
+                <div><div class="stat-number">20</div><div class="stat-item">年策展经历</div></div>
+                <div><div class="stat-number">≈60</div><div class="stat-item">场展览策划</div></div>
+                <div><div class="stat-number">4</div><div class="stat-item">大洲足迹</div></div>
+            </div>
+        </div>
+
+        <div id="apps-title" class="section-header">
+            <h2>原创应用</h2>
+        </div>
+        <div class="grid-3">
+            <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/ProfitFairy_icon.png" alt="ProfitFairy"></div><div class="card-info"><div class="work-title">ProfitFairy 毛利率利润定价计算器</div><div class="work-sub">商业・生产力工具</div><div class="work-desc">专为电商与实体商家设计的利润管理系统。一键拆分成本、运费、税金、平台费，即时计算多项参数混搭并支持历史纪录查看，让每个商业决策精准透明。</div><div class="store-badge"><a href="https://apps.apple.com/app/id6740332215" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
+            <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/RubyDays_icon.png" alt="RubyDays"></div><div class="card-info"><div class="work-title">小主私密日记：老中医汉方养生调理日历</div><div class="work-sub">生理期追踪、月经排卵期计算器・女性私密日记</div><div class="work-desc">生理期与排卵期精准计算日历，同时是一本可上锁的私密日记。融合《黄帝内经》等四大中医典籍，提供穴位与药膳食补指南。记录每一天的心情、照片与身体变化。</div><div class="store-badge"><a href="https://apps.apple.com/app/id6752606069" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
+            <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/AIOS_icon.png" alt="AIOS Realm"></div><div class="card-info"><div class="work-title">艾奥斯 (AIOS Realm)</div><div class="work-sub">解谜・卡牌・故事</div><div class="work-desc">颠覆传统2048的立体化脑力解谜。透过十字合成、女神卡牌召唤与记忆碎片重组，逐步解锁海洋女神的史诗剧情。</div><div class="store-badge"><a href="https://apps.apple.com/app/id6745821288" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
+        </div>
+
+        <div id="stickers-title" class="section-header">
+            <h2>iMessage 贴图</h2>
+        </div>
+        <div class="grid-4">
+            <div class="sticker-card"><img class="sticker-icon" src="/images/shiba_icon.png" alt="Taiger Shiba"><div class="sticker-name-zh">【台客柴】阿柴的江湖日常：俗搁有力篇</div><div class="sticker-sub">蓝白拖＋复古安全帽＋超派口头禅，看起来很凶其实超北烂</div><div class="store-badge"><a href="https://apps.apple.com/app/id6761126835" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
+            <div class="sticker-card"><img class="sticker-icon" src="/images/MeowCAT-1_icon.png" alt="MeowCAT-1"><div class="sticker-name-zh">MeowCAT-1: 办公室猫爪</div><div class="sticker-sub">你的每日可爱剂量 / Your Daily Dose of Cuteness</div><div class="store-badge"><a href="https://apps.apple.com/app/id6755613138" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
+            <div class="sticker-card"><img class="sticker-icon" src="/images/MeowCAT-2_icon.png" alt="MeowCAT-2"><div class="sticker-name-zh">MeowCAT-2: 职场崩溃日记</div><div class="sticker-sub">嚣张不改，崩溃常来 / Sassy &amp; Stressed-out</div><div class="store-badge"><a href="https://apps.apple.com/app/id6755665538" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
+            <div class="sticker-card"><img class="sticker-icon" src="/images/MeowCAT-3_icon.png" alt="MeowCAT-3"><div class="sticker-name-zh">MeowCAT-3: 隔间喵趣</div><div class="sticker-sub">用一声喵，说一切 / Say It with a Meow</div><div class="store-badge"><a href="https://apps.apple.com/app/id6755676294" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
+        </div>
+
+        <div id="curator-title" class="curator-head">
+            <h3>聆听，然后共振</h3>
+            <div class="sub">策展笔记 · 从展场到屏幕</div>
+        </div>
+        <div class="curator-block">
+            <div class="curator-inner">
+                <div class="curator-text">策展是一条长河
+
+学会的不是如何展示
+而是如何聆听
+聆听作品自身的语言
+聆听空间的呼吸
+聆听观者沉默的凝视
+
+真正的展览
+是让这三者找到共振的频率</div>
+                <div class="curator-text">后来
+这份聆听被带进数字世界
+
+每一个App 每一款贴图
+都不再只是单方面的设计
+像从前聆听作品那样
+聆听每一个使用者的声音
+他们的想法 困惑 期盼
+一点一滴渗进代码里
+
+这些作品
+是使用者与创作者共同完成的形状
+
+从来不是那个单独塑造氛围的人
+试着站在不同的位置上
+去感受 去揣摩 去共振
+
+小主私密日记是一个例子
+
+一个男性
+要如何设计一个陪伴女性生理期的工具
+没有答案
+只能去听 去读
+去想象那些永远无法亲身经历的日常
+
+正是这种未知
+让创作有了温柔的可能
+
+App也是这样
+它们不是被封装的成品
+而是等待被聆听 被共鸣 被一起完成的
+
+如同当年曼哈顿
+那盏灯亮起之后
+
+有人安静地站在父亲的作品前
+
+看了很久
+
+策展如此
+创作亦如此
+
+永不落幕</div>
+                <div class="curated-list">
+                    <div class="list-grid">
+                        <div class="list-item"><div class="list-role">个展策划 / Solo Exhibitions</div><div class="list-detail">足迹横跨亚洲、欧洲、美洲、澳洲，为多位艺术家策划个人展览</div></div>
+                        <div class="list-item"><div class="list-role">联展统筹 / Group Shows</div><div class="list-detail">统筹主题性联展，梳理群体创作中的对话脉络</div></div>
+                        <div class="list-item"><div class="list-role">艺术博览会 / Art Fairs</div><div class="list-detail"><span>诸如 </span><span>ArtExpo New York / 纽约艺术博览会 </span><span>Art Shopping – Carrousel du Louvre / 法国巴黎罗浮宫卡鲁塞尔艺术博览会 </span><span>Art Taipei / 台北艺术博览会 </span><span>AArt Shanghai / 上海城市艺术博览会 </span><span> 等</span></div></div>
+                        <div class="list-item"><div class="list-role">艺术顾问 / Art Advisor</div><div class="list-detail">私人美术馆顾问、藏家与艺术机构策展咨询</div></div>
+                    </div>
+                    <div class="list-note">足迹遍及四大洲 — 近六十场展览策划实践</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-area">
+            <a href="mailto:hi@anselbi.com" class="contact-email-link">联络 / 合作</a>
+            <div class="contact-note">策展合作 · 开发委托 · 品牌联名 · 用户反馈</div>
+        </div>
+
+        <div class="privacy-footer">
+            <a href="/zh-cn/privacy/" class="privacy-link">隐私权政策</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Ansel Bi</p>
+    </div>
+</footer>
+</body>
+</html>

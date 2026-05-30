@@ -1,0 +1,8 @@
+# Legacy URL redirects (language-neutral fallbacks; middleware handles smart detection on supported routes)
+/index.html / 302
+/privacy.html /privacy 302
+
+# Trailing slash normalization
+/zh-tw /zh-tw/ 301
+/zh-cn /zh-cn/ 301
+/en /en/ 301
