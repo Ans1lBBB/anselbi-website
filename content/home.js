@@ -29,7 +29,7 @@ module.exports = {
     pf_sub: "商業・生產力工具",
     pf_desc:
       "專為電商與實體商家設計的利潤管理系統。一鍵拆分成本、運費、稅金、平台費，即時計算多項參數混搭並支援歷史紀錄查看，讓每個商業決策精準透明。",
-    ruby_title: "小主私密日記：老中醫漢方養生調理日曆",
+    ruby_title: "小主私密日記－月經經期排卵日曆",
     ruby_sub: "生理期追蹤、月經排卵期計算器・女性私密日記",
     ruby_desc:
       "生理期與排卵期精準計算日曆，同時是一本可上鎖的私密日記。融合《黃帝內經》等四大中醫典籍，提供穴位與藥膳食補指南。記錄每一天的心情、照片與身體變化。",
@@ -99,7 +99,7 @@ module.exports = {
     pf_sub: "商业・生产力工具",
     pf_desc:
       "专为电商与实体商家设计的利润管理系统。一键拆分成本、运费、税金、平台费，即时计算多项参数混搭并支持历史纪录查看，让每个商业决策精准透明。",
-    ruby_title: "小主私密日记：老中医汉方养生调理日历",
+    ruby_title: "小主私密日记－月经经期排卵日历",
     ruby_sub: "生理期追踪、月经排卵期计算器・女性私密日记",
     ruby_desc:
       "生理期与排卵期精准计算日历，同时是一本可上锁的私密日记。融合《黄帝内经》等四大中医典籍，提供穴位与药膳食补指南。记录每一天的心情、照片与身体变化。",
@@ -165,7 +165,7 @@ module.exports = {
     stat3_txt: "Continents",
     apps_title: "Original Apps",
     sticker_title: "iMessage Stickers",
-    pf_title: "ProfitFairy: Gross Margin & Pricing",
+    pf_title: "ProfitFairy: Gross Margin Calc",
     pf_sub: "Business · Productivity",
     pf_desc:
       "Profit management for e-commerce & retail. Split costs, shipping, taxes, platform fees instantly, calculate multiple mixed parameters in real time with history log support. Precision for every decision.",
