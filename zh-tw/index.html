@@ -16,7 +16,7 @@
     <meta property="og:title" content="畢弘偉 Ansel Bi — 策展人 / App 程式設計師">
     <meta property="og:description" content="策展人 Ansel Bi，近二十年策展經歷，策劃近六十場展覽，足跡遍及亞洲、歐洲、美洲、澳洲。將策展美學注入獨立開發的 APP 與貼圖。">
     <meta property="og:locale" content="zh_TW">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Noto+Sans+TC:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Noto+Serif+TC:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet">
     <style>* { margin: 0; padding: 0; box-sizing: border-box; }
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', sans-serif;
@@ -25,25 +25,61 @@ body {
     scroll-behavior: smooth;
     line-height: 1.5;
 }
-/* 中文姓名：與 arielglow.com .logo-zh 相同（Noto Sans TC 無襯線） */
+/* ── 分層字型：策展區襯線 · 作品區無襯線 · 內文 Inter ── */
 .chinese-name {
-    font-family: 'Noto Sans TC', 'Inter', -apple-system, 'PingFang TC', 'PingFang SC', 'Microsoft JhengHei', sans-serif;
-    font-weight: 500;
-    letter-spacing: 0.06em;
+    font-family: 'Noto Serif TC', 'Noto Serif SC', serif;
+    font-weight: 600;
+    letter-spacing: 0.08em;
 }
 .name-title h1 .name-en {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
-    letter-spacing: -0.3px;
+    letter-spacing: -0.02em;
 }
-/* 繁中／簡中內文標題：無襯線 */
-html[lang^="zh"] .section-header h2,
-html[lang^="zh"] .curator-head h3,
+.hero-slogan {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.stat-number {
+    font-family: 'Cormorant Garamond', serif;
+}
+#curator-title h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+html[lang^="zh"] #curator-title h3,
+html[lang^="zh"] .chinese-name {
+    font-family: 'Noto Serif TC', 'Noto Serif SC', serif;
+    font-style: normal;
+}
+html[lang="zh-CN"] .chinese-name,
+html[lang="zh-CN"] #curator-title h3 {
+    font-family: 'Noto Serif SC', 'Noto Serif TC', serif;
+}
+#apps-title h2,
+#stickers-title h2 {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+html[lang^="zh"] #apps-title h2,
+html[lang^="zh"] #stickers-title h2,
 html[lang^="zh"] .work-title,
 html[lang^="zh"] .sticker-name-zh {
-    font-family: 'Noto Sans TC', 'Inter', -apple-system, 'PingFang TC', 'PingFang SC', 'Microsoft JhengHei', sans-serif;
+    font-family: 'Noto Sans TC', 'Inter', -apple-system, 'PingFang TC', 'Microsoft JhengHei', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: none;
+}
+html[lang="zh-CN"] #apps-title h2,
+html[lang="zh-CN"] #stickers-title h2,
+html[lang="zh-CN"] .work-title,
+html[lang="zh-CN"] .sticker-name-zh {
+    font-family: 'Noto Sans SC', 'Noto Sans TC', 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif;
 }
 .container { max-width: 1400px; margin: 0 auto; padding: 0 72px; }
 .navbar {
@@ -127,11 +163,10 @@ html[lang^="zh"] .sticker-name-zh {
 }
 .portrait-frame:hover img { transform: scale(1.02); }
 .hero-slogan {
-    font-size: 0.75rem;
-    letter-spacing: 3px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
     color: #c9aa7b;
     margin-bottom: 1.25rem;
-    font-weight: 300;
 }
 .name-title { margin-bottom: 1.25rem; }
 .name-title h1 {
@@ -165,11 +200,9 @@ html[lang^="zh"] .sticker-name-zh {
 .stat-item { font-size: 0.75rem; letter-spacing: 1px; color: #9e9589; }
 .stat-number {
     font-size: 1.6rem;
-    font-weight: 600;
+    font-weight: 500;
     color: #c9aa7b;
-    font-family: 'Playfair Display', serif;
     margin-bottom: 0.25rem;
-    letter-spacing: -0.3px;
 }
 .section-header {
     margin: 80px 0 40px;
@@ -179,10 +212,6 @@ html[lang^="zh"] .sticker-name-zh {
 }
 .section-header h2 {
     font-size: 1.4rem;
-    font-weight: 600;
-    letter-spacing: -0.3px;
-    font-family: 'Playfair Display', serif;
-    text-transform: uppercase;
 }
 .curator-head {
     margin: 80px 0 32px;
@@ -190,9 +219,6 @@ html[lang^="zh"] .sticker-name-zh {
 }
 .curator-head h3 {
     font-size: 1.8rem;
-    font-weight: 600;
-    font-family: 'Playfair Display', serif;
-    letter-spacing: -0.3px;
     margin-bottom: 8px;
 }
 .curator-head .sub {
