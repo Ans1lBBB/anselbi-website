@@ -10,6 +10,10 @@ const privacyContent = require("../content/privacy");
 const homeCss = fs.readFileSync(path.join(ROOT, "assets/home.css"), "utf8");
 const privacyCss = fs.readFileSync(path.join(ROOT, "assets/privacy.css"), "utf8");
 
+const faviconHead = `    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">`;
+
 function esc(text) {
   return String(text)
     .replace(/&/g, "&amp;")
@@ -75,6 +79,7 @@ ${hreflangTags(lang, "home")}
     <meta property="og:title" content="${esc(c.title)}">
     <meta property="og:description" content="${esc(c.description)}">
     <meta property="og:locale" content="${lang === "en" ? "en_US" : lang === "zh-cn" ? "zh_CN" : "zh_TW"}">
+${faviconHead}
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Noto+Serif+TC:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet">
     <style>${homeCss}</style>
 </head>
@@ -199,6 +204,7 @@ function buildPrivacy(lang, c) {
     <title>${esc(c.title)}</title>
     <meta name="description" content="${esc(c.description)}">
 ${hreflangTags(lang, "privacy")}
+${faviconHead}
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Noto+Serif+TC:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet">
     <style>${privacyCss}</style>
 </head>
