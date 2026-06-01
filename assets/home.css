@@ -1,17 +1,30 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', sans-serif;
     background-color: #121212;
     color: #e6e2da;
     scroll-behavior: smooth;
     line-height: 1.5;
 }
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&display=swap');
+/* 中文姓名：與 arielglow.com .logo-zh 相同（Noto Sans TC 無襯線） */
 .chinese-name {
-    font-family: 'Noto Serif TC', 'Cormorant Garamond', serif;
-    font-style: normal;
+    font-family: 'Noto Sans TC', 'Inter', -apple-system, 'PingFang TC', 'PingFang SC', 'Microsoft JhengHei', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+}
+.name-title h1 .name-en {
+    font-family: 'Playfair Display', serif;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: -0.3px;
+}
+/* 繁中／簡中內文標題：無襯線 */
+html[lang^="zh"] .section-header h2,
+html[lang^="zh"] .curator-head h3,
+html[lang^="zh"] .work-title,
+html[lang^="zh"] .sticker-name-zh {
+    font-family: 'Noto Sans TC', 'Inter', -apple-system, 'PingFang TC', 'PingFang SC', 'Microsoft JhengHei', sans-serif;
+    font-style: normal;
+    font-weight: 500;
 }
 .container { max-width: 1400px; margin: 0 auto; padding: 0 72px; }
 .navbar {
@@ -133,10 +146,11 @@ body {
 .stat-item { font-size: 0.75rem; letter-spacing: 1px; color: #9e9589; }
 .stat-number {
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 600;
     color: #c9aa7b;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Playfair Display', serif;
     margin-bottom: 0.25rem;
+    letter-spacing: -0.3px;
 }
 .section-header {
     margin: 80px 0 40px;
@@ -146,9 +160,9 @@ body {
 }
 .section-header h2 {
     font-size: 1.4rem;
-    font-weight: 400;
-    letter-spacing: 2px;
-    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    font-family: 'Playfair Display', serif;
     text-transform: uppercase;
 }
 .curator-head {
@@ -157,9 +171,9 @@ body {
 }
 .curator-head h3 {
     font-size: 1.8rem;
-    font-weight: 400;
-    font-family: 'Cormorant Garamond', serif;
-    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: -0.3px;
     margin-bottom: 8px;
 }
 .curator-head .sub {

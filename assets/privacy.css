@@ -1,13 +1,19 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', sans-serif;
     background-color: #121212;
     color: #e6e2da;
     line-height: 1.6;
 }
+html[lang^="zh"] .header h1,
+html[lang^="zh"] h2 {
+    font-family: 'Noto Sans TC', 'Inter', -apple-system, 'PingFang TC', 'PingFang SC', 'Microsoft JhengHei', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
 .container { max-width: 900px; margin: 0 auto; padding: 60px 32px; }
 .header { margin-bottom: 48px; border-bottom: 1px solid rgba(230,226,218,0.15); padding-bottom: 24px; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px; }
-.header h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 500; margin-bottom: 12px; color: #c9aa7b; }
+.header h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 600; margin-bottom: 12px; color: #c9aa7b; letter-spacing: -0.3px; }
 .header p { font-size: 0.85rem; color: #9e9589; }
 .lang-switch { display: flex; gap: 6px; background: rgba(255,255,255,0.04); padding: 4px 12px; border-radius: 48px; }
 .lang-btn { background: transparent; border: none; font-size: 0.7rem; font-weight: 500; padding: 5px 14px; border-radius: 40px; cursor: pointer; color: #9e9589; transition: 0.2s; text-decoration: none; }
