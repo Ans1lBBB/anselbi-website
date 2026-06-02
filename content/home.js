@@ -16,7 +16,7 @@ module.exports = {
     slogan: "將策展的沉默，編譯為數位的詩行",
     role: "策展人 / App 程式設計師",
     hero_desc:
-      "台灣\n一個倉庫裡\n\n父親的作品\n在我面前\n\n不是欣賞\n是打包\n\n打棧板 釘木箱 貼標籤 纏膠帶\n\n然後\n那些木箱飛越半個地球\n\n直到它們抵達\n紐約 曼哈頓\n\n那年是2009\n\n展場裡 拆封 擦拭\n小心翼翼地安放在牆上\n\n等待燈光亮起\n\n那是我策劃的第一場展覽\n策展人是兒子\n藝術家是父親\n\n我從父親的作品裡學會了聆聽\n不是聆聽掌聲\n而是聆聽一件作品從木箱裡被取出時\n那道細微的 幾乎聽不見的呼吸聲\n\n還有燈亮之後\n有人走進來\n安靜地站在作品前\n那份沉默\n比任何話語都誠實\n\n近二十年過去了\n\n我策劃了近六十場展覽\n足跡走過亞洲 歐洲 美洲 澳洲\n做過私人美術館顧問\n為藝術家策劃過個展與聯展\n也為藏家與機構提供諮詢\n\n但我始終沒有忘記那個倉庫\n\n沒有忘記釘木箱敲打的聲音\n\n如今\n我將那份聆聽那份細膩的節奏\n帶進App與貼圖裡\n它們是我與使用者之間\n一次次無聲的共振\n\n就像當年那盞燈\n輕輕落在父親的作品上\n\n然後\n有人停下來\n\n安靜地\n看了很久\n\n或許\n那個人就是你",
+      "台灣\n某個倉庫裡\n\n父親的作品\n在我面前\n\n不是欣賞\n是打包\n\n打棧板 釘木箱 貼標籤 纏膠帶\n\n然後\n那些木箱飛越半個地球\n\n直到它們抵達\n紐約 曼哈頓\n\n那年是2009\n\n展場裡 拆封 擦拭\n小心翼翼地安放在牆上\n\n等待燈光亮起\n\n那是我策劃的第一場展覽\n策展人是兒子\n藝術家是父親\n\n我從父親的作品裡學會了聆聽\n不是聆聽掌聲\n而是聆聽一件作品從木箱裡被取出時\n那道細微的 幾乎聽不見的呼吸聲\n\n還有燈亮之後\n有人走進來\n安靜地站在作品前\n那份沉默\n比任何話語都誠實\n\n近二十年過去了\n\n我策劃了近六十場展覽\n足跡走過亞洲 歐洲 美洲 澳洲\n做過私人美術館顧問\n為藝術家策劃過個展與聯展\n也為藏家與機構提供諮詢\n\n但我始終沒有忘記那個倉庫\n\n沒有忘記釘木箱敲打的聲音\n\n如今\n我將那份聆聽那份細膩的節奏\n帶進App與貼圖裡\n它們是我與使用者之間\n一次次無聲的共振\n\n就像當年那盞燈\n輕輕落在父親的作品上\n\n然後\n有人停下來\n\n安靜地\n看了很久\n\n或許\n那個人就是你",
     stat1_num: "20",
     stat1_txt: "年策展經歷",
     stat2_num: "≈60",
@@ -32,11 +32,11 @@ module.exports = {
     ruby_title: "小主私密日記－月經經期排卵日曆",
     ruby_sub: "生理期追蹤、月經排卵期計算器・女性私密日記",
     ruby_desc:
-      "生理期與排卵期精準計算日曆，同時是一本可上鎖的私密日記。融合《黃帝內經》等四大中醫典籍，提供穴位與藥膳食補指南。記錄每一天的心情、照片與身體變化。",
+      "生理期與排卵期精準計算日曆，同時是一本可上鎖的私密日記。融合《黃帝內經》等四大中醫典籍，提供穴位與藥膳食補指南。記錄每一天的心情、瞬間與身體變化。",
     aios_title: "艾奧斯 (AIOS Realm)",
     aios_sub: "解謎・卡牌・故事",
     aios_desc:
-      "顛覆傳統2048的立體化腦力解謎。透過十字合成、女神卡牌召喚與記憶碎片重組，逐步解鎖海洋女神的史詩劇情。燒腦策略與抽卡收集並行。",
+      "顛覆傳統2048的立體化腦力解謎。透過十字合成、女神卡牌召喚與記憶碎片重組，逐步解鎖海洋女神的史詩劇情。燒腦策略與抽卡收集並行的益智遊戲。",
     taiger_name: "【台客柴】阿柴的江湖日常：俗擱有力篇",
     taiger_sub: "藍白拖＋復古安全帽＋超派口頭禪，看起來很兇其實超北爛",
     meow1_name: "MeowCAT-1: 辦公室貓爪",
@@ -86,7 +86,7 @@ module.exports = {
     slogan: "将策展的沉默，编译为数字的诗行",
     role: "策展人 / App 程序员",
     hero_desc:
-      "台湾\n一个仓库里\n\n父亲的作品\n在我面前\n\n不是欣赏\n是打包\n\n打栈板 钉木箱 贴标签 缠胶带\n\n然后\n那些木箱飞越半个地球\n\n直到它们抵达\n纽约 曼哈顿\n\n那年是2009\n\n展场里 拆封 擦拭\n小心翼翼地安放在墙上\n\n等待灯光亮起\n\n那是我策划的第一场展览\n策展人是儿子\n艺术家是父亲\n\n我从父亲的作品里学会了聆听\n不是聆听掌声\n而是聆听一件作品从木箱里被取出时\n那道细微的 几乎听不见的呼吸声\n\n还有灯亮之后\n有人走进来\n安静地站在作品前\n那份沉默\n比任何话语都诚实\n\n近二十年过去了\n\n我策划了近六十场展览\n足迹走过亚洲 欧洲 美洲 澳洲\n做过私人美术馆顾问\n为艺术家策划过个展与联展\n也为藏家与机构提供咨询\n\n但我始终没有忘记那个仓库\n\n没有忘记钉木箱敲打的声音\n\n如今\n我将那份聆听那份细腻的节奏\n带进App与贴图里\n它们是我与使用者之间\n一次次无声的共振\n\n就像当年那盏灯\n轻轻落在父亲的作品上\n\n然后\n有人停下来\n\n安静地\n看了很久\n\n或许\n那个人就是你",
+      "台湾\n某个仓库里\n\n父亲的作品\n在我面前\n\n不是欣赏\n是打包\n\n打栈板 钉木箱 贴标签 缠胶带\n\n然后\n那些木箱飞越半个地球\n\n直到它们抵达\n纽约 曼哈顿\n\n那年是2009\n\n展场里 拆封 擦拭\n小心翼翼地安放在墙上\n\n等待灯光亮起\n\n那是我策划的第一场展览\n策展人是儿子\n艺术家是父亲\n\n我从父亲的作品里学会了聆听\n不是聆听掌声\n而是聆听一件作品从木箱里被取出时\n那道细微的 几乎听不见的呼吸声\n\n还有灯亮之后\n有人走进来\n安静地站在作品前\n那份沉默\n比任何话语都诚实\n\n近二十年过去了\n\n我策划了近六十场展览\n足迹走过亚洲 欧洲 美洲 澳洲\n做过私人美术馆顾问\n为艺术家策划过个展与联展\n也为藏家与机构提供咨询\n\n但我始终没有忘记那个仓库\n\n没有忘记钉木箱敲打的声音\n\n如今\n我将那份聆听那份细腻的节奏\n带进App与贴图里\n它们是我与使用者之间\n一次次无声的共振\n\n就像当年那盏灯\n轻轻落在父亲的作品上\n\n然后\n有人停下来\n\n安静地\n看了很久\n\n或许\n那个人就是你",
     stat1_num: "20",
     stat1_txt: "年策展经历",
     stat2_num: "≈60",
@@ -102,11 +102,11 @@ module.exports = {
     ruby_title: "小主私密日记－月经经期排卵日历",
     ruby_sub: "生理期追踪、月经排卵期计算器・女性私密日记",
     ruby_desc:
-      "生理期与排卵期精准计算日历，同时是一本可上锁的私密日记。融合《黄帝内经》等四大中医典籍，提供穴位与药膳食补指南。记录每一天的心情、照片与身体变化。",
+      "生理期与排卵期精准计算日历，同时是一本可上锁的私密日记。融合《黄帝内经》等四大中医典籍，提供穴位与药膳食补指南。记录每一天的心情、瞬间与身体变化。",
     aios_title: "艾奥斯 (AIOS Realm)",
     aios_sub: "解谜・卡牌・故事",
     aios_desc:
-      "颠覆传统2048的立体化脑力解谜。透过十字合成、女神卡牌召唤与记忆碎片重组，逐步解锁海洋女神的史诗剧情。",
+      "颠覆传统2048的立体化脑力解谜。透过十字合成、女神卡牌召唤与记忆碎片重组，逐步解锁海洋女神的史诗剧情。烧脑策略与抽卡收集并行的益智游戏。",
     taiger_name: "【台客柴】阿柴的江湖日常：俗搁有力篇",
     taiger_sub: "蓝白拖＋复古安全帽＋超派口头禅，看起来很凶其实超北烂",
     meow1_name: "MeowCAT-1: 办公室猫爪",
@@ -156,7 +156,7 @@ module.exports = {
     slogan: "Compiling curatorial silence into digital poetry",
     role: "Curator / App Developer",
     hero_desc:
-      "Taiwan\nInside a warehouse\n\nMy father's work\nBefore me\n\nNot to admire it\nTo pack it\n\nPalletizing nailing crates taping labels wrapping tape\n\nThen\nThose crates flew halfway across the world\n\nUntil they arrived\nIn New York Manhattan\n\nThat year was 2009\n\nInside the gallery unpacking wiping\nPlacing each piece gently on the wall\n\nWaiting for the lights to come up\n\nThat was my first exhibition as a curator\nThe curator was a son\nThe artist was his father\n\nFrom my father's work I learned to listen\nNot to applause\nBut to the faint almost inaudible breath\nOf a piece being lifted from its crate\n\nAnd after the lights came up\nSomeone would walk in\nAnd stand quietly in front of the work\nThat silence\nWas more honest than any words\n\nNearly twenty years have passed\n\nI have curated nearly sixty exhibitions\nTraveling across Asia Europe the Americas and Australia\nServed as a private museum advisor\nCurated solo and group shows for artists\nAnd offered consultation to collectors and institutions\n\nBut I have never forgotten that warehouse\n\nNever forgotten the sound of hammering nails into crates\n\nNow\nI bring that same listening that same delicate rhythm\nInto apps and stickers\nThey are the silent resonance\nBetween me and every user\n\nLike that light\nSoftly falling on my father's work\n\nThen\nSomeone stopped\n\nQuietly\nLooked for a long long time\n\nPerhaps\nThat someone is you",
+      "Taiwan\nInside a certain warehouse\n\nMy father's work\nBefore me\n\nNot to admire it\nTo pack it\n\nPalletizing nailing crates taping labels wrapping tape\n\nThen\nThose crates flew halfway across the world\n\nUntil they arrived\nIn New York Manhattan\n\nThat year was 2009\n\nInside the gallery unpacking wiping\nPlacing each piece gently on the wall\n\nWaiting for the lights to come up\n\nThat was my first exhibition as a curator\nThe curator was a son\nThe artist was his father\n\nFrom my father's work I learned to listen\nNot to applause\nBut to the faint almost inaudible breath\nOf a piece being lifted from its crate\n\nAnd after the lights came up\nSomeone would walk in\nAnd stand quietly in front of the work\nThat silence\nWas more honest than any words\n\nNearly twenty years have passed\n\nI have curated nearly sixty exhibitions\nTraveling across Asia Europe the Americas and Australia\nServed as a private museum advisor\nCurated solo and group shows for artists\nAnd offered consultation to collectors and institutions\n\nBut I have never forgotten that warehouse\n\nNever forgotten the sound of hammering nails into crates\n\nNow\nI bring that same listening that same delicate rhythm\nInto apps and stickers\nThey are the silent resonance\nBetween me and every user\n\nLike that light\nSoftly falling on my father's work\n\nThen\nSomeone stopped\n\nQuietly\nLooked for a long long time\n\nPerhaps\nThat someone is you",
     stat1_num: "20",
     stat1_txt: "Years",
     stat2_num: "≈60",
@@ -172,11 +172,11 @@ module.exports = {
     ruby_title: "RubyDays: TCM Herbal Wellness Calendar",
     ruby_sub: "Period Tracker, Ovulation Calculator & Private Diary",
     ruby_desc:
-      "Accurate period & ovulation calendar, plus a lockable private diary. Integrates 4 TCM classics, acupressure, and medicinal recipes. Record daily moods, photos, and physical changes.",
+      "Accurate period & ovulation calendar, plus a lockable private diary. Integrates 4 TCM classics, acupressure, and medicinal recipes. Record daily moods, moments, and physical changes.",
     aios_title: "AIOS Realm: Divinity Reborn",
     aios_sub: "Puzzle · Cards · Story",
     aios_desc:
-      "A 2048-evolution puzzle game. Merge goddess cards, unlock epic oceanic narrative. Strategic brain-teaser meets card collection.",
+      "A 2048-evolution puzzle game. Merge goddess cards, unlock epic oceanic narrative. A puzzle game where strategic brain-teasing and card collection go hand in hand.",
     taiger_name: "Taiger Shiba: Jianghu Daily",
     taiger_sub: "Blue slippers + retro helmet + gangster phrases. Looks fierce but hilariously silly",
     meow1_name: "MeowCAT-1: Office Paws",
