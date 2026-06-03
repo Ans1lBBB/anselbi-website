@@ -129,7 +129,7 @@ query ZoneStats($zoneTag: string, $since: Date, $until: Date, $start: Time, $end
         }
       ) {
         count
-        sum { visits pageViews }
+        sum { visits }
         dimensions { clientCountryName }
       }
     }
