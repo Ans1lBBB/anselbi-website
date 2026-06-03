@@ -106,6 +106,20 @@ npx wrangler pages dev . --compatibility-date=2024-01-01
 
 ---
 
+## 訪客統計（Cloudflare Web Analytics）
+
+部署時會自動向 Cloudflare 取得 **Web Analytics beacon**，並插入所有官網頁面（免費）。
+
+**在哪裡看數據：**
+
+1. 登入 [Cloudflare Dashboard](https://dash.cloudflare.com)
+2. 選網域 **anselbi.com**
+3. 左側 **Analytics & Logs** → **Web Analytics**
+
+新啟用後約 **24～48 小時** 才會有穩定圖表。若 API 權限不足導致未插入追蹤碼，可在 Cloudflare 後台手動複製 beacon，設為 GitHub Secret：`CF_WEB_ANALYTICS_TOKEN`，再重新部署。
+
+---
+
 ## 目錄結構
 
 ```
