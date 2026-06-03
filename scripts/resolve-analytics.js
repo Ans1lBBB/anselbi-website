@@ -107,7 +107,7 @@ async function resolveToken() {
   let token = pickTokenFromSites(sites);
 
   if (!token) {
-    const zoneId = await getZoneId(accountId);
+    const zoneId = await getZoneId();
     const attempts = [
       zoneId ? { zone_tag: zoneId, auto_install: false } : null,
       { host: "www.anselbi.com", auto_install: false },
