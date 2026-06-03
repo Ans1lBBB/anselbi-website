@@ -109,7 +109,7 @@ async function graphql(query, variables) {
 }
 
 const STATS_QUERY = `
-query ZoneStats($zoneTag: string, $since: Date, $until: Date) {
+query ZoneStats($zoneTag: string, $since: Date, $until: Date, $start: Time, $end: Time) {
   viewer {
     zones(filter: { zoneTag: $zoneTag }) {
       overview: httpRequests1dGroups(
@@ -119,14 +119,18 @@ query ZoneStats($zoneTag: string, $since: Date, $until: Date) {
         sum { requests pageViews }
         uniq { uniques }
       }
-      countries: httpRequests1dGroups(
-        filter: { date_geq: $since, date_lt: $until }
+      countries: httpRequestsAdaptiveGroups(
         limit: 25
-        orderBy: [sum_requests_DESC]
+        orderBy: [count_DESC]
+        filter: {
+          datetime_geq: $start
+          datetime_lt: $end
+          requestSource: "eyeball"
+        }
       ) {
+        count
+        sum { visits pageViews }
         dimensions { clientCountryName }
-        sum { requests pageViews }
-        uniq { uniques }
       }
     }
   }
@@ -144,6 +148,8 @@ async function reportSite(key, range) {
     zoneTag,
     since: range.since,
     until: range.until,
+    start: `${range.since}T00:00:00Z`,
+    end: `${range.until}T00:00:00Z`,
   });
   const zone = data?.viewer?.zones?.[0];
   if (!zone) throw new Error(`GraphQL 無資料：${zoneName}`);
@@ -152,9 +158,9 @@ async function reportSite(key, range) {
   const requests = overview?.sum?.requests ?? 0;
   const pageViews = overview?.sum?.pageViews ?? 0;
   const uniques = overview?.uniq?.uniques ?? 0;
-  const countries = (zone.countries || []).filter(
-    (g) => g.dimensions?.clientCountryName
-  );
+  const countries = (zone.countries || [])
+    .filter((g) => g.dimensions?.clientCountryName)
+    .sort((a, b) => (b.count ?? 0) - (a.count ?? 0));
 
   const lines = [
     `## ${label}`,
@@ -170,18 +176,20 @@ async function reportSite(key, range) {
 
   if (countries.length) {
     lines.push("### 國家／地區（依請求次數排序）", "");
-    lines.push("| 排名 | 國家 | 請求 | 獨立 IP |");
-    lines.push("|------|------|------|---------|");
+    lines.push("| 排名 | 國家 | 請求 | 造訪次數 |");
+    lines.push("|------|------|------|----------|");
     countries.slice(0, 15).forEach((g, i) => {
       const code = g.dimensions.clientCountryName;
+      const reqs = g.count ?? g.sum?.visits ?? 0;
       lines.push(
-        `| ${i + 1} | ${countryLabel(code)} | ${(g.sum?.requests ?? 0).toLocaleString()} | ${(g.uniq?.uniques ?? 0).toLocaleString()} |`
+        `| ${i + 1} | ${countryLabel(code)} | ${reqs.toLocaleString()} | ${(g.sum?.visits ?? 0).toLocaleString()} |`
       );
     });
     const top = countries[0];
+    const topReqs = top.count ?? top.sum?.visits ?? 0;
     lines.push(
       "",
-      `**目前最多流量來自：** ${countryLabel(top.dimensions.clientCountryName)}（${(top.sum?.requests ?? 0).toLocaleString()} 次請求）`
+      `**目前最多流量來自：** ${countryLabel(top.dimensions.clientCountryName)}（${topReqs.toLocaleString()} 次請求）`
     );
   } else {
     lines.push("_此期間尚無國家細分資料（或流量極少）。_");
