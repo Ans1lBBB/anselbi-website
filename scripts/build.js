@@ -92,6 +92,8 @@ ${hreflangTags(lang, "home")}
     <meta property="og:title" content="${esc(c.title)}">
     <meta property="og:description" content="${esc(c.description)}">
     <meta property="og:locale" content="${lang === "en" ? "en_US" : lang === "zh-cn" ? "zh_CN" : "zh_TW"}">
+    <meta property="og:image" content="${SITE}/apple-touch-icon.png">
+    <meta name="twitter:card" content="summary">
 ${faviconHead}
 ${analyticsHead}
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Noto+Serif+TC:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet">

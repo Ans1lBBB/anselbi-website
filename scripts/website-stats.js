@@ -54,9 +54,11 @@ function dateRange(period) {
   const days = period === "7d" ? 7 : period === "30d" ? 30 : 1;
   const start = new Date(end);
   start.setUTCDate(start.getUTCDate() - days);
+  const days = period === "7d" ? 7 : period === "30d" ? 30 : 1;
   return {
     since: start.toISOString().slice(0, 10),
     until: end.toISOString().slice(0, 10),
+    periodDays: days,
     label:
       period === "today"
         ? "今天（UTC 日曆日）"
@@ -108,17 +110,25 @@ async function graphql(query, variables) {
   return data.data;
 }
 
-const STATS_QUERY = `
-query ZoneStats($zoneTag: string, $since: Date, $until: Date, $start: Time, $end: Time) {
+const OVERVIEW_QUERY = `
+query ZoneOverview($zoneTag: string, $since: Date, $until: Date) {
   viewer {
     zones(filter: { zoneTag: $zoneTag }) {
-      overview: httpRequests1dGroups(
+      days: httpRequests1dGroups(
         filter: { date_geq: $since, date_lt: $until }
-        limit: 1
+        limit: 31
       ) {
         sum { requests pageViews }
         uniq { uniques }
       }
+    }
+  }
+}`;
+
+const COUNTRIES_QUERY = `
+query ZoneCountries($zoneTag: string, $start: Time, $end: Time) {
+  viewer {
+    zones(filter: { zoneTag: $zoneTag }) {
       countries: httpRequestsAdaptiveGroups(
         limit: 25
         orderBy: [count_DESC]
@@ -144,21 +154,44 @@ function countryLabel(code) {
 async function reportSite(key, range) {
   const { zoneName, label } = SITES[key];
   const zoneTag = await getZoneId(zoneName);
-  const data = await graphql(STATS_QUERY, {
+  const overviewData = await graphql(OVERVIEW_QUERY, {
     zoneTag,
     since: range.since,
     until: range.until,
-    start: `${range.since}T00:00:00Z`,
-    end: `${range.until}T00:00:00Z`,
   });
-  const zone = data?.viewer?.zones?.[0];
+  const zone = overviewData?.viewer?.zones?.[0];
   if (!zone) throw new Error(`GraphQL 無資料：${zoneName}`);
 
-  const overview = zone.overview?.[0];
-  const requests = overview?.sum?.requests ?? 0;
-  const pageViews = overview?.sum?.pageViews ?? 0;
-  const uniques = overview?.uniq?.uniques ?? 0;
-  const countries = (zone.countries || [])
+  const days = zone.days || [];
+  let requests = 0;
+  let pageViews = 0;
+  let uniques = 0;
+  for (const d of days) {
+    requests += d.sum?.requests ?? 0;
+    pageViews += d.sum?.pageViews ?? 0;
+    uniques += d.uniq?.uniques ?? 0;
+  }
+
+  let countries = [];
+  const countryEnd = range.until;
+  const countryStart = range.periodDays === 1 ? range.since : range.until;
+  if (range.periodDays === 1) {
+    try {
+      const countryData = await graphql(COUNTRIES_QUERY, {
+        zoneTag,
+        start: `${countryStart}T00:00:00Z`,
+        end: `${countryEnd}T00:00:00Z`,
+      });
+      countries = countryData?.viewer?.zones?.[0]?.countries || [];
+    } catch (err) {
+      console.warn(`Country breakdown skipped for ${zoneName}:`, err.message);
+    }
+  } else {
+    console.warn(
+      `Country breakdown only for period=today (Free plan adaptive limit). Use today for 國家排行.`
+    );
+  }
+  countries = countries
     .filter((g) => g.dimensions?.clientCountryName)
     .sort((a, b) => (b.count ?? 0) - (a.count ?? 0));
 
@@ -170,7 +203,7 @@ async function reportSite(key, range) {
     "|------|------|------|",
     `| 請求次數 | ${requests.toLocaleString()} | 經 Cloudflare 的 HTTP 請求 |`,
     `| 頁面瀏覽 | ${pageViews.toLocaleString()} | 近似 PV |`,
-    `| 獨立訪客（IP） | ${uniques.toLocaleString()} | 約略「多少人」，非精確登入用戶 |`,
+    `| 獨立訪客（IP） | ${uniques.toLocaleString()} | 約略「多少人」${range.periodDays > 1 ? "（多日加總，同一人可能重複計）" : ""} |`,
     "",
   ];
 
@@ -190,6 +223,10 @@ async function reportSite(key, range) {
     lines.push(
       "",
       `**目前最多流量來自：** ${countryLabel(top.dimensions.clientCountryName)}（${topReqs.toLocaleString()} 次請求）`
+    );
+  } else if (range.periodDays > 1) {
+    lines.push(
+      "_國家排行僅支援「今天」查詢（Cloudflare 免費方案 API 限制）。若要國家分布，請問「今天流量」即可。_"
     );
   } else {
     lines.push("_此期間尚無國家細分資料（或流量極少）。_");
