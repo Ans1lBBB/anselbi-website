@@ -50,11 +50,18 @@ async function getZoneId(accountId) {
   return null;
 }
 
-async function verifyAccountToken(accountId) {
-  const data = await cfFetch(
-    `https://api.cloudflare.com/client/v4/accounts/${accountId}/tokens/verify`
-  );
-  return data.result;
+async function verifyApiToken(accountId) {
+  try {
+    const user = await cfFetch(
+      "https://api.cloudflare.com/client/v4/user/tokens/verify"
+    );
+    return { scope: "user", ...user.result };
+  } catch {
+    const account = await cfFetch(
+      `https://api.cloudflare.com/client/v4/accounts/${accountId}/tokens/verify`
+    );
+    return { scope: "account", ...account.result };
+  }
 }
 
 async function resolveToken() {
@@ -68,8 +75,10 @@ async function resolveToken() {
   }
 
   try {
-    const verified = await verifyAccountToken(accountId);
-    console.log(`API token verified for account: ${verified?.id || accountId}`);
+    const verified = await verifyApiToken(accountId);
+    console.log(
+      `API token verified (${verified.scope}): ${verified?.id || accountId}`
+    );
   } catch (err) {
     throw new Error(
       `Token/Account ID mismatch or invalid credentials (${err.message}). ` +
@@ -78,9 +87,22 @@ async function resolveToken() {
     );
   }
 
-  const list = await cfFetch(
-    `https://api.cloudflare.com/client/v4/accounts/${accountId}/rum/site_info/list`
-  );
+  let list;
+  try {
+    list = await cfFetch(
+      `https://api.cloudflare.com/client/v4/accounts/${accountId}/rum/site_info/list`
+    );
+  } catch (err) {
+    if (/authentication error/i.test(err.message)) {
+      throw new Error(
+        "Web Analytics API returned Authentication error even though the token is valid. " +
+          "This usually means the token needs Account → Account Settings → Read and Edit " +
+          "(Account Analytics Read alone is not enough for rum/site_info). " +
+          "Or set GitHub secret CF_WEB_ANALYTICS_TOKEN from Cloudflare → Web Analytics."
+      );
+    }
+    throw err;
+  }
   const sites = list.result || [];
   let token = pickTokenFromSites(sites);
 
