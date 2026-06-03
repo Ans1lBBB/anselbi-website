@@ -1,33 +1,56 @@
-# 官網交給 Agent 維護
+# 官網交給 Agent（管理層模式）
 
-你專心做 App 即可。官網（anselbi.com、arielglow.com）由 Cursor **Agent 模式**處理。
+你專心做 App。官網當成問秘書：**問數據、改內容、改設計**，都由 Cursor **Agent** 處理，不必碰前後端或 Cloudflare 後台。
 
-## 你只要說
+---
 
-- **「部署 anselbi」** / **「部署 arielglow」** / **「兩個官網都部署」**
-- **「改官網文案：……」**（繁中／簡中／英文）
-- **「檢查官網是否正常」**
+## 你可以像問秘書一樣說
 
-不必再自己開 Cloudflare 或 GitHub Actions（除非 Token 過期）。
+### 流量與訪客（範例）
 
-## 已設定好的（不用重做）
+- 「今天 anselbi 有多少人來？」
+- 「這週 arielglow 流量如何？」
+- 「訪客主要來自哪些國家？哪國最多？」
+- 「獨立訪客和頁面瀏覽差多少？」
 
-- GitHub：`gh` 已登入 `Ans1lBBB`
-- 兩個 repo 的 `CLOUDFLARE_API_TOKEN`、`CLOUDFLARE_ACCOUNT_ID`
-- push `main` → 自動部署到 Cloudflare Pages
+Agent 會跑流量報告（Cloudflare API），用**中文摘要**回答你。
 
-## 技術細節（給 Agent，你可略過）
+> 說明：獨立訪客用 Cloudflare 的「獨立 IP」近似；「回訪客」與 Web Analytics 後台圖表最接近。若 API 權限不足，Agent 會說明要加 **Zone Analytics Read**。
 
-| 項目 | 說明 |
+### 改官網（範例）
+
+- 「把首頁標題改成……」
+- 「英文版 privacy 加一段……」
+- 「arielglow 背景色調柔和一點」
+
+Agent 改檔 → build → push → 自動部署。
+
+### 一句話部署
+
+- **部署 anselbi** / **部署 arielglow** / **兩個都部署**
+
+---
+
+## 你不用做的事
+
+- 不用自己開 GitHub Actions
+- 不用自己貼 API Token（已存在 GitHub Secrets）
+- 不用記指令；用自然語言即可
+
+---
+
+## 技術對照（給 Agent）
+
+| 需求 | 做法 |
 |------|------|
-| anselbi 文案 | `content/home.js`、`content/privacy.js` → `npm run build` |
-| ariel 文案 | `index.html` |
-| 統計 | CI 用 API 自動插入；失敗也不影響網站上線 |
-| 進階 DNS | ariel 的「Cloudflare hardening」workflow 可選 |
+| 流量報告 | `npm run stats -- --site both --period today` 或 `gh workflow run "Website traffic report"` |
+| 改 anselbi 文案 | `content/home.js`、`content/privacy.js` → `npm run build` |
+| 改 ariel | `index.html` |
+| 部署 | push `main` 或 Deploy workflow |
 
-## App Store 網址（維持不變）
+| 網站 | Repo | 網域 |
+|------|------|------|
+| anselbi | `Ans1lBBB/anselbi-website` | www.anselbi.com |
+| arielglow | `Ans1lBBB/arielglow-website` | www.arielglow.com |
 
-- 官網：`https://www.anselbi.com/`
-- 隱私權：`https://www.anselbi.com/privacy`
-
-詳見 `APP-STORE-URLS.md`。
+App Store：`https://www.anselbi.com/`、`https://www.anselbi.com/privacy`（見 `APP-STORE-URLS.md`）。

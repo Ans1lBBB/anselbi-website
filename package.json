@@ -2,6 +2,7 @@
   "name": "anselbi-website",
   "private": true,
   "scripts": {
-    "build": "node scripts/resolve-analytics.js && node scripts/build.js"
+    "build": "node scripts/resolve-analytics.js && node scripts/build.js",
+    "stats": "node scripts/website-stats.js"
   }
 }

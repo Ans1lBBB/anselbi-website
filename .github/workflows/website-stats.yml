@@ -1,0 +1,39 @@
+name: Website traffic report
+
+on:
+  workflow_dispatch:
+    inputs:
+      site:
+        description: "anselbi | ariel | both"
+        required: true
+        default: both
+        type: choice
+        options:
+          - both
+          - anselbi
+          - ariel
+      period:
+        description: "today | 7d | 30d"
+        required: true
+        default: today
+        type: choice
+        options:
+          - today
+          - 7d
+          - 30d
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate traffic report
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: node scripts/website-stats.js --site "${{ inputs.site }}" --period "${{ inputs.period }}"

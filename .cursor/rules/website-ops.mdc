@@ -5,7 +5,7 @@ alwaysApply: true
 
 # Website operations (user focuses on apps)
 
-The user does **not** want to manage Cloudflare/GitHub for personal sites. **You** handle it.
+The user is the **manager**, not the engineer. They ask in natural language (Traditional Chinese); you execute and summarize like a secretary.
 
 ## Repos
 
@@ -14,26 +14,28 @@ The user does **not** want to manage Cloudflare/GitHub for personal sites. **You
 | anselbi | `/Users/ansel/Projects/my-website` | `Ans1lBBB/anselbi-website` | www.anselbi.com |
 | arielglow | `/Users/ansel/Projects/daughter-Ariel-website` | `Ans1lBBB/arielglow-website` | www.arielglow.com |
 
-## When user says 部署 / 上線 / 更新官網
+## Traffic / analytics questions (今天多少人、國家、排行…)
 
-1. Edit copy in `content/*.js` (anselbi) or `index.html` (ariel) as needed.
-2. `npm run build` locally if you want to verify.
-3. Commit + push `main` (or ask which repo).
-4. CI deploys automatically; or `gh workflow run "Deploy to Cloudflare Pages" --repo Ans1lBBB/<repo>`.
-5. Confirm: Actions green, site HTTP 200, anselbi has `cloudflareinsights` in HTML when analytics OK.
+1. Prefer running a report yourself — do not tell the user to open Cloudflare unless the API fails.
+2. From `my-website`:
+   - Local: `npm run stats -- --site both --period today` (needs `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID` in env), or
+   - CI: `gh workflow run "Website traffic report" --repo Ans1lBBB/anselbi-website -f site=both -f period=today` then read the job log / summary.
+3. Answer in **Traditional Chinese**: requests, page views, unique IPs (≈ visitors), top countries, which country is #1.
+4. Clarify limits: returning vs new visitors → Web Analytics dashboard; zone API ≈ real traffic through Cloudflare.
+5. Map period: 今天 → `today`, 本週 → `7d`, 本月 → `30d`.
 
-## Secrets (already set — do not ask user to paste tokens in chat)
+## Content / design changes
 
-- `CLOUDFLARE_API_TOKEN` — Workers template token (Pages Edit)
-- `CLOUDFLARE_ACCOUNT_ID`
-- Optional per-repo: `CF_WEB_ANALYTICS_TOKEN` (only if API auto-resolve fails)
+1. anselbi: edit `content/home.js`, `content/privacy.js`, `assets/*.css`; `npm run build`.
+2. arielglow: edit `index.html` / CSS inline.
+3. Commit + push `main`; confirm Deploy workflow success.
 
-## Content rules
+## Deploy
 
-- anselbi: tri-lingual via `content/home.js`, `content/privacy.js` + `npm run build`
-- App Store URLs: `https://www.anselbi.com/`, `https://www.anselbi.com/privacy` (middleware auto-lang)
-- Do not commit `.cf-analytics-token`
+On 部署 / 上線: push or `gh workflow run "Deploy to Cloudflare Pages"`.
 
-## Optional maintenance
+## Secrets
 
-- ariel DNS/SSL hardening: `gh workflow run "Cloudflare hardening" --repo Ans1lBBB/arielglow-website` (needs broader token; site works without it)
+Never ask for tokens in chat. Use GitHub Secrets via Actions or local env. Optional: `CF_WEB_ANALYTICS_TOKEN` per repo.
+
+See `WEBSITE-OPS.md`.
