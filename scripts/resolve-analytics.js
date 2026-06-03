@@ -50,6 +50,13 @@ async function getZoneId(accountId) {
   return null;
 }
 
+async function verifyAccountToken(accountId) {
+  const data = await cfFetch(
+    `https://api.cloudflare.com/client/v4/accounts/${accountId}/tokens/verify`
+  );
+  return data.result;
+}
+
 async function resolveToken() {
   if (process.env.CF_WEB_ANALYTICS_TOKEN) {
     return process.env.CF_WEB_ANALYTICS_TOKEN.trim();
@@ -58,6 +65,17 @@ async function resolveToken() {
   const accountId = process.env.CLOUDFLARE_ACCOUNT_ID;
   if (!process.env.CLOUDFLARE_API_TOKEN || !accountId) {
     return null;
+  }
+
+  try {
+    const verified = await verifyAccountToken(accountId);
+    console.log(`API token verified for account: ${verified?.id || accountId}`);
+  } catch (err) {
+    throw new Error(
+      `Token/Account ID mismatch or invalid credentials (${err.message}). ` +
+        "Fix CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_API_TOKEN in GitHub Secrets, " +
+        "or add CF_WEB_ANALYTICS_TOKEN from Cloudflare → Web Analytics."
+    );
   }
 
   const list = await cfFetch(
