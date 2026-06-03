@@ -1,0 +1,39 @@
+---
+description: Ansel personal websites — deploy and ops (anselbi + arielglow)
+alwaysApply: true
+---
+
+# Website operations (user focuses on apps)
+
+The user does **not** want to manage Cloudflare/GitHub for personal sites. **You** handle it.
+
+## Repos
+
+| Site | Local path | GitHub | Domain |
+|------|------------|--------|--------|
+| anselbi | `/Users/ansel/Projects/my-website` | `Ans1lBBB/anselbi-website` | www.anselbi.com |
+| arielglow | `/Users/ansel/Projects/daughter-Ariel-website` | `Ans1lBBB/arielglow-website` | www.arielglow.com |
+
+## When user says 部署 / 上線 / 更新官網
+
+1. Edit copy in `content/*.js` (anselbi) or `index.html` (ariel) as needed.
+2. `npm run build` locally if you want to verify.
+3. Commit + push `main` (or ask which repo).
+4. CI deploys automatically; or `gh workflow run "Deploy to Cloudflare Pages" --repo Ans1lBBB/<repo>`.
+5. Confirm: Actions green, site HTTP 200, anselbi has `cloudflareinsights` in HTML when analytics OK.
+
+## Secrets (already set — do not ask user to paste tokens in chat)
+
+- `CLOUDFLARE_API_TOKEN` — Workers template token (Pages Edit)
+- `CLOUDFLARE_ACCOUNT_ID`
+- Optional per-repo: `CF_WEB_ANALYTICS_TOKEN` (only if API auto-resolve fails)
+
+## Content rules
+
+- anselbi: tri-lingual via `content/home.js`, `content/privacy.js` + `npm run build`
+- App Store URLs: `https://www.anselbi.com/`, `https://www.anselbi.com/privacy` (middleware auto-lang)
+- Do not commit `.cf-analytics-token`
+
+## Optional maintenance
+
+- ariel DNS/SSL hardening: `gh workflow run "Cloudflare hardening" --repo Ans1lBBB/arielglow-website` (needs broader token; site works without it)

@@ -40,7 +40,7 @@ function pickTokenFromSites(sites) {
   return sites[0]?.site_token || null;
 }
 
-async function getZoneId(accountId) {
+async function getZoneId() {
   for (const name of ["anselbi.com", "www.anselbi.com"]) {
     const data = await cfFetch(
       `https://api.cloudflare.com/client/v4/zones?name=${encodeURIComponent(name)}`
@@ -108,15 +108,27 @@ async function resolveToken() {
 
   if (!token) {
     const zoneId = await getZoneId(accountId);
-    const body = zoneId
-      ? { zone_tag: zoneId, auto_install: false }
-      : { host: "www.anselbi.com", auto_install: false };
+    const attempts = [
+      zoneId ? { zone_tag: zoneId, auto_install: false } : null,
+      { host: "www.anselbi.com", auto_install: false },
+      { host: "anselbi.com", auto_install: false },
+    ].filter(Boolean);
 
-    const created = await cfFetch(
-      `https://api.cloudflare.com/client/v4/accounts/${accountId}/rum/site_info`,
-      { method: "POST", body: JSON.stringify(body) }
-    );
-    token = created.result?.site_token || null;
+    for (const body of attempts) {
+      try {
+        const created = await cfFetch(
+          `https://api.cloudflare.com/client/v4/accounts/${accountId}/rum/site_info`,
+          { method: "POST", body: JSON.stringify(body) }
+        );
+        token = created.result?.site_token || null;
+        if (token) {
+          console.log(`Created Web Analytics site (${JSON.stringify(body)})`);
+          break;
+        }
+      } catch (err) {
+        console.warn(`RUM create failed for ${JSON.stringify(body)}:`, err.message);
+      }
+    }
   }
 
   return token;
