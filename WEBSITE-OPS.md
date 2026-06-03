@@ -15,7 +15,9 @@
 
 Agent 會跑流量報告（Cloudflare API），用**中文摘要**回答你。
 
-> 說明：獨立訪客用 Cloudflare 的「獨立 IP」近似；「回訪客」與 Web Analytics 後台圖表最接近。若 API 權限不足，Agent 會說明要加 **Zone Analytics Read**。
+> 說明：獨立訪客用 Cloudflare 的「獨立 IP」近似；「回訪／新訪客」與 Web Analytics 後台最接近。
+>
+> **一次性（可選）**：若 Token 尚未包含 **Zone → Analytics → Read**，在 Cloudflare 編輯 Token 並更新 GitHub Secret 後，Agent 就能用 API 回答流量問題；不加也能改文案與部署，只是流量要口述或看後台。
 
 ### 改官網（範例）
 

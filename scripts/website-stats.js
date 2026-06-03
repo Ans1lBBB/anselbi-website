@@ -233,8 +233,16 @@ async function main() {
 
 main().catch((err) => {
   console.error(err.message);
-  console.error(
-    "\n若為權限問題：API Token 需包含 Zone Analytics Read（或 Analytics:Read）。"
-  );
+  if (/analytics\.read/i.test(String(err.message))) {
+    console.error(
+      "\n請在 Cloudflare API Token 加上：Zone → Analytics → Read（兩個網域或所有區域）。" +
+        "\n加完後更新 GitHub Secret，之後 Agent 即可回答「今天多少人、哪國最多」等問題。" +
+        "\n暫時也可看：Cloudflare 後台 → 各網域 → Analytics & Logs → Web Analytics。"
+    );
+  } else {
+    console.error(
+      "\n若為權限問題：API Token 需包含 Zone Analytics Read。"
+    );
+  }
   process.exit(1);
 });
