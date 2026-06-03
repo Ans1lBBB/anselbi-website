@@ -54,7 +54,6 @@ function dateRange(period) {
   const days = period === "7d" ? 7 : period === "30d" ? 30 : 1;
   const start = new Date(end);
   start.setUTCDate(start.getUTCDate() - days);
-  const days = period === "7d" ? 7 : period === "30d" ? 30 : 1;
   return {
     since: start.toISOString().slice(0, 10),
     until: end.toISOString().slice(0, 10),
