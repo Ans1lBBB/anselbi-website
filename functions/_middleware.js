@@ -2,9 +2,9 @@
  * Cloudflare Pages middleware — auto language detection for root and legacy URLs.
  *
  * Priority:
- * 1. Accept-Language (browser / OS preference)
+ * 1. Accept-Language (browser / OS preference) — zh variants only
  * 2. CF-IPCountry (when Chinese is ambiguous)
- * 3. Default: zh-tw
+ * 3. Default: en (all non-Chinese locales)
  */
 const LANG_PATHS = {
   "zh-tw": "/zh-tw/",
@@ -49,9 +49,6 @@ function detectLanguage(request) {
     if (lang.startsWith("zh-cn") || lang.startsWith("zh-sg") || lang.includes("hans")) {
       return "zh-cn";
     }
-    if (lang.startsWith("en")) {
-      return "en";
-    }
     if (lang === "zh" || lang.startsWith("zh-")) {
       return resolveChineseVariant(country);
     }
@@ -60,15 +57,7 @@ function detectLanguage(request) {
   if (country === "CN") return "zh-cn";
   if (TRADITIONAL_REGIONS.has(country)) return "zh-tw";
 
-  const hasEnglishPreference = preferences.some(({ lang }) => lang.startsWith("en"));
-  if (hasEnglishPreference) return "en";
-
-  if (country && country !== "CN" && !TRADITIONAL_REGIONS.has(country)) {
-    const topNonChinese = preferences.find(({ lang }) => !lang.startsWith("zh"));
-    if (topNonChinese?.lang.startsWith("en")) return "en";
-  }
-
-  return "zh-tw";
+  return "en";
 }
 
 function shouldAutoRedirect(pathname) {

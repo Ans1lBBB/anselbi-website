@@ -8,16 +8,15 @@
 
 1. **優先：瀏覽器語言（Accept-Language）** — 反映使用者 OS / 瀏覽器慣用語言
 2. **補充：IP 所在國家（Cloudflare）** — 當中文未標明繁簡時使用
-3. **預設：繁體中文（zh-tw）**
+3. **預設：英文（en）** — 日、韓、歐美等非中文語系皆導向英文
 
 | 條件 | 導向 |
 |------|------|
 | `zh-TW` / `zh-HK` / `zh-MO` / `zh-Hant` | `/zh-tw/` |
 | `zh-CN` / `zh-SG` / `zh-Hans` | `/zh-cn/` |
-| `en` | `/en/` |
 | 只有 `zh` 且 IP 在中國 | `/zh-cn/` |
 | 只有 `zh` 且 IP 在台港澳 | `/zh-tw/` |
-| 其他 | `/zh-tw/`（或英文偏好時 `/en/`） |
+| 其他（含 `en`、`ja`、`ko`、`de`、`fr` 等） | `/en/` |
 
 App Store 的 `https://www.anselbi.com/privacy` **繼續有效**，會依訪客語言自動導向對應版本。
 

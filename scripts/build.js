@@ -50,7 +50,7 @@ function hreflangTags(currentLang, pageType) {
     .join("\n");
 
   return `${tags}
-    <link rel="alternate" hreflang="x-default" href="${SITE}${pageType === "home" ? homeContent["zh-tw"].path : privacyContent["zh-tw"].path}">
+    <link rel="alternate" hreflang="x-default" href="${SITE}${pageType === "home" ? homeContent.en.path : privacyContent.en.path}">
     <link rel="canonical" href="${canonical}">`;
 }
 
@@ -147,10 +147,10 @@ ${analyticsHead}
             <h2>${esc(c.sticker_title)}</h2>
         </div>
         <div class="grid-4">
-            <div class="sticker-card"><img class="sticker-icon" src="/images/shiba_icon.png" alt="Taiger Shiba"><div class="sticker-name-zh">${esc(c.taiger_name)}</div><div class="sticker-sub">${esc(c.taiger_sub)}</div><div class="store-badge"><a href="https://apps.apple.com/app/id6761126835" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
-            <div class="sticker-card"><img class="sticker-icon" src="/images/MeowCAT-1_icon.png" alt="MeowCAT-1"><div class="sticker-name-zh">${esc(c.meow1_name)}</div><div class="sticker-sub">${esc(c.meow1_sub)}</div><div class="store-badge"><a href="https://apps.apple.com/app/id6755613138" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
-            <div class="sticker-card"><img class="sticker-icon" src="/images/MeowCAT-2_icon.png" alt="MeowCAT-2"><div class="sticker-name-zh">${esc(c.meow2_name)}</div><div class="sticker-sub">${esc(c.meow2_sub)}</div><div class="store-badge"><a href="https://apps.apple.com/app/id6755665538" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
-            <div class="sticker-card"><img class="sticker-icon" src="/images/MeowCAT-3_icon.png" alt="MeowCAT-3"><div class="sticker-name-zh">${esc(c.meow3_name)}</div><div class="sticker-sub">${esc(c.meow3_sub)}</div><div class="store-badge"><a href="https://apps.apple.com/app/id6755676294" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
+            <div class="sticker-card"><img class="sticker-icon" src="/images/shiba_icon.png" alt="Taiger Shiba"><div class="sticker-name-zh">${esc(c.taiger_name)}</div><div class="sticker-sub">${esc(c.taiger_sub)}</div><div class="sticker-desc">${esc(c.taiger_desc)}</div><div class="store-badge"><a href="https://apps.apple.com/app/id6761126835" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
+            <div class="sticker-card"><img class="sticker-icon" src="/images/MeowCAT-1_icon.png" alt="MeowCAT-1"><div class="sticker-name-zh">${esc(c.meow1_name)}</div><div class="sticker-sub">${esc(c.meow1_sub)}</div><div class="sticker-desc">${esc(c.meow1_desc)}</div><div class="store-badge"><a href="https://apps.apple.com/app/id6755613138" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
+            <div class="sticker-card"><img class="sticker-icon" src="/images/MeowCAT-2_icon.png" alt="MeowCAT-2"><div class="sticker-name-zh">${esc(c.meow2_name)}</div><div class="sticker-sub">${esc(c.meow2_sub)}</div><div class="sticker-desc">${esc(c.meow2_desc)}</div><div class="store-badge"><a href="https://apps.apple.com/app/id6755665538" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
+            <div class="sticker-card"><img class="sticker-icon" src="/images/MeowCAT-3_icon.png" alt="MeowCAT-3"><div class="sticker-name-zh">${esc(c.meow3_name)}</div><div class="sticker-sub">${esc(c.meow3_sub)}</div><div class="sticker-desc">${esc(c.meow3_desc)}</div><div class="store-badge"><a href="https://apps.apple.com/app/id6755676294" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
         </div>
 
         <div id="curator-title" class="curator-head">
