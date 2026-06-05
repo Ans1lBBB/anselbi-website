@@ -4,7 +4,23 @@ const path = require("path");
 
 const ROOT = path.join(__dirname, "..");
 const SITE = "https://www.anselbi.com";
-const LANGS = ["zh-tw", "zh-cn", "en"];
+const LANGS = ["zh-tw", "zh-cn", "en", "ja", "ko"];
+
+const LANG_LABELS = {
+  "zh-tw": "繁中",
+  "zh-cn": "簡中",
+  en: "EN",
+  ja: "日本語",
+  ko: "한국어",
+};
+
+const OG_LOCALES = {
+  "zh-tw": "zh_TW",
+  "zh-cn": "zh_CN",
+  en: "en_US",
+  ja: "ja_JP",
+  ko: "ko_KR",
+};
 const homeContent = require("../content/home");
 const privacyContent = require("../content/privacy");
 const homeCss = fs.readFileSync(path.join(ROOT, "assets/home.css"), "utf8");
@@ -55,16 +71,19 @@ function hreflangTags(currentLang, pageType) {
 }
 
 function langSwitch(currentLang, pageType) {
-  const paths =
-    pageType === "home"
-      ? LANGS.map((lang) => ({ lang, label: lang === "en" ? "EN" : lang === "zh-cn" ? "簡中" : "繁中", href: homeContent[lang].path }))
-      : LANGS.map((lang) => ({ lang, label: lang === "en" ? "EN" : lang === "zh-cn" ? "簡中" : "繁中", href: privacyContent[lang].path }));
+  const content = pageType === "home" ? homeContent : privacyContent;
+  const paths = LANGS.map((lang) => ({
+    lang,
+    label: LANG_LABELS[lang],
+    href: content[lang].path,
+    hreflang: content[lang].hreflang,
+  }));
 
   return paths
     .map((item, i) => {
       const active = item.lang === currentLang ? " active" : "";
       const divider = i < paths.length - 1 ? '<span class="lang-divider">/</span>' : "";
-      return `<a href="${item.href}" class="lang-btn${active}" hreflang="${item.lang === "en" ? "en" : item.lang === "zh-cn" ? "zh-Hans" : "zh-Hant"}">${item.label}</a>${divider}`;
+      return `<a href="${item.href}" class="lang-btn${active}" hreflang="${item.hreflang}">${item.label}</a>${divider}`;
     })
     .join("\n            ");
 }
@@ -91,12 +110,12 @@ ${hreflangTags(lang, "home")}
     <meta property="og:url" content="${SITE}${c.path}">
     <meta property="og:title" content="${esc(c.title)}">
     <meta property="og:description" content="${esc(c.description)}">
-    <meta property="og:locale" content="${lang === "en" ? "en_US" : lang === "zh-cn" ? "zh_CN" : "zh_TW"}">
+    <meta property="og:locale" content="${OG_LOCALES[lang]}">
     <meta property="og:image" content="${SITE}/apple-touch-icon.png">
     <meta name="twitter:card" content="summary">
 ${faviconHead}
 ${analyticsHead}
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Noto+Serif+TC:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Noto+Serif+TC:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
     <style>${homeCss}</style>
 </head>
 <body>
@@ -222,7 +241,7 @@ function buildPrivacy(lang, c) {
 ${hreflangTags(lang, "privacy")}
 ${faviconHead}
 ${analyticsHead}
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Noto+Serif+TC:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Noto+Serif+TC:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
     <style>${privacyCss}</style>
 </head>
 <body>

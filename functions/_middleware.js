@@ -4,12 +4,15 @@
  * Priority:
  * 1. Accept-Language (browser / OS preference) — zh variants only
  * 2. CF-IPCountry (when Chinese is ambiguous)
- * 3. Default: en (all non-Chinese locales)
+ * 3. Japanese / Korean (Accept-Language or IP country)
+ * 4. Default: en
  */
 const LANG_PATHS = {
   "zh-tw": "/zh-tw/",
   "zh-cn": "/zh-cn/",
   en: "/en/",
+  ja: "/ja/",
+  ko: "/ko/",
 };
 
 const TRADITIONAL_REGIONS = new Set(["TW", "HK", "MO"]);
@@ -52,10 +55,18 @@ function detectLanguage(request) {
     if (lang === "zh" || lang.startsWith("zh-")) {
       return resolveChineseVariant(country);
     }
+    if (lang === "ja" || lang.startsWith("ja-")) {
+      return "ja";
+    }
+    if (lang === "ko" || lang.startsWith("ko-")) {
+      return "ko";
+    }
   }
 
   if (country === "CN") return "zh-cn";
   if (TRADITIONAL_REGIONS.has(country)) return "zh-tw";
+  if (country === "JP") return "ja";
+  if (country === "KR") return "ko";
 
   return "en";
 }
