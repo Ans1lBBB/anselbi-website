@@ -16,7 +16,7 @@ module.exports = {
     slogan: "將策展的沉默，編譯為數位的詩行",
     role: "策展人 / App 程式設計師",
     hero_desc:
-      "某個倉庫裡\n\n滿倉的畫\n靜止在我面前\n\n不是欣賞\n是打包\n\n打棧板 釘木箱 貼標籤 纏膠帶\n\n然後\n這些大傢伙\n落在比台北慢十二個鐘的曼哈頓\n\n那年是雷曼風暴過後\n等待燈光亮起的2009\n\n策展人是兒子\n藝術家是父親\n\n那是我印象最深的一場策展\n\n我從父親的作品裡學會了聆聽\n不是聆聽掌聲\n而是聆聽一件作品從木箱裡被取出時\n那道細微的 幾乎聽不見的呼吸聲\n\n還有燈亮之後\n有人走進來\n安靜地站在作品前\n那份沉默\n比任何話語都誠實\n\n近二十年過去了\n\n我策劃了近六十場展覽\n足跡走過亞洲 歐洲 美洲 澳洲\n做過私人美術館顧問\n為藝術家策劃過個展與聯展\n也為藏家與機構提供諮詢\n\n但我始終沒有忘記那個倉庫\n\n沒有忘記釘木箱敲打的聲音\n\n如今\n我將那份聆聽那份細膩的節奏\n帶進App與貼圖裡\n它們是我與使用者之間\n一次次無聲的共振\n\n就像當年那盞燈\n輕輕落在父親的作品上\n\n然後\n有人停下來\n\n安靜地\n看了很久\n\n或許\n那個人就是你",
+      "某個倉庫裡\n\n滿倉的畫\n靜止在我面前\n\n不是欣賞\n是打包\n\n打棧板 釘木箱 貼標籤 纏膠帶\n\n然後\n這些大傢伙\n落在比台北慢十二個鐘的曼哈頓\n\n那年是雷曼風暴過後\n等待燈光亮起的2009\n\n策展人是兒子\n藝術家是父親\n\n那是我印象最深的一場策展\n\n我從父親的作品裡學會了聆聽\n不是聆聽掌聲\n而是聆聽一件作品從木箱裡被取出時\n那道細微的 幾乎聽不見的呼吸聲\n\n還有燈亮之後\n有人走進來\n安靜地站在作品前\n那份沉默\n比任何話語都誠實\n\n近二十年過去了\n\n我策劃了近六十場展覽\n足跡走過亞洲 歐洲 美洲 澳洲\n做過私人美術館顧問\n為藝術家策劃過個展與聯展\n也為藏家與機構提供諮詢\n\n但我始終沒有忘記\n沒有忘記在倉庫裡釘木箱打棧板的汗水記憶\n\n如今\n我將那份聆聽那份細膩的節奏\n帶進App與貼圖裡\n它們是我與使用者之間\n一次次無聲的共振\n\n就像當年那盞燈\n輕輕落在父親的作品上\n\n然後\n有人停下來\n\n安靜地\n看了很久\n\n或許\n那個人就是你",
     stat1_num: "20",
     stat1_txt: "年策展經歷",
     stat2_num: "≈60",
@@ -91,7 +91,7 @@ module.exports = {
     slogan: "将策展的沉默，编译为数字的诗行",
     role: "策展人 / App 程序员",
     hero_desc:
-      "某个仓库里\n\n满仓的画\n静止在我面前\n\n不是欣赏\n是打包\n\n打栈板 钉木箱 贴标签 缠胶带\n\n然后\n这些大家伙\n落在比台北慢十二个钟的曼哈顿\n\n那年是雷曼风暴过后\n等待灯光亮起的2009\n\n策展人是儿子\n艺术家是父亲\n\n那是我印象最深的一场策展\n\n我从父亲的作品里学会了聆听\n不是聆听掌声\n而是聆听一件作品从木箱里被取出时\n那道细微的 几乎听不见的呼吸声\n\n还有灯亮之后\n有人走进来\n安静地站在作品前\n那份沉默\n比任何话语都诚实\n\n近二十年过去了\n\n我策划了近六十场展览\n足迹走过亚洲 欧洲 美洲 澳洲\n做过私人美术馆顾问\n为艺术家策划过个展与联展\n也为藏家与机构提供咨询\n\n但我始终没有忘记那个仓库\n\n没有忘记钉木箱敲打的声音\n\n如今\n我将那份聆听那份细腻的节奏\n带进App与贴图里\n它们是我与使用者之间\n一次次无声的共振\n\n就像当年那盏灯\n轻轻落在父亲的作品上\n\n然后\n有人停下来\n\n安静地\n看了很久\n\n或许\n那个人就是你",
+      "某个仓库里\n\n满仓的画\n静止在我面前\n\n不是欣赏\n是打包\n\n打栈板 钉木箱 贴标签 缠胶带\n\n然后\n这些大家伙\n落在比台北慢十二个钟的曼哈顿\n\n那年是雷曼风暴过后\n等待灯光亮起的2009\n\n策展人是儿子\n艺术家是父亲\n\n那是我印象最深的一场策展\n\n我从父亲的作品里学会了聆听\n不是聆听掌声\n而是聆听一件作品从木箱里被取出时\n那道细微的 几乎听不见的呼吸声\n\n还有灯亮之后\n有人走进来\n安静地站在作品前\n那份沉默\n比任何话语都诚实\n\n近二十年过去了\n\n我策划了近六十场展览\n足迹走过亚洲 欧洲 美洲 澳洲\n做过私人美术馆顾问\n为艺术家策划过个展与联展\n也为藏家与机构提供咨询\n\n但我始终没有忘记\n没有忘记在仓库里钉木箱打栈板的汗水记忆\n\n如今\n我将那份聆听那份细腻的节奏\n带进App与贴图里\n它们是我与使用者之间\n一次次无声的共振\n\n就像当年那盏灯\n轻轻落在父亲的作品上\n\n然后\n有人停下来\n\n安静地\n看了很久\n\n或许\n那个人就是你",
     stat1_num: "20",
     stat1_txt: "年策展经历",
     stat2_num: "≈60",
@@ -166,7 +166,7 @@ module.exports = {
     slogan: "Compiling curatorial silence into digital poetry",
     role: "Curator / App Developer",
     hero_desc:
-      "Inside a certain warehouse\n\nPaintings filled the room\nStill before me\n\nNot to admire them\nTo pack them\n\nPalletizing nailing crates labeling wrapping tape\n\nThen\nThese heavy giants\nLanded in Manhattan twelve hours behind Taipei\n\nThe year after the Lehman storm\nWaiting for the lights to rise in 2009\n\nThe curator was a son\nThe artist was his father\n\nIt was the curatorial work I remember most vividly\n\nFrom my father's work I learned to listen\nNot to applause\nBut to the faint almost inaudible breath\nOf a piece being lifted from its crate\n\nAnd after the lights came up\nSomeone would walk in\nAnd stand quietly in front of the work\nThat silence\nWas more honest than any words\n\nNearly twenty years have passed\n\nI have curated nearly sixty exhibitions\nTraveling across Asia Europe the Americas and Australia\nServed as a private museum advisor\nCurated solo and group shows for artists\nAnd offered consultation to collectors and institutions\n\nBut I have never forgotten that warehouse\n\nNever forgotten the sound of hammering nails into crates\n\nNow\nI bring that same listening that same delicate rhythm\nInto apps and stickers\nThey are the silent resonance\nBetween me and every user\n\nLike that light\nSoftly falling on my father's work\n\nThen\nSomeone stopped\n\nQuietly\nLooked for a long long time\n\nPerhaps\nThat someone is you",
+      "Inside a certain warehouse\n\nPaintings filled the room\nStill before me\n\nNot to admire them\nTo pack them\n\nPalletizing nailing crates labeling wrapping tape\n\nThen\nThese heavy giants\nLanded in Manhattan twelve hours behind Taipei\n\nThe year after the Lehman storm\nWaiting for the lights to rise in 2009\n\nThe curator was a son\nThe artist was his father\n\nIt was the curatorial work I remember most vividly\n\nFrom my father's work I learned to listen\nNot to applause\nBut to the faint almost inaudible breath\nOf a piece being lifted from its crate\n\nAnd after the lights came up\nSomeone would walk in\nAnd stand quietly in front of the work\nThat silence\nWas more honest than any words\n\nNearly twenty years have passed\n\nI have curated nearly sixty exhibitions\nTraveling across Asia Europe the Americas and Australia\nServed as a private museum advisor\nCurated solo and group shows for artists\nAnd offered consultation to collectors and institutions\n\nBut I have never forgotten\nNever forgotten the sweaty memory of nailing crates and palletizing in the warehouse\n\nNow\nI bring that same listening that same delicate rhythm\nInto apps and stickers\nThey are the silent resonance\nBetween me and every user\n\nLike that light\nSoftly falling on my father's work\n\nThen\nSomeone stopped\n\nQuietly\nLooked for a long long time\n\nPerhaps\nThat someone is you",
     stat1_num: "20",
     stat1_txt: "Years",
     stat2_num: "≈60",
@@ -241,7 +241,7 @@ module.exports = {
     slogan: "キュレーションの沈黙を、デジタルの詩行へと編む",
     role: "キュレーター / アプリ開発者",
     hero_desc:
-      "ある倉庫の中で\n\n倉庫いっぱいの画が\n目の前で静まり返っていた\n\n鑑賞するためではない\n梱包するためだ\n\nパレットに載せ 木箱を釘付け ラベルを貼り テープを巻く\n\nそして\nこの大きな塊たちが\n台北より十二時間遅いマンハッタンに降り立った\n\nそれはリーマンショックのあと\n灯がともるのを待っていた2009年\n\nキュレーターは息子\nアーティストは父\n\n記憶に最も深く残るキュレーションだった\n\n父の作品から私は「聴く」ことを学んだ\n拍手を聴くのではない\n木箱から作品が取り出されるとき\nかすかで ほとんど聞こえない息づかいを聴くのだ\n\nそして灯がともると\n誰かが入ってきて\n作品の前に静かに立つ\nその沈黙は\nどんな言葉よりも誠実だった\n\n二十年近くが過ぎた\n\n私は約六十の展覧会を企画し\nアジア ヨーロッパ 南北アメリカ オーストラリアを歩いてきた\n私立美術館のアドバイザーを務め\nアーティストの個展やグループ展を企画し\nコレクターや機関へのコンサルティングも行ってきた\n\nしかしあの倉庫を忘れたことはない\n\n木箱に釘を打つ音を忘れたことはない\n\n今\nその聴き方 その繊細なリズムを\nアプリとステッカーに持ち込んでいる\nそれらは私とユーザーとの間の\n何度も重なる無声の共鳴だ\n\nあの頃の灯のように\n父の作品にそっと降り注ぐように\n\nそして\n誰かが立ち止まり\n\n静かに\n長いあいだ見つめた\n\nもしかしたら\nその人はあなたかもしれない",
+      "ある倉庫の中で\n\n倉庫いっぱいの画が\n目の前で静まり返っていた\n\n鑑賞するためではない\n梱包するためだ\n\nパレットに載せ 木箱を釘付け ラベルを貼り テープを巻く\n\nそして\nこの大きな塊たちが\n台北より十二時間遅いマンハッタンに降り立った\n\nそれはリーマンショックのあと\n灯がともるのを待っていた2009年\n\nキュレーターは息子\nアーティストは父\n\n記憶に最も深く残るキュレーションだった\n\n父の作品から私は「聴く」ことを学んだ\n拍手を聴くのではない\n木箱から作品が取り出されるとき\nかすかで ほとんど聞こえない息づかいを聴くのだ\n\nそして灯がともると\n誰かが入ってきて\n作品の前に静かに立つ\nその沈黙は\nどんな言葉よりも誠実だった\n\n二十年近くが過ぎた\n\n私は約六十の展覧会を企画し\nアジア ヨーロッパ 南北アメリカ オーストラリアを歩いてきた\n私立美術館のアドバイザーを務め\nアーティストの個展やグループ展を企画し\nコレクターや機関へのコンサルティングも行ってきた\n\nしかし私は決して忘れていない\n倉庫で木箱を釘付け パレットを組んだ汗の記憶を忘れていない\n\n今\nその聴き方 その繊細なリズムを\nアプリとステッカーに持ち込んでいる\nそれらは私とユーザーとの間の\n何度も重なる無声の共鳴だ\n\nあの頃の灯のように\n父の作品にそっと降り注ぐように\n\nそして\n誰かが立ち止まり\n\n静かに\n長いあいだ見つめた\n\nもしかしたら\nその人はあなたかもしれない",
     stat1_num: "20",
     stat1_txt: "年のキュレーション",
     stat2_num: "≈60",
@@ -316,7 +316,7 @@ module.exports = {
     slogan: "큐레이션의 침묵을 디지털 시로 엮다",
     role: "큐레이터 / 앱 개발자",
     hero_desc:
-      "어느 창고 안에서\n\n창고 가득 그림이\n내 앞에서 고요했다\n\n감상하기 위함이 아니라\n포장하기 위함이었다\n\n팔레트 적재 나무 상자 못 박기 라벨 붙이기 테이프 감기\n\n그리고\n이 거대한 것들이\n타이베이보다 열두 시간 늦은 맨해튼에 내려앉았다\n\n그해는 리먼 쇼크 이후\n조명이 켜지기를 기다리던 2009년\n\n큐레이터는 아들\n예술가는 아버지\n\n가장 깊이 기억에 남는 큐레이션이었다\n\n아버지의 작품에서 나는 듣는 법을 배웠다\n박수를 듣는 것이 아니라\n상자에서 작품이 꺼내질 때\n거의 들리지 않는 미세한 숨결을 듣는 것이다\n\n그리고 불이 켜진 뒤\n누군가 들어와\n작품 앞에 조용히 서 있었다\n그 침묵은\n어떤 말보다도 진실했다\n\n거의 이십 년이 지났다\n\n나는 약 육십 회의 전시를 기획했고\n아시아 유럽 아메리카 오스트레일리아를 걸었다\n사립 미술관 자문을 맡았고\n예술가의 개인전과 단체전을 기획했으며\n수집가와 기관에 컨설팅을 제공했다\n\n하지만 나는 그 창고를 잊지 않았다\n\n상자에 못을 박는 소리를 잊지 않았다\n\n이제\n그 듣는 방식 그 섬세한 리듬을\n앱과 스티커에 담고 있다\n그것들은 나와 사용자 사이의\n끊임없는 무음의 공명이다\n\n그때 그 불빛처럼\n아버지의 작품 위에 부드럽게 내려앉듯\n\n그리고\n누군가 멈춰 섰다\n\n조용히\n오랫동안 바라보았다\n\n어쩌면\n그 사람이 바로 당신일지도 모른다",
+      "어느 창고 안에서\n\n창고 가득 그림이\n내 앞에서 고요했다\n\n감상하기 위함이 아니라\n포장하기 위함이었다\n\n팔레트 적재 나무 상자 못 박기 라벨 붙이기 테이프 감기\n\n그리고\n이 거대한 것들이\n타이베이보다 열두 시간 늦은 맨해튼에 내려앉았다\n\n그해는 리먼 쇼크 이후\n조명이 켜지기를 기다리던 2009년\n\n큐레이터는 아들\n예술가는 아버지\n\n가장 깊이 기억에 남는 큐레이션이었다\n\n아버지의 작품에서 나는 듣는 법을 배웠다\n박수를 듣는 것이 아니라\n상자에서 작품이 꺼내질 때\n거의 들리지 않는 미세한 숨결을 듣는 것이다\n\n그리고 불이 켜진 뒤\n누군가 들어와\n작품 앞에 조용히 서 있었다\n그 침묵은\n어떤 말보다도 진실했다\n\n거의 이십 년이 지났다\n\n나는 약 육십 회의 전시를 기획했고\n아시아 유럽 아메리카 오스트레일리아를 걸었다\n사립 미술관 자문을 맡았고\n예술가의 개인전과 단체전을 기획했으며\n수집가와 기관에 컨설팅을 제공했다\n\n하지만 나는 결코 잊지 않았다\n창고에서 나무 상자에 못을 박고 팔레트를 쌓던 땀의 기억을 잊지 않았다\n\n이제\n그 듣는 방식 그 섬세한 리듬을\n앱과 스티커에 담고 있다\n그것들은 나와 사용자 사이의\n끊임없는 무음의 공명이다\n\n그때 그 불빛처럼\n아버지의 작품 위에 부드럽게 내려앉듯\n\n그리고\n누군가 멈춰 섰다\n\n조용히\n오랫동안 바라보았다\n\n어쩌면\n그 사람이 바로 당신일지도 모른다",
     stat1_num: "20",
     stat1_txt: "년 큐레이션",
     stat2_num: "≈60",
