@@ -175,7 +175,7 @@ module.exports = {
     stat3_txt: "Continents",
     apps_title: "Original Apps",
     sticker_title: "iMessage Stickers",
-    pf_title: "ProfitFairy: Gross Margin Calc",
+    pf_title: "ProfitFairy Gross Margin Calc",
     pf_sub: "Business · Productivity",
     pf_desc:
       "Profit management for e-commerce & retail. Split costs, shipping, taxes, platform fees instantly, calculate multiple mixed parameters in real time with history log support. Precision for every decision.",
