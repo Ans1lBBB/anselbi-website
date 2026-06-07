@@ -30,6 +30,8 @@
 | 行銷 URL（選填） | `https://www.anselbi.com/` |
 | 支援 URL | `https://www.anselbi.com/` |
 
+**名稱／副標題／關鍵字（ASO）**：見 [`APP-STORE-ASO.md`](./APP-STORE-ASO.md)。
+
 ### ProfitFairy — 尚未改版（App 內仍為舊網址）
 
 - **現況**：App 內可能仍指向舊 GitHub Pages 網址
