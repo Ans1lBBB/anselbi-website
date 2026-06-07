@@ -179,7 +179,7 @@ module.exports = {
     pf_sub: "Business · Productivity",
     pf_desc:
       "Profit management for e-commerce & retail. Split costs, shipping, taxes, platform fees instantly, calculate multiple mixed parameters in real time with history log support. Precision for every decision.",
-    ruby_title: "RubyDays: TCM Herbal Wellness Calendar",
+    ruby_title: "小主私密日記-月經期排卵日曆備孕安全期易孕避孕無廣告養生調理",
     ruby_sub: "Period Tracker, Ovulation Calculator & Private Diary",
     ruby_desc:
       "Accurate period & ovulation calendar, plus a lockable private diary. Integrates 4 TCM classics, acupressure, and medicinal recipes. Record daily moods, moments, and physical changes.",
@@ -254,8 +254,8 @@ module.exports = {
     pf_sub: "原価・販売価格を即計算 手数料・税も",
     pf_desc:
       "EC・小売向けの利益管理ツール。コスト、送料、税金、プラットフォーム手数料を一括分解し、複数パラメータの組み合わせをリアルタイム計算。履歴ログ対応で、すべての意思決定を透明に。",
-    ruby_title: "小主私密日記-月經期排卵日曆備孕安全期・無廣告養生調理",
-    ruby_sub: "",
+    ruby_title: "小主私密日記-月經期排卵日曆備孕安全期易孕避孕無廣告養生調理",
+    ruby_sub: "生理周期追跡・排卵計算・プライベート日記",
     ruby_desc:
       "生理周期と排卵日を正確に計算するカレンダーと、ロック可能なプライベート日記。四大中医古典を融合し、ツボ押しや薬膳レシピを提供。毎日の気分、瞬間、体の変化を記録。",
     aios_title: "アイオス（AIOS Realm）",
@@ -329,8 +329,8 @@ module.exports = {
     pf_sub: "원가 판매가 즉시 계산｜수수료·세금",
     pf_desc:
       "이커머스·소매를 위한 이익 관리 도구. 비용, 배송비, 세금, 플랫폼 수수료를 즉시 분해하고 여러 파라미터를 실시간으로 계산합니다. 기록 로그 지원으로 모든 결정을 투명하게.",
-    ruby_title: "小主私密日記-月經期排卵日曆備孕安全期・無廣告養生調理",
-    ruby_sub: "",
+    ruby_title: "小主私密日記-月經期排卵日曆備孕安全期易孕避孕無廣告養生調理",
+    ruby_sub: "생리 주기 추적・배란 계산・비밀 일기",
     ruby_desc:
       "정확한 생리·배란 캘린더와 잠금 가능한 프라이빗 다이어리. 4대 한의학 고전을 통합하고 지압·약식 레시피를 제공합니다. 매일의 기분, 순간, 신체 변화를 기록하세요.",
     aios_title: "아이오스（AIOS Realm）",
