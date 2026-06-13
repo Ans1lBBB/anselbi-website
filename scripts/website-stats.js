@@ -1,13 +1,10 @@
 #!/usr/bin/env node
 /**
  * Manager-style traffic report via Cloudflare Zone Analytics (GraphQL).
- * Usage: node scripts/website-stats.js [--site anselbi|ariel|both] [--period today|7d|30d]
+ * Usage: node scripts/website-stats.js [--period today|7d|30d]
  * Env: CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID
  */
-const SITES = {
-  anselbi: { zoneName: "anselbi.com", label: "anselbi.com（個人官網）" },
-  ariel: { zoneName: "arielglow.com", label: "arielglow.com（女兒官網）" },
-};
+const SITE = { zoneName: "anselbi.com", label: "anselbi.com" };
 
 const COUNTRY_ZH = {
   TW: "台灣",
@@ -37,13 +34,11 @@ const COUNTRY_ZH = {
 };
 
 function parseArgs(argv) {
-  let site = "both";
   let period = "today";
   for (let i = 2; i < argv.length; i++) {
-    if (argv[i] === "--site" && argv[i + 1]) site = argv[++i];
-    else if (argv[i] === "--period" && argv[i + 1]) period = argv[++i];
+    if (argv[i] === "--period" && argv[i + 1]) period = argv[++i];
   }
-  return { site, period };
+  return { period };
 }
 
 function dateRange(period) {
@@ -150,8 +145,8 @@ function countryLabel(code) {
   return `${COUNTRY_ZH[code] || code}（${code}）`;
 }
 
-async function reportSite(key, range) {
-  const { zoneName, label } = SITES[key];
+async function reportSite(range) {
+  const { zoneName, label } = SITE;
   const zoneTag = await getZoneId(zoneName);
   const overviewData = await graphql(OVERVIEW_QUERY, {
     zoneTag,
@@ -240,23 +235,19 @@ async function reportSite(key, range) {
 }
 
 async function main() {
-  const { site, period } = parseArgs(process.argv);
+  const { period } = parseArgs(process.argv);
   const range = dateRange(period);
-  const keys =
-    site === "both" ? ["anselbi", "ariel"] : site === "ariel" ? ["ariel"] : ["anselbi"];
 
   const out = [
-    `# 官網流量摘要`,
+    `# anselbi.com 流量摘要`,
     `產生時間：${new Date().toISOString()}`,
     "",
   ];
 
-  for (const key of keys) {
-    try {
-      out.push(await reportSite(key, range));
-    } catch (err) {
-      out.push(`## ${SITES[key].label}`, `錯誤：${err.message}`, "");
-    }
+  try {
+    out.push(await reportSite(range));
+  } catch (err) {
+    out.push(`## ${SITE.label}`, `錯誤：${err.message}`, "");
   }
 
   const text = out.join("\n");
@@ -271,7 +262,7 @@ main().catch((err) => {
   console.error(err.message);
   if (/analytics\.read/i.test(String(err.message))) {
     console.error(
-      "\n請在 Cloudflare API Token 加上：Zone → Analytics → Read（兩個網域或所有區域）。" +
+      "\n請在 Cloudflare API Token 加上：Zone → Analytics → Read（anselbi.com 或所有區域）。" +
         "\n加完後更新 GitHub Secret，之後 Agent 即可回答「今天多少人、哪國最多」等問題。" +
         "\n暫時也可看：Cloudflare 後台 → 各網域 → Analytics & Logs → Web Analytics。"
     );

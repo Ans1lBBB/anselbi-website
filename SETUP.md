@@ -122,7 +122,7 @@ npx wrangler pages dev . --compatibility-date=2024-01-01
 ## 目錄結構
 
 ```
-my-website/
+anselbi-website/     ← 本機唯一入口（= www.anselbi.com）
 ├── content/          ← 三語文案（改這裡）
 ├── scripts/build.js  ← 產生靜態頁
 ├── functions/        ← Cloudflare 語言偵測

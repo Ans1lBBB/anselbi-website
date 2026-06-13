@@ -1,41 +1,24 @@
 ---
-description: Ansel personal websites — deploy and ops (anselbi + arielglow)
+description: anselbi.com 官網 — 本機唯一入口
 alwaysApply: true
 ---
 
-# Website operations (user focuses on apps)
+# anselbi.com 官網
 
-The user is the **manager**, not the engineer. They ask in natural language (Traditional Chinese); you execute and summarize like a secretary.
+本機路徑：`/Users/ansel/Projects/anselbi-website` → **www.anselbi.com**（GitHub：`Ans1lBBB/anselbi-website`）
 
-## Repos
+使用者是管理層，用繁體中文下指令；你像秘書執行並摘要。
 
-| Site | Local path | GitHub | Domain |
-|------|------------|--------|--------|
-| anselbi | `/Users/ansel/Projects/my-website` | `Ans1lBBB/anselbi-website` | www.anselbi.com |
-| arielglow | `/Users/ansel/Projects/daughter-Ariel-website` | `Ans1lBBB/arielglow-website` | www.arielglow.com |
+## 流量
 
-## Traffic / analytics questions (今天多少人、國家、排行…)
+`npm run stats -- --period today`，或 `gh workflow run "Website traffic report" --repo Ans1lBBB/anselbi-website -f period=today`。用繁體中文回答 requests、page views、unique IPs、國家排行。期間：今天 `today`、本週 `7d`、本月 `30d`。
 
-1. Prefer running a report yourself — do not tell the user to open Cloudflare unless the API fails.
-2. From `my-website`:
-   - Local: `npm run stats -- --site both --period today` (needs `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID` in env), or
-   - CI: `gh workflow run "Website traffic report" --repo Ans1lBBB/anselbi-website -f site=both -f period=today` then read the job log / summary.
-3. Answer in **Traditional Chinese**: requests, page views, unique IPs (≈ visitors), top countries, which country is #1.
-4. Clarify limits: returning vs new visitors → Web Analytics dashboard; zone API ≈ real traffic through Cloudflare.
-5. Map period: 今天 → `today`, 本週 → `7d`, 本月 → `30d`.
+## 改內容
 
-## Content / design changes
+`content/home.js`、`content/privacy.js`、`assets/*.css` → `npm run build` → push `main`。
 
-1. anselbi: edit `content/home.js`, `content/privacy.js`, `assets/*.css`; `npm run build`.
-2. arielglow: edit `index.html` / CSS inline.
-3. Commit + push `main`; confirm Deploy workflow success.
+## 部署
 
-## Deploy
+push `main` 或 `gh workflow run "Deploy to Cloudflare Pages"`。
 
-On 部署 / 上線: push or `gh workflow run "Deploy to Cloudflare Pages"`.
-
-## Secrets
-
-Never ask for tokens in chat. Use GitHub Secrets via Actions or local env. Optional: `CF_WEB_ANALYTICS_TOKEN` per repo.
-
-See `WEBSITE-OPS.md`.
+見 `WEBSITE-OPS.md`。
