@@ -10,6 +10,7 @@ module.exports = {
       "畢弘偉, Ansel Bi, 策展人, 獨立開發者, ProfitFairy, 小主私密日記, 艾奧斯, 台客柴, MeowCAT",
     chinese_name: "畢弘偉",
     name_en: "Ansel Bi",
+    nav_brand: "畢弘偉",
     nav_works: "作品",
     nav_stickers: "貼圖",
     nav_curator: "策展",
@@ -33,10 +34,10 @@ module.exports = {
     ruby_sub: "生理期追蹤、月經排卵期計算器・女性私密日記",
     ruby_desc:
       "生理期與排卵期精準計算日曆，同時是一本可上鎖的私密日記。融合《黃帝內經》等四大中醫典籍，提供穴位與藥膳食補指南。記錄每一天的心情、瞬間與身體變化。",
-    aios_title: "艾奧斯 (AIOS Realm)",
-    aios_sub: "解謎・卡牌・故事",
+    aios_title: "艾奧斯海",
+    aios_sub: "合併潮印，喚醒女神",
     aios_desc:
-      "顛覆傳統2048的立體化腦力解謎。透過十字合成、女神卡牌召喚與記憶碎片重組，逐步解鎖海洋女神的史詩劇情。燒腦策略與抽卡收集並行的益智遊戲。",
+      "在艾奧斯海乘風啟航，合併潮印、喚醒女神，打撈深淵記憶。經典合併玩法搭配深淵記憶小遊戲與女神法典收集，修復封印、逐關喚醒守護者。",
     taiger_name: "【台客柴】阿柴的江湖日常：俗擱有力篇",
     taiger_sub: "藍白拖＋復古安全帽＋超派口頭禪，看起來很兇其實超北爛",
     taiger_desc:
@@ -85,6 +86,7 @@ module.exports = {
       "毕弘伟, Ansel Bi, 策展人, 独立开发者, ProfitFairy, 小主私密日记, 艾奥斯, 台客柴, MeowCAT",
     chinese_name: "毕弘伟",
     name_en: "Ansel Bi",
+    nav_brand: "毕弘伟",
     nav_works: "作品",
     nav_stickers: "贴图",
     nav_curator: "策展",
@@ -108,10 +110,10 @@ module.exports = {
     ruby_sub: "生理期追踪、月经排卵期计算器・女性私密日记",
     ruby_desc:
       "生理期与排卵期精准计算日历，同时是一本可上锁的私密日记。融合《黄帝内经》等四大中医典籍，提供穴位与药膳食补指南。记录每一天的心情、瞬间与身体变化。",
-    aios_title: "艾奥斯 (AIOS Realm)",
-    aios_sub: "解谜・卡牌・故事",
+    aios_title: "艾奥斯海",
+    aios_sub: "合并潮印，唤醒女神",
     aios_desc:
-      "颠覆传统2048的立体化脑力解谜。透过十字合成、女神卡牌召唤与记忆碎片重组，逐步解锁海洋女神的史诗剧情。烧脑策略与抽卡收集并行的益智游戏。",
+      "在艾奥斯海乘风启航，合并潮印、唤醒女神，打捞深渊记忆。经典合并玩法搭配深渊记忆小游戏与女神法典收集，修复封印、逐关唤醒守护者。",
     taiger_name: "【台客柴】阿柴的江湖日常：俗搁有力篇",
     taiger_sub: "蓝白拖＋复古安全帽＋超派口头禅，看起来很凶其实超北烂",
     taiger_desc:
@@ -157,9 +159,10 @@ module.exports = {
     description:
       "Curator and indie app developer Ansel Bi. Nearly 20 years curating ~60 exhibitions across four continents. Bringing curatorial aesthetics to original apps and iMessage stickers.",
     keywords:
-      "Ansel Bi, curator, indie developer, ProfitFairy, RubyDays, AIOS Realm, Taiger Shiba, MeowCAT",
+      "Ansel Bi, curator, indie developer, ProfitFairy, RubyDays, AIOS Sea, Taiger Shiba, MeowCAT",
     chinese_name: "",
     name_en: "Ansel Bi",
+    nav_brand: "Ansel Bi",
     nav_works: "Works",
     nav_stickers: "Stickers",
     nav_curator: "Curating",
@@ -183,10 +186,10 @@ module.exports = {
     ruby_sub: "Period Tracker, Ovulation Calculator & Private Diary",
     ruby_desc:
       "Accurate period & ovulation calendar, plus a lockable private diary. Integrates 4 TCM classics, acupressure, and medicinal recipes. Record daily moods, moments, and physical changes.",
-    aios_title: "AIOS Realm: Divinity Reborn",
-    aios_sub: "Puzzle · Cards · Story",
+    aios_title: "AIOS Sea",
+    aios_sub: "Merge tides, awaken goddesses",
     aios_desc:
-      "A 2048-evolution puzzle game. Merge goddess cards, unlock epic oceanic narrative. A puzzle game where strategic brain-teasing and card collection go hand in hand.",
+      "Set sail on AIOS Sea. Merge tide-marks, awaken thirty-seven goddesses, and recover memories from the abyss. Classic merge gameplay with Abyss Memories minigames and a Goddess Codex to collect.",
     taiger_name: "Taiger Shiba: Jianghu Daily",
     taiger_sub: "Blue slippers + retro helmet + gangster phrases. Looks fierce but hilariously silly",
     taiger_desc:
@@ -232,9 +235,10 @@ module.exports = {
     description:
       "キュレーター兼インディーアプリ開発者 Ansel Bi。約20年間、四大陸で約60の展覧会を企画。キュレーションの美学をオリジナルアプリとiMessageステッカーに注ぐ。",
     keywords:
-      "Ansel Bi, キュレーター, インディー開発者, ProfitFairy, RubyDays, AIOS Realm, 台客柴, MeowCAT",
+      "Ansel Bi, キュレーター, インディー開発者, ProfitFairy, RubyDays, AIOS Sea, 台客柴, MeowCAT",
     chinese_name: "",
     name_en: "Ansel Bi",
+    nav_brand: "Ansel Bi",
     nav_works: "作品",
     nav_stickers: "ステッカー",
     nav_curator: "キュレーション",
@@ -258,10 +262,10 @@ module.exports = {
     ruby_sub: "生理周期追跡・排卵計算・プライベート日記",
     ruby_desc:
       "生理周期と排卵日を正確に計算するカレンダーと、ロック可能なプライベート日記。四大中医古典を融合し、ツボ押しや薬膳レシピを提供。毎日の気分、瞬間、体の変化を記録。",
-    aios_title: "アイオス（AIOS Realm）",
-    aios_sub: "2048を超えた、挑戦する勇気ある？",
+    aios_title: "AIOS Sea",
+    aios_sub: "潮を合わせ女神を醒めよう",
     aios_desc:
-      "2048を進化させた立体パズルゲーム。女神カードを合成し、海洋女神の壮大な物語を解き放つ。戦略的な頭脳パズルとカード収集が融合したゲーム。",
+      "AIOS Sea を渡り、潮印を合わせ、37 柱の女神を醒め、深淵の記憶を取り戻せ。クラシックなマージと深淵の記憶ミニゲーム、女神法典のコレクションが融合したパズルゲーム。",
     taiger_name: "【台客柴】阿柴的江湖日常：俗擱有力篇",
     taiger_sub: "藍白拖＋復古安全帽＋超派口頭禪，看起來很兇其實超北爛",
     taiger_desc:
@@ -307,9 +311,10 @@ module.exports = {
     description:
       "큐레이터이자 인디 앱 개발자 Ansel Bi. 약 20년간 4대륙에서 약 60회의 전시를 기획했습니다. 큐레이션 미학을 오리지널 앱과 iMessage 스티커에 담습니다.",
     keywords:
-      "Ansel Bi, 큐레이터, 인디 개발자, ProfitFairy, RubyDays, AIOS Realm, 타이거 시바, MeowCAT",
+      "Ansel Bi, 큐레이터, 인디 개발자, ProfitFairy, RubyDays, AIOS Sea, 타이거 시바, MeowCAT",
     chinese_name: "",
     name_en: "Ansel Bi",
+    nav_brand: "Ansel Bi",
     nav_works: "작품",
     nav_stickers: "스티커",
     nav_curator: "큐레이션",
@@ -333,10 +338,10 @@ module.exports = {
     ruby_sub: "생리 주기 추적・배란 계산・비밀 일기",
     ruby_desc:
       "정확한 생리·배란 캘린더와 잠금 가능한 프라이빗 다이어리. 4대 한의학 고전을 통합하고 지압·약식 레시피를 제공합니다. 매일의 기분, 순간, 신체 변화를 기록하세요.",
-    aios_title: "아이오스（AIOS Realm）",
-    aios_sub: "2048을 넘어, 도전할 용기 있나?",
+    aios_title: "AIOS Sea",
+    aios_sub: "조수를 합치고 여신을 깨우세요",
     aios_desc:
-      "2048을 진화시킨 입체 퍼즐 게임. 여신 카드를 합성하고 바다 여신의 서사를 해제하세요. 전략적 두뇌 퍼즐과 카드 수집이 함께하는 게임.",
+      "AIOS Sea를 항해하며 조수 표식을 합치고, 37명의 여신을 깨우며 심연의 기억을 되찾으세요. 클래식 머지와 심연의 기억 미니게임, 여신 법전 수집이 어우러진 퍼즐 게임.",
     taiger_name: "【台客柴】阿柴的江湖日常：俗擱有力篇",
     taiger_sub: "藍白拖＋復古安全帽＋超派口頭禪，看起來很兇其實超北爛",
     taiger_desc:

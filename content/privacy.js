@@ -23,7 +23,7 @@ module.exports = {
       {
         title: "2. 廣告與第三方服務",
         paragraphs: [
-          "ProfitFairy 與艾奧斯 (AIOS Realm) 為維持免費服務，整合 Google AdMob 廣告。若你允許 App 追蹤，AdMob 可能使用裝置廣告識別碼（如 IDFA）投放個人化廣告並衡量廣告成效。我們不會將此識別碼與你的姓名或帳號綁定。你可在 iPhone 或 iPad 的「設定 → 隱私權與安全性 → 追蹤」中隨時關閉。歐盟、英國、瑞士等地區可能不顯示廣告。",
+          "ProfitFairy 與艾奧斯海為維持免費服務，整合 Google AdMob 廣告。若你允許 App 追蹤，AdMob 可能使用裝置廣告識別碼（如 IDFA）投放個人化廣告並衡量廣告成效。我們不會將此識別碼與你的姓名或帳號綁定。你可在 iPhone 或 iPad 的「設定 → 隱私權與安全性 → 追蹤」中隨時關閉。歐盟、英國、瑞士等地區可能不顯示廣告。",
           "小主私密日記以及全系列 iMessage 貼圖皆不含任何廣告，提供純淨無干擾的使用體驗。",
         ],
         link: {
@@ -70,7 +70,7 @@ module.exports = {
       {
         title: "2. 广告与第三方服务",
         paragraphs: [
-          "ProfitFairy 与艾奥斯 (AIOS Realm) 为维持免费服务，整合 Google AdMob 广告。若你允许 App 追踪，AdMob 可能使用装置广告识别码（如 IDFA）投放个性化广告并衡量广告成效。我们不会将此识别码与你的姓名或账号绑定。你可在 iPhone 或 iPad 的「设置 → 隐私与安全性 → 追踪」中随时关闭。欧盟、英国、瑞士等地区可能不显示广告。",
+          "ProfitFairy 与艾奥斯海为维持免费服务，整合 Google AdMob 广告。若你允许 App 追踪，AdMob 可能使用装置广告识别码（如 IDFA）投放个性化广告并衡量广告成效。我们不会将此识别码与你的姓名或账号绑定。你可在 iPhone 或 iPad 的「设置 → 隐私与安全性 → 追踪」中随时关闭。欧盟、英国、瑞士等地区可能不显示广告。",
           "小主私密日记以及全系列 iMessage 贴图皆不含任何广告，提供纯净无干扰的使用体验。",
         ],
         link: {
@@ -117,7 +117,7 @@ module.exports = {
       {
         title: "2. Advertising & Third-Party Services",
         paragraphs: [
-          "ProfitFairy and AIOS Realm integrate Google AdMob ads to remain free. If you allow app tracking, AdMob may use a device advertising identifier (such as IDFA) to deliver personalized ads and measure ad performance. We do not link that identifier to your name or account. You can turn this off anytime in iPhone or iPad Settings → Privacy & Security → Tracking. Ads may not appear in the EU, UK, Switzerland, and similar regions.",
+          "ProfitFairy and AIOS Sea integrate Google AdMob ads to remain free. If you allow app tracking, AdMob may use a device advertising identifier (such as IDFA) to deliver personalized ads and measure ad performance. We do not link that identifier to your name or account. You can turn this off anytime in iPhone or iPad Settings → Privacy & Security → Tracking. Ads may not appear in the EU, UK, Switzerland, and similar regions.",
           "RubyDays and all iMessage sticker packs contain no advertisements, providing a completely ad-free experience.",
         ],
         link: {
@@ -164,7 +164,7 @@ module.exports = {
       {
         title: "2. 広告と第三者サービス",
         paragraphs: [
-          "ProfitFairy 粗利率・利益 価格計算 と アイオス（AIOS Realm）は無料提供を維持するため、Google AdMob 広告を統合しています。追跡を許可した場合、AdMob は端末の広告識別子（IDFA など）を用いてパーソナライズ広告の配信や効果測定を行うことがあります。当社はこの識別子をお客様の氏名やアカウントと結びつけません。iPhone または iPad の「設定 → プライバシーとセキュリティ → 追跡」でいつでもオフにできます。EU、英国、スイスなどの地域では広告が表示されない場合があります。",
+          "ProfitFairy 粗利率・利益 価格計算 と AIOS Sea は無料提供を維持するため、Google AdMob 広告を統合しています。追跡を許可した場合、AdMob は端末の広告識別子（IDFA など）を用いてパーソナライズ広告の配信や効果測定を行うことがあります。当社はこの識別子をお客様の氏名やアカウントと結びつけません。iPhone または iPad の「設定 → プライバシーとセキュリティ → 追跡」でいつでもオフにできます。EU、英国、スイスなどの地域では広告が表示されない場合があります。",
           "小主日記 およびすべての iMessage ステッカーには広告は含まれず、完全に広告のない体験を提供します。",
         ],
         link: {
@@ -211,7 +211,7 @@ module.exports = {
       {
         title: "2. 광고 및 제3자 서비스",
         paragraphs: [
-          "ProfitFairy 마진·수익·가격 계산기와 아이오스（AIOS Realm）는 무료 서비스를 유지하기 위해 Google AdMob 광고를 통합합니다. 추적을 허용한 경우 AdMob은 기기 광고 식별자(IDFA 등)를 사용해 맞춤형 광고를 제공하고 광고 성과를 측정할 수 있습니다. 당사는 이 식별자를 귀하의 이름이나 계정과 연결하지 않습니다. iPhone 또는 iPad의 「설정 → 개인정보 보호 및 보안 → 추적」에서 언제든 끌 수 있습니다. EU, 영국, 스위스 등 일부 지역에서는 광고가 표시되지 않을 수 있습니다.",
+          "ProfitFairy 마진·수익·가격 계산기와 AIOS Sea는 무료 서비스를 유지하기 위해 Google AdMob 광고를 통합합니다. 추적을 허용한 경우 AdMob은 기기 광고 식별자(IDFA 등)를 사용해 맞춤형 광고를 제공하고 광고 성과를 측정할 수 있습니다. 당사는 이 식별자를 귀하의 이름이나 계정과 연결하지 않습니다. iPhone 또는 iPad의 「설정 → 개인정보 보호 및 보안 → 추적」에서 언제든 끌 수 있습니다. EU, 영국, 스위스 등 일부 지역에서는 광고가 표시되지 않을 수 있습니다.",
           "小主日記 및 모든 iMessage 스티커에는 광고가 포함되지 않아 완전히 광고 없는 경험을 제공합니다.",
         ],
         link: {

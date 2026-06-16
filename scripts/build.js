@@ -120,14 +120,19 @@ ${analyticsHead}
 </head>
 <body>
 <nav class="navbar">
-    <div class="container nav-flex">
-        <div class="nav-menu">
-            <a href="#apps-title" class="nav-link">${esc(c.nav_works)}</a>
-            <a href="#stickers-title" class="nav-link">${esc(c.nav_stickers)}</a>
-            <a href="#curator-title" class="nav-link">${esc(c.nav_curator)}</a>
+    <div class="container nav-shell">
+        <div class="nav-primary">
+            <a href="${c.path}" class="nav-brand">${esc(c.nav_brand)}</a>
+            <div class="nav-menu">
+                <a href="#apps-title" class="nav-link">${esc(c.nav_works)}</a>
+                <a href="#stickers-title" class="nav-link">${esc(c.nav_stickers)}</a>
+                <a href="#curator-title" class="nav-link">${esc(c.nav_curator)}</a>
+            </div>
         </div>
-        <div class="lang-switch">
-            ${langSwitch(lang, "home")}
+        <div class="nav-utility">
+            <div class="lang-switch">
+                ${langSwitch(lang, "home")}
+            </div>
         </div>
     </div>
 </nav>
@@ -159,7 +164,7 @@ ${analyticsHead}
         <div class="grid-3">
             <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/ProfitFairy_icon.png" alt="ProfitFairy"></div><div class="card-info"><div class="work-title">${esc(c.pf_title)}</div><div class="work-sub">${esc(c.pf_sub)}</div><div class="work-desc">${esc(c.pf_desc)}</div><div class="store-badge"><a href="https://apps.apple.com/app/id6740332215" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
             <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/RubyDays_icon.png" alt="RubyDays"></div><div class="card-info"><div class="work-title">${esc(c.ruby_title)}</div><div class="work-sub">${esc(c.ruby_sub)}</div><div class="work-desc">${esc(c.ruby_desc)}</div><div class="store-badge"><a href="https://apps.apple.com/app/id6752606069" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
-            <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/AIOS_icon.png" alt="AIOS Realm"></div><div class="card-info"><div class="work-title">${esc(c.aios_title)}</div><div class="work-sub">${esc(c.aios_sub)}</div><div class="work-desc">${esc(c.aios_desc)}</div><div class="store-badge"><a href="https://apps.apple.com/app/id6745821288" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
+            <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/AIOS_icon.png" alt="${esc(c.aios_title)}"></div><div class="card-info"><div class="work-title">${esc(c.aios_title)}</div><div class="work-sub">${esc(c.aios_sub)}</div><div class="work-desc">${esc(c.aios_desc)}</div><div class="store-badge"><a href="https://apps.apple.com/app/id6745821288" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
         </div>
 
         <div id="stickers-title" class="section-header">

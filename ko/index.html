@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Ansel Bi — 큐레이터 / 앱 개발자</title>
     <meta name="description" content="큐레이터이자 인디 앱 개발자 Ansel Bi. 약 20년간 4대륙에서 약 60회의 전시를 기획했습니다. 큐레이션 미학을 오리지널 앱과 iMessage 스티커에 담습니다.">
-    <meta name="keywords" content="Ansel Bi, 큐레이터, 인디 개발자, ProfitFairy, RubyDays, AIOS Realm, 타이거 시바, MeowCAT">
+    <meta name="keywords" content="Ansel Bi, 큐레이터, 인디 개발자, ProfitFairy, RubyDays, AIOS Sea, 타이거 시바, MeowCAT">
     <link rel="alternate" hreflang="zh-Hant" href="https://www.anselbi.com/zh-tw/">
     <link rel="alternate" hreflang="zh-Hans" href="https://www.anselbi.com/zh-cn/">
     <link rel="alternate" hreflang="en" href="https://www.anselbi.com/en/">
@@ -91,36 +91,61 @@ html[lang="zh-CN"] .sticker-name-zh {
 }
 .container { max-width: 1400px; margin: 0 auto; padding: 0 72px; }
 .navbar {
-    padding: 28px 0;
+    padding: 22px 0 16px;
     position: sticky;
     top: 0;
-    background: rgba(18, 18, 18, 0.92);
+    background: rgba(18, 18, 18, 0.94);
     backdrop-filter: blur(16px);
     z-index: 100;
     border-bottom: 1px solid rgba(230, 226, 218, 0.06);
 }
-.nav-flex {
+.nav-shell {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    gap: 0;
+}
+.nav-primary {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    flex-wrap: wrap;
+    padding-bottom: 14px;
 }
+.nav-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #7e6f5e;
+    text-decoration: none;
+    transition: color 0.2s;
+    flex-shrink: 0;
+}
+html[lang^="zh"] .nav-brand {
+    font-family: 'Noto Serif TC', 'Noto Serif SC', serif;
+    font-style: normal;
+    letter-spacing: 0.08em;
+    text-transform: none;
+}
+.nav-brand:hover { color: #c9aa7b; }
 .nav-menu {
     display: flex;
-    gap: 2rem;
+    gap: 2.25rem;
     align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 .nav-link {
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #9e9589;
     transition: 0.2s;
     position: relative;
-    padding-bottom: 2px;
+    padding-bottom: 3px;
 }
 .nav-link::after {
     content: '';
@@ -134,25 +159,41 @@ html[lang="zh-CN"] .sticker-name-zh {
 }
 .nav-link:hover { color: #c9aa7b; }
 .nav-link:hover::after { width: 100%; }
+.nav-utility {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 12px;
+    border-top: 1px solid rgba(230, 226, 218, 0.08);
+}
 .lang-switch {
     display: flex;
-    gap: 0.5rem;
+    gap: 2px;
     align-items: center;
+    background: rgba(255, 255, 255, 0.035);
+    padding: 4px 10px;
+    border-radius: 48px;
+    border: 1px solid rgba(230, 226, 218, 0.06);
 }
-.lang-divider { color: #4a453f; font-size: 0.7rem; }
+.lang-divider { color: #3d3832; font-size: 0.55rem; user-select: none; }
 .lang-btn {
     background: transparent;
     border: none;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     font-weight: 500;
-    padding: 0;
+    padding: 4px 10px;
+    border-radius: 40px;
     cursor: pointer;
-    color: #9e9589;
+    color: #6a6258;
     transition: 0.2s;
     text-decoration: none;
+    letter-spacing: 0.02em;
 }
 .lang-btn:hover { color: #c9aa7b; }
-.lang-btn.active { color: #c9aa7b; }
+.lang-btn.active {
+    background: #c9aa7b;
+    color: #121212;
+}
 .hero { padding: 60px 0 40px; }
 .hero-photo { margin-bottom: 2.5rem; }
 .portrait-frame {
@@ -278,11 +319,18 @@ footer { text-align: center; padding: 24px 0 40px; font-size: 0.7rem; color: #6a
 }
 @media (max-width: 780px) {
     .container { padding: 0 24px; }
-    .nav-flex { justify-content: center; gap: 1rem; }
-    .nav-menu { gap: 1.5rem; }
-    .nav-link { font-size: 0.7rem; letter-spacing: 1.5px; }
-    .lang-btn { font-size: 0.65rem; }
-    .lang-divider { font-size: 0.6rem; }
+    .nav-primary {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding-bottom: 12px;
+    }
+    .nav-menu { gap: 1.25rem; justify-content: center; }
+    .nav-link { font-size: 0.68rem; letter-spacing: 1.5px; }
+    .nav-utility { justify-content: center; padding-top: 10px; }
+    .lang-switch { padding: 3px 8px; }
+    .lang-btn { font-size: 0.6rem; padding: 3px 8px; }
+    .lang-divider { font-size: 0.5rem; }
     .hero-photo { text-align: center; }
     .portrait-frame { width: 140px; height: 140px; margin: 0 auto; }
     .hero-slogan { text-align: center; font-size: 0.7rem; }
@@ -315,18 +363,23 @@ footer { text-align: center; padding: 24px 0 40px; font-size: 0.7rem; color: #6a
 </head>
 <body>
 <nav class="navbar">
-    <div class="container nav-flex">
-        <div class="nav-menu">
-            <a href="#apps-title" class="nav-link">작품</a>
-            <a href="#stickers-title" class="nav-link">스티커</a>
-            <a href="#curator-title" class="nav-link">큐레이션</a>
+    <div class="container nav-shell">
+        <div class="nav-primary">
+            <a href="/ko/" class="nav-brand">Ansel Bi</a>
+            <div class="nav-menu">
+                <a href="#apps-title" class="nav-link">작품</a>
+                <a href="#stickers-title" class="nav-link">스티커</a>
+                <a href="#curator-title" class="nav-link">큐레이션</a>
+            </div>
         </div>
-        <div class="lang-switch">
-            <a href="/zh-tw/" class="lang-btn" hreflang="zh-Hant">繁中</a><span class="lang-divider">/</span>
+        <div class="nav-utility">
+            <div class="lang-switch">
+                <a href="/zh-tw/" class="lang-btn" hreflang="zh-Hant">繁中</a><span class="lang-divider">/</span>
             <a href="/zh-cn/" class="lang-btn" hreflang="zh-Hans">簡中</a><span class="lang-divider">/</span>
             <a href="/en/" class="lang-btn" hreflang="en">EN</a><span class="lang-divider">/</span>
             <a href="/ja/" class="lang-btn" hreflang="ja">日本語</a><span class="lang-divider">/</span>
             <a href="/ko/" class="lang-btn active" hreflang="ko">한국어</a>
+            </div>
         </div>
     </div>
 </nav>
@@ -418,7 +471,7 @@ footer { text-align: center; padding: 24px 0 40px; font-size: 0.7rem; color: #6a
         <div class="grid-3">
             <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/ProfitFairy_icon.png" alt="ProfitFairy"></div><div class="card-info"><div class="work-title">ProfitFairy 마진·수익·가격 계산기</div><div class="work-sub">원가 판매가 즉시 계산｜수수료·세금</div><div class="work-desc">이커머스·소매를 위한 이익 관리 도구. 비용, 배송비, 세금, 플랫폼 수수료를 즉시 분해하고 여러 파라미터를 실시간으로 계산합니다. 기록 로그 지원으로 모든 결정을 투명하게.</div><div class="store-badge"><a href="https://apps.apple.com/app/id6740332215" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
             <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/RubyDays_icon.png" alt="RubyDays"></div><div class="card-info"><div class="work-title">小主私密日記-月經期排卵日曆備孕安全期易孕避孕無廣告養生調理</div><div class="work-sub">생리 주기 추적・배란 계산・비밀 일기</div><div class="work-desc">정확한 생리·배란 캘린더와 잠금 가능한 프라이빗 다이어리. 4대 한의학 고전을 통합하고 지압·약식 레시피를 제공합니다. 매일의 기분, 순간, 신체 변화를 기록하세요.</div><div class="store-badge"><a href="https://apps.apple.com/app/id6752606069" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
-            <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/AIOS_icon.png" alt="AIOS Realm"></div><div class="card-info"><div class="work-title">아이오스（AIOS Realm）</div><div class="work-sub">2048을 넘어, 도전할 용기 있나?</div><div class="work-desc">2048을 진화시킨 입체 퍼즐 게임. 여신 카드를 합성하고 바다 여신의 서사를 해제하세요. 전략적 두뇌 퍼즐과 카드 수집이 함께하는 게임.</div><div class="store-badge"><a href="https://apps.apple.com/app/id6745821288" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
+            <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/AIOS_icon.png" alt="AIOS Sea"></div><div class="card-info"><div class="work-title">AIOS Sea</div><div class="work-sub">조수를 합치고 여신을 깨우세요</div><div class="work-desc">AIOS Sea를 항해하며 조수 표식을 합치고, 37명의 여신을 깨우며 심연의 기억을 되찾으세요. 클래식 머지와 심연의 기억 미니게임, 여신 법전 수집이 어우러진 퍼즐 게임.</div><div class="store-badge"><a href="https://apps.apple.com/app/id6745821288" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
         </div>
 
         <div id="stickers-title" class="section-header">

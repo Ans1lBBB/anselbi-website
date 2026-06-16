@@ -39,8 +39,9 @@
 - **下次改版時改為**：`https://www.anselbi.com/privacy` 與 `https://www.anselbi.com/`
 - AdMob：確認 App Store 主網域為 `anselbi.com`，`app-ads.txt` 已在根目錄
 
-### 艾奧斯（AIOS Realm）— 同上
+### 艾奧斯海（AIOS Sea）— 同上
 
+- 顯示名稱：繁中「艾奧斯海」、简中「艾奥斯海」、EN/JA/KO「AIOS Sea」
 - 下次改版：`https://www.anselbi.com/privacy`、`https://www.anselbi.com/`
 
 ### iMessage 貼圖（台客柴、MeowCAT 等）
