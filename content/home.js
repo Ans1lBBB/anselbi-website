@@ -30,8 +30,8 @@ module.exports = {
     pf_sub: "商業・生產力工具",
     pf_desc:
       "專為電商與實體商家設計的利潤管理系統。一鍵拆分成本、運費、稅金、平台費，即時計算多項參數混搭並支援歷史紀錄查看，讓每個商業決策精準透明。",
-    ruby_title: "小主私密日記-月經期排卵日曆備孕安全期易孕避孕無廣告養生調理",
-    ruby_sub: "生理期追蹤、月經排卵期計算器・女性私密日記",
+    ruby_title: "小主私密日記·經期排卵備孕·老中醫養生閣·私密手札",
+    ruby_sub: "老中醫養生閣・經期手札・排卵備孕日曆",
     ruby_desc:
       "生理期與排卵期精準計算日曆，同時是一本可上鎖的私密日記。融合《黃帝內經》等四大中醫典籍，提供穴位與藥膳食補指南。記錄每一天的心情、瞬間與身體變化。",
     aios_title: "艾奧斯海",
@@ -106,8 +106,8 @@ module.exports = {
     pf_sub: "商业・生产力工具",
     pf_desc:
       "专为电商与实体商家设计的利润管理系统。一键拆分成本、运费、税金、平台费，即时计算多项参数混搭并支持历史纪录查看，让每个商业决策精准透明。",
-    ruby_title: "小主私密日记-月经期排卵日历备孕安全期易孕避孕无广告养生调理",
-    ruby_sub: "生理期追踪、月经排卵期计算器・女性私密日记",
+    ruby_title: "小主私密日记·经期排卵备孕·老中医养生阁·私密手札",
+    ruby_sub: "老中医养生阁・经期手札・排卵备孕日历",
     ruby_desc:
       "生理期与排卵期精准计算日历，同时是一本可上锁的私密日记。融合《黄帝内经》等四大中医典籍，提供穴位与药膳食补指南。记录每一天的心情、瞬间与身体变化。",
     aios_title: "艾奥斯海",
@@ -182,8 +182,8 @@ module.exports = {
     pf_sub: "Business · Productivity",
     pf_desc:
       "Profit management for e-commerce & retail. Split costs, shipping, taxes, platform fees instantly, calculate multiple mixed parameters in real time with history log support. Precision for every decision.",
-    ruby_title: "小主私密日記-月經期排卵日曆備孕安全期易孕避孕無廣告養生調理",
-    ruby_sub: "Period Tracker, Ovulation Calculator & Private Diary",
+    ruby_title: "RubyDays: Period Tracker & TCM Wellness",
+    ruby_sub: "Ancient Wisdom Pavilion · Cycle Diary · Ovulation",
     ruby_desc:
       "Accurate period & ovulation calendar, plus a lockable private diary. Integrates 4 TCM classics, acupressure, and medicinal recipes. Record daily moods, moments, and physical changes.",
     aios_title: "AIOS Sea",
@@ -258,8 +258,8 @@ module.exports = {
     pf_sub: "原価・販売価格を即計算 手数料・税も",
     pf_desc:
       "EC・小売向けの利益管理ツール。コスト、送料、税金、プラットフォーム手数料を一括分解し、複数パラメータの組み合わせをリアルタイム計算。履歴ログ対応で、すべての意思決定を透明に。",
-    ruby_title: "小主私密日記-月經期排卵日曆備孕安全期易孕避孕無廣告養生調理",
-    ruby_sub: "生理周期追跡・排卵計算・プライベート日記",
+    ruby_title: "小主私密日記·老中醫養生閣・生理周期カレンダー",
+    ruby_sub: "養生閣・周期手札・排卵・備孕カレンダー",
     ruby_desc:
       "生理周期と排卵日を正確に計算するカレンダーと、ロック可能なプライベート日記。四大中医古典を融合し、ツボ押しや薬膳レシピを提供。毎日の気分、瞬間、体の変化を記録。",
     aios_title: "AIOS Sea",
@@ -334,8 +334,8 @@ module.exports = {
     pf_sub: "원가 판매가 즉시 계산｜수수료·세금",
     pf_desc:
       "이커머스·소매를 위한 이익 관리 도구. 비용, 배송비, 세금, 플랫폼 수수료를 즉시 분해하고 여러 파라미터를 실시간으로 계산합니다. 기록 로그 지원으로 모든 결정을 투명하게.",
-    ruby_title: "小主私密日記-月經期排卵日曆備孕安全期易孕避孕無廣告養生調理",
-    ruby_sub: "생리 주기 추적・배란 계산・비밀 일기",
+    ruby_title: "小主私密日記·老中醫養生閣・생리주기 캘린더",
+    ruby_sub: "養生閣・周期手札・배란・임신 캘린더",
     ruby_desc:
       "정확한 생리·배란 캘린더와 잠금 가능한 프라이빗 다이어리. 4대 한의학 고전을 통합하고 지압·약식 레시피를 제공합니다. 매일의 기분, 순간, 신체 변화를 기록하세요.",
     aios_title: "AIOS Sea",

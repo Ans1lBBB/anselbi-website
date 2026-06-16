@@ -7,7 +7,7 @@ module.exports = {
     title: "隱私權政策 | Ansel Bi",
     description: "Ansel Bi 旗下所有應用程式與貼圖的隱私權政策。",
     pageTitle: "隱私權政策",
-    updateDate: "最後更新：2026年6月 — 適用於 Ansel Bi 旗下所有應用程式與貼圖",
+    updateDate: "最後更新：2026年6月（4.1）— 適用於 Ansel Bi 旗下所有應用程式與貼圖",
     backLink: "← 返回首頁",
     footerNote: "策展人對隱私的堅持，如同對藝術的敬意。純粹、透明且嚴謹。",
     contactBtn: "聯絡我們",
@@ -16,7 +16,7 @@ module.exports = {
         title: "1. 資料蒐集範圍",
         paragraphs: [
           "我們的 App 無需註冊帳號即可使用，不會向你索取姓名、電子郵件或電話號碼。我們不會建立會員後台，也無法辨識某一位用戶的真實身份。",
-          "為改善產品體驗，ProfitFairy 整合 Google Firebase Analytics，收集匿名使用事件（例如開啟哪些畫面、是否完成試算）。這些資料僅用於了解 App 使用情況與產品優化，無法用來還原你的個人身份。",
+          "為改善產品體驗，ProfitFairy 與小主私密日記整合 Google Firebase Analytics，收集匿名使用事件（例如開啟哪些畫面、是否完成試算或儲存手札）。這些資料僅用於了解 App 使用情況與產品優化，無法用來還原你的個人身份，也不包含經期日期、手札文字或照片內容。",
           "App 內購與訂閱由 Apple 處理。我們不會取得你的 Apple ID 或付款明細，僅在裝置端判斷是否已解鎖 VIP 功能。",
         ],
       },
@@ -34,7 +34,7 @@ module.exports = {
       },
       {
         title: "3. 本地儲存與隱私",
-        body: "健康記錄（小主私密日記）、日記內容、照片上鎖資料、利潤計算歷史、遊戲進度與卡牌資料僅儲存於您的裝置內部，絕不會上傳至任何外部伺服器。",
+        body: "健康記錄（小主私密日記的經期與手札）、照片上鎖資料、利潤計算歷史、遊戲進度與卡牌資料僅儲存於您的裝置內部（可選 iCloud 私密同步），絕不會上傳至開發者伺服器。Firebase Analytics 僅接收匿名操作事件，不含上述健康或日記內容。",
       },
       {
         title: "4. 兒童隱私",
@@ -63,7 +63,7 @@ module.exports = {
         title: "1. 数据收集范围",
         paragraphs: [
           "我们的 App 无需注册账号即可使用，不会向你索取姓名、电子邮件或电话号码。我们不会建立会员后台，也无法辨识某一位用户的真实身份。",
-          "为改善产品体验，ProfitFairy 整合 Google Firebase Analytics，收集匿名使用事件（例如开启哪些画面、是否完成试算）。这些数据仅用于了解 App 使用情况与产品优化，无法用来还原你的个人身份。",
+          "为改善产品体验，ProfitFairy 与小主私密日记整合 Google Firebase Analytics，收集匿名使用事件（例如开启哪些画面、是否完成试算或保存手札）。这些数据仅用于了解 App 使用情况与产品优化，无法用来还原你的个人身份，也不包含经期日期、手札文字或照片内容。",
           "App 内购与订阅由 Apple 处理。我们不会取得你的 Apple ID 或付款明细，仅在装置端判断是否已解锁 VIP 功能。",
         ],
       },
@@ -81,7 +81,7 @@ module.exports = {
       },
       {
         title: "3. 本地存储与隐私",
-        body: "健康记录（小主私密日记）、日记内容、照片上锁资料、利润计算历史、游戏进度与卡牌资料仅储存于您的设备内部，绝不会上传至任何外部服务器。",
+        body: "健康记录（小主私密日记的经期与手札）、照片上锁资料、利润计算历史、游戏进度与卡牌资料仅储存于您的设备内部（可选 iCloud 私密同步），绝不会上传至开发者服务器。Firebase Analytics 仅接收匿名操作事件，不含上述健康或日记内容。",
       },
       {
         title: "4. 儿童隐私",
@@ -110,7 +110,7 @@ module.exports = {
         title: "1. Data Collection",
         paragraphs: [
           "Our apps work without account registration. We do not ask for your name, email, or phone number. We do not operate a member database and cannot identify who you are in real life.",
-          "To improve ProfitFairy, we use Google Firebase Analytics to collect anonymous usage events (such as which screens you open or whether a calculation was completed). This data is used only to understand how the app is used and to improve the product. It cannot be used to reveal your personal identity.",
+          "To improve our apps, ProfitFairy and RubyDays use Google Firebase Analytics to collect anonymous usage events (such as which screens you open or whether a calculation or diary save was completed). This data is used only to understand how the app is used and to improve the product. It cannot reveal your personal identity and does not include period dates, diary text, or photos.",
           "In-app purchases and subscriptions are handled by Apple. We do not receive your Apple ID or payment details. We only check on your device whether VIP features are unlocked.",
         ],
       },
@@ -128,7 +128,7 @@ module.exports = {
       },
       {
         title: "3. Local Storage & Privacy",
-        body: "All health data (RubyDays), diary entries, locked photos, profit calculation history, game progress, and card data are stored only on your device and are never uploaded to any external server.",
+        body: "Health data (RubyDays cycle and diary entries), locked photos, profit calculation history, game progress, and card data are stored only on your device (optional private iCloud sync) and are never uploaded to the developer's servers. Firebase Analytics receives only anonymous interaction events and never includes that health or diary content.",
       },
       {
         title: "4. Children's Privacy",
@@ -157,7 +157,7 @@ module.exports = {
         title: "1. データの収集範囲",
         paragraphs: [
           "当社のアプリはアカウント登録なしでご利用いただけます。氏名、メールアドレス、電話番号はお尋ねしません。会員データベースは運営しておらず、お客様個人を特定することはできません。",
-          "製品改善のため、ProfitFairy 粗利率・利益 価格計算 では Google Firebase Analytics を利用し、匿名の利用イベント（どの画面を開いたか、計算を完了したかなど）を収集します。これらはアプリの利用状況の把握と品質向上のみに使用し、個人の身元を特定するために使うことはできません。",
+          "製品改善のため、ProfitFairy 粗利率・利益 価格計算 と 小主日記 では Google Firebase Analytics を利用し、匿名の利用イベント（どの画面を開いたか、計算や手札の保存を完了したかなど）を収集します。これらはアプリの利用状況の把握と品質向上のみに使用し、個人の身元を特定するために使うことはできません。生理日、日記の文字、写真の内容は含まれません。",
           "アプリ内課金とサブスクリプションは Apple が処理します。Apple ID や支払い明細は当社に届きません。端末上で VIP 機能が解放されているかどうかのみを確認します。",
         ],
       },
@@ -175,7 +175,7 @@ module.exports = {
       },
       {
         title: "3. ローカルストレージとプライバシー",
-        body: "健康データ（小主日記）、日記の内容、ロックされた写真、利益計算の履歴、ゲームの進行状況、カードデータはすべてお客様の端末内にのみ保存され、外部サーバーにアップロードされることはありません。",
+        body: "健康データ（小主日記の周期と手札）、ロックされた写真、利益計算の履歴、ゲームの進行状況、カードデータはすべてお客様の端末内（任意の iCloud プライベート同期）にのみ保存され、開発者のサーバーにはアップロードされません。Firebase Analytics が受け取るのは匿名の操作イベントのみで、上記の健康・日記内容は含まれません。",
       },
       {
         title: "4. 児童のプライバシー",
@@ -204,7 +204,7 @@ module.exports = {
         title: "1. 데이터 수집 범위",
         paragraphs: [
           "당사 앱은 계정 등록 없이 사용할 수 있습니다. 이름, 이메일, 전화번호를 요청하지 않습니다. 회원 데이터베이스를 운영하지 않으며, 이용자 개인을 식별할 수 없습니다.",
-          "제품 개선을 위해 ProfitFairy 마진·수익·가격 계산기는 Google Firebase Analytics를 사용하여 익명 이용 이벤트(어떤 화면을 열었는지, 계산을 완료했는지 등)를 수집합니다. 이 데이터는 앱 사용 현황 파악과 품질 개선에만 사용되며, 개인 신원을 밝히는 데 사용할 수 없습니다.",
+          "제품 개선을 위해 ProfitFairy 마진·수익·가격 계산기와 小主日記은 Google Firebase Analytics를 사용하여 익명 이용 이벤트(어떤 화면을 열었는지, 계산이나手札 저장을 완료했는지 등)를 수집합니다. 이 데이터는 앱 사용 현황 파악과 품질 개선에만 사용되며, 개인 신원을 밝히는 데 사용할 수 없습니다. 생리 날짜, 일기文字, 사진 내용은 포함되지 않습니다.",
           "앱 내 구매와 구독은 Apple이 처리합니다. Apple ID나 결제 내역은 당사에 전달되지 않습니다. 기기에서 VIP 기능이 잠금 해제되었는지만 확인합니다.",
         ],
       },
@@ -222,7 +222,7 @@ module.exports = {
       },
       {
         title: "3. 로컬 저장 및 프라이버시",
-        body: "건강 데이터(小主日記), 일기 내용, 잠긴 사진, 이익 계산 기록, 게임 진행 상황, 카드 데이터는 모두 기기 내부에만 저장되며 외부 서버에 업로드되지 않습니다.",
+        body: "건강 데이터(小主日記 주기 및 手札), 잠긴 사진, 이익 계산 기록, 게임 진행 상황, 카드 데이터는 모두 기기 내부(선택적 iCloud 비공개 동기화)에만 저장되며 개발자 서버에 업로드되지 않습니다. Firebase Analytics는 익명 조작 이벤트만 수신하며 위 건강·일기 내용은 포함하지 않습니다.",
       },
       {
         title: "4. 아동 프라이버시",
