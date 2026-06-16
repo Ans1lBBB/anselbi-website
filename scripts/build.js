@@ -120,19 +120,14 @@ ${analyticsHead}
 </head>
 <body>
 <nav class="navbar">
-    <div class="container nav-shell">
-        <div class="nav-primary">
-            <a href="${c.path}" class="nav-brand">${esc(c.nav_brand)}</a>
-            <div class="nav-menu">
-                <a href="#apps-title" class="nav-link">${esc(c.nav_works)}</a>
-                <a href="#stickers-title" class="nav-link">${esc(c.nav_stickers)}</a>
-                <a href="#curator-title" class="nav-link">${esc(c.nav_curator)}</a>
-            </div>
+    <div class="container nav-bar">
+        <div class="nav-menu">
+            <a href="#apps-title" class="nav-link">${esc(c.nav_works)}</a>
+            <a href="#stickers-title" class="nav-link">${esc(c.nav_stickers)}</a>
+            <a href="#curator-title" class="nav-link">${esc(c.nav_curator)}</a>
         </div>
-        <div class="nav-utility">
-            <div class="lang-switch">
-                ${langSwitch(lang, "home")}
-            </div>
+        <div class="lang-switch">
+            ${langSwitch(lang, "home")}
         </div>
     </div>
 </nav>
