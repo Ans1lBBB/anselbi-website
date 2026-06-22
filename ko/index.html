@@ -23,7 +23,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-
+    <!-- Cloudflare Web Analytics -->
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"e2bd5f7ddf3049f3b2d845ae133f7276"}'></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Noto+Serif+TC:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
     <style>* { margin: 0; padding: 0; box-sizing: border-box; }
 body {
@@ -249,6 +250,7 @@ html[lang="zh-CN"] .sticker-name-zh {
 .work-desc { font-size: 0.85rem; color: #b8b0a2; line-height: 1.6; margin-bottom: 20px; }
 .store-badge img { height: 42px; width: auto; border-radius: 10px; }
 .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+.grid-stickers { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 28px; }
 .sticker-card { background: #1a1a1a; border: 1px solid rgba(230,226,218,0.08); padding: 24px 20px; transition: 0.2s; }
 .sticker-card:hover { border-color: rgba(201,170,123,0.4); }
 .sticker-icon { width: 70px; height: 70px; border-radius: 18px; margin-bottom: 16px; object-fit: cover; }
@@ -275,7 +277,7 @@ footer { text-align: center; padding: 24px 0 40px; font-size: 0.7rem; color: #6a
 @media (max-width: 1024px) {
     .container { padding: 0 32px; }
     .grid-3 { grid-template-columns: 1fr 1fr; gap: 28px; }
-    .grid-4 { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .grid-4, .grid-stickers { grid-template-columns: repeat(2, 1fr); gap: 24px; }
     .portrait-frame { width: 160px; height: 160px; }
     .name-title h1 { font-size: 2.5rem; }
 }
@@ -299,7 +301,7 @@ footer { text-align: center; padding: 24px 0 40px; font-size: 0.7rem; color: #6a
     .curator-head { margin: 50px 0 24px; scroll-margin-top: 80px; }
     .curator-head h3 { font-size: 1.4rem; text-align: center; }
     .curator-head .sub { text-align: center; font-size: 0.65rem; }
-    .grid-3, .grid-4 { grid-template-columns: 1fr; }
+    .grid-3, .grid-4, .grid-stickers { grid-template-columns: 1fr; }
     .curator-block { padding: 32px 24px; }
     .curator-text { font-size: 0.9rem; }
     .list-role { width: 100%; font-size: 0.75rem; }
@@ -419,16 +421,17 @@ footer { text-align: center; padding: 24px 0 40px; font-size: 0.7rem; color: #6a
             <h2>오리지널 앱</h2>
         </div>
         <div class="grid-3">
-            <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/ProfitFairy_icon.png" alt="ProfitFairy"></div><div class="card-info"><div class="work-title">ProfitFairy 마진·수익·가격 계산기</div><div class="work-sub">원가 판매가 즉시 계산｜수수료·세금</div><div class="work-desc">이커머스·소매를 위한 이익 관리 도구. 비용, 배송비, 세금, 플랫폼 수수료를 즉시 분해하고 여러 파라미터를 실시간으로 계산합니다. 기록 로그 지원으로 모든 결정을 투명하게.</div><div class="store-badge"><a href="https://apps.apple.com/app/id6740332215" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
-            <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/RubyDays_icon.png" alt="RubyDays"></div><div class="card-info"><div class="work-title">小主私密日記·老中醫養生閣・생리주기 캘린더</div><div class="work-sub">養生閣・周期手札・배란・임신 캘린더</div><div class="work-desc">정확한 생리·배란 캘린더와 잠금 가능한 프라이빗 다이어리. 4대 한의학 고전을 통합하고 지압·약식 레시피를 제공합니다. 매일의 기분, 순간, 신체 변화를 기록하세요.</div><div class="store-badge"><a href="https://apps.apple.com/app/id6752606069" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
-            <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/AIOS_icon.png" alt="AIOS Sea"></div><div class="card-info"><div class="work-title">AIOS Sea</div><div class="work-sub">조수를 합치고 여신을 깨우세요</div><div class="work-desc">AIOS Sea를 항해하며 조수 표식을 합치고, 37명의 여신을 깨우며 심연의 기억을 되찾으세요. 클래식 머지와 심연의 기억 미니게임, 여신 법전 수집이 어우러진 퍼즐 게임.</div><div class="store-badge"><a href="https://apps.apple.com/app/id6745821288" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
+            <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/ProfitFairy_icon.png" alt="ProfitFairy"></div><div class="card-info"><div class="work-title">ProfitFairy 원가마진수익 분석기</div><div class="work-sub">판매가와 비용 구조 연동 분석</div><div class="work-desc">원가, 판매가, 목표 마진 중 하나만 입력하면 최종 가격, 이익, 이익률을 즉시 확인할 수 있습니다. 3항목 연동 계산과 할인, 수수료, 세금, 배송비 등 고급 옵션을 지원합니다. 원가 분석 페이지에서 공유 가능한 마진 내역 긴 이미지를 출력하고, 기록 저장과 일괄 관리도 가능합니다. 기기 지역 설정에 맞는 숫자 표기를 지원하며 12,345.67 같은 형식도 그대로 사용할 수 있습니다. 5개 언어 지원.</div><div class="store-badge"><a href="https://apps.apple.com/app/id6740332215" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
+            <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/RubyDays_icon.png" alt="RubyDays"></div><div class="card-info"><div class="work-title">小主私密日記 · 주기 달력과手札</div><div class="work-sub">매일을 기록하고, 나만의 리듬을 부드럽게 읽어가세요</div><div class="work-desc">주기와 임신 준비 달력, 잠금 가능한手札, 주기 단계에 맞춘 양생각 고전 발췌. 생리 기록, 배란과 안전 기간 추정, 차트와 알림으로 계획을 돕습니다. 양생각은 『황제내경』『본초강목』『부청주여과』『침구갑을경』의 요지를 담아, 단계별로 일상, 고전 식문, 마음의 읽을거리를 정리합니다. 데이터는 기기 저장, iCloud 비공개 동기화 선택 가능. 글과 「순간」 사진, Face ID 보호. 고전 발췌는 일상 참고용. 광고 없음.</div><div class="store-badge"><a href="https://apps.apple.com/app/id6752606069" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
+            <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/AIOS_icon.png?v=9cfe6de2" alt="AIOS Sea"></div><div class="card-info"><div class="work-title">AIOS Sea</div><div class="work-sub">조수를 합치고 여신을 깨우세요</div><div class="work-desc">AIOS Sea를 항해하며 조수 표식을 합치고, 37명의 여신을 깨우며 심연의 기억을 되찾으세요. 클래식 머지, 심연의 기억 미니게임, 여신 법전 도감 수집의 세 가지 입구. 바다 테마의 힐링 비주얼로 짧은 휴식에 적합합니다. Game Center 업적과 일일 퀘스트, 5개 언어 지원으로 지속 업데이트.</div><div class="store-badge"><a href="https://apps.apple.com/app/id6745821288" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
         </div>
 
         <div id="stickers-title" class="section-header">
             <h2>iMessage 스티커</h2>
         </div>
-        <div class="grid-4">
+        <div class="grid-stickers">
             <div class="sticker-card"><img class="sticker-icon" src="/images/shiba_icon.png" alt="Taiger Shiba"><div class="sticker-name-zh">【台客柴】阿柴的江湖日常：俗擱有力篇</div><div class="sticker-sub">藍白拖＋復古安全帽＋超派口頭禪，看起來很兇其實超北爛</div><div class="sticker-desc">대화 주제가 없나요? 타이거 시바가 없어서 그렇습니다! 대만식 명대사와 웃긴 이모티콘으로 읽씹 친구와 매운맛 채팅에 딱 맞습니다. 슬리퍼부터 레트로 헬멧까지, 대만 감성 가득.</div><div class="store-badge"><a href="https://apps.apple.com/app/id6761126835" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
+            <div class="sticker-card"><img class="sticker-icon" src="/images/shiba_daily_icon.png" alt="Taiwan Shiba Daily"><div class="sticker-name-zh">타이완 시바: 데일리 스티커</div><div class="sticker-sub">글자 없는 시바 스티커 40장</div><div class="sticker-desc">같은 타이완 시바 캐릭터의 글자 없는 버전. 슬리퍼+레트로 헬멧 일상 표정. 2026년 8월 31일까지 무료.</div></div>
             <div class="sticker-card"><img class="sticker-icon" src="/images/MeowCAT-1_icon.png" alt="MeowCAT-1"><div class="sticker-name-zh">MeowCAT-1: 사무실 고양이</div><div class="sticker-sub">당신의 매일 매력 복용량</div><div class="sticker-desc">오피스 라이프를 새롭게! 비 오는 출근, KPI 전투—모든 순간이 더 귀엽고 공감되게.</div><div class="store-badge"><a href="https://apps.apple.com/app/id6755613138" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
             <div class="sticker-card"><img class="sticker-icon" src="/images/MeowCAT-2_icon.png" alt="MeowCAT-2"><div class="sticker-name-zh">MeowCAT-2: 회사 괴롭힘 실태</div><div class="sticker-sub">삐졌음 스트레스 폭발함</div><div class="sticker-desc">받은편지함 히드라, 보스의 긴급 요청—당당한 오피스 고양이가 무너지는 일상을 함께합니다.</div><div class="store-badge"><a href="https://apps.apple.com/app/id6755665538" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
             <div class="sticker-card"><img class="sticker-icon" src="/images/MeowCAT-3_icon.png" alt="MeowCAT-3"><div class="sticker-name-zh">MeowCAT-3: 사무실 야옹이</div><div class="sticker-sub">야옹으로 전해요</div><div class="sticker-desc">끝없는 회의, 키보드 옆 졸린 고양이, 성공을 축하하는 발바닥 하이파이브—푹신한 동료가 일상을 치유합니다.</div><div class="store-badge"><a href="https://apps.apple.com/app/id6755676294" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>

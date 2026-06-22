@@ -222,6 +222,7 @@ html[lang="zh-CN"] .sticker-name-zh {
 .work-desc { font-size: 0.85rem; color: #b8b0a2; line-height: 1.6; margin-bottom: 20px; }
 .store-badge img { height: 42px; width: auto; border-radius: 10px; }
 .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+.grid-stickers { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 28px; }
 .sticker-card { background: #1a1a1a; border: 1px solid rgba(230,226,218,0.08); padding: 24px 20px; transition: 0.2s; }
 .sticker-card:hover { border-color: rgba(201,170,123,0.4); }
 .sticker-icon { width: 70px; height: 70px; border-radius: 18px; margin-bottom: 16px; object-fit: cover; }
@@ -248,7 +249,7 @@ footer { text-align: center; padding: 24px 0 40px; font-size: 0.7rem; color: #6a
 @media (max-width: 1024px) {
     .container { padding: 0 32px; }
     .grid-3 { grid-template-columns: 1fr 1fr; gap: 28px; }
-    .grid-4 { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .grid-4, .grid-stickers { grid-template-columns: repeat(2, 1fr); gap: 24px; }
     .portrait-frame { width: 160px; height: 160px; }
     .name-title h1 { font-size: 2.5rem; }
 }
@@ -272,7 +273,7 @@ footer { text-align: center; padding: 24px 0 40px; font-size: 0.7rem; color: #6a
     .curator-head { margin: 50px 0 24px; scroll-margin-top: 80px; }
     .curator-head h3 { font-size: 1.4rem; text-align: center; }
     .curator-head .sub { text-align: center; font-size: 0.65rem; }
-    .grid-3, .grid-4 { grid-template-columns: 1fr; }
+    .grid-3, .grid-4, .grid-stickers { grid-template-columns: 1fr; }
     .curator-block { padding: 32px 24px; }
     .curator-text { font-size: 0.9rem; }
     .list-role { width: 100%; font-size: 0.75rem; }

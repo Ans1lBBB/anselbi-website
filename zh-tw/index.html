@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>畢弘偉 Ansel Bi — 策展人 / App 程式設計師</title>
     <meta name="description" content="策展人 Ansel Bi，近二十年策展經歷，策劃近六十場展覽，足跡遍及亞洲、歐洲、美洲、澳洲。將策展美學注入獨立開發的 APP 與貼圖。">
-    <meta name="keywords" content="畢弘偉, Ansel Bi, 策展人, 獨立開發者, ProfitFairy, 小主私密日記, 艾奧斯, 台客柴, MeowCAT">
+    <meta name="keywords" content="畢弘偉, Ansel Bi, 策展人, 獨立開發者, ProfitFairy, 小主私密日記, 艾奧斯海, 台客柴, MeowCAT">
     <link rel="alternate" hreflang="zh-Hant" href="https://www.anselbi.com/zh-tw/">
     <link rel="alternate" hreflang="zh-Hans" href="https://www.anselbi.com/zh-cn/">
     <link rel="alternate" hreflang="en" href="https://www.anselbi.com/en/">
@@ -23,7 +23,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-
+    <!-- Cloudflare Web Analytics -->
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"e2bd5f7ddf3049f3b2d845ae133f7276"}'></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Noto+Serif+TC:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
     <style>* { margin: 0; padding: 0; box-sizing: border-box; }
 body {
@@ -249,6 +250,7 @@ html[lang="zh-CN"] .sticker-name-zh {
 .work-desc { font-size: 0.85rem; color: #b8b0a2; line-height: 1.6; margin-bottom: 20px; }
 .store-badge img { height: 42px; width: auto; border-radius: 10px; }
 .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+.grid-stickers { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 28px; }
 .sticker-card { background: #1a1a1a; border: 1px solid rgba(230,226,218,0.08); padding: 24px 20px; transition: 0.2s; }
 .sticker-card:hover { border-color: rgba(201,170,123,0.4); }
 .sticker-icon { width: 70px; height: 70px; border-radius: 18px; margin-bottom: 16px; object-fit: cover; }
@@ -275,7 +277,7 @@ footer { text-align: center; padding: 24px 0 40px; font-size: 0.7rem; color: #6a
 @media (max-width: 1024px) {
     .container { padding: 0 32px; }
     .grid-3 { grid-template-columns: 1fr 1fr; gap: 28px; }
-    .grid-4 { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .grid-4, .grid-stickers { grid-template-columns: repeat(2, 1fr); gap: 24px; }
     .portrait-frame { width: 160px; height: 160px; }
     .name-title h1 { font-size: 2.5rem; }
 }
@@ -299,7 +301,7 @@ footer { text-align: center; padding: 24px 0 40px; font-size: 0.7rem; color: #6a
     .curator-head { margin: 50px 0 24px; scroll-margin-top: 80px; }
     .curator-head h3 { font-size: 1.4rem; text-align: center; }
     .curator-head .sub { text-align: center; font-size: 0.65rem; }
-    .grid-3, .grid-4 { grid-template-columns: 1fr; }
+    .grid-3, .grid-4, .grid-stickers { grid-template-columns: 1fr; }
     .curator-block { padding: 32px 24px; }
     .curator-text { font-size: 0.9rem; }
     .list-role { width: 100%; font-size: 0.75rem; }
@@ -419,16 +421,17 @@ footer { text-align: center; padding: 24px 0 40px; font-size: 0.7rem; color: #6a
             <h2>原創應用</h2>
         </div>
         <div class="grid-3">
-            <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/ProfitFairy_icon.png" alt="ProfitFairy"></div><div class="card-info"><div class="work-title">ProfitFairy 毛利率利潤定價計算機</div><div class="work-sub">商業・生產力工具</div><div class="work-desc">專為電商與實體商家設計的利潤管理系統。一鍵拆分成本、運費、稅金、平台費，即時計算多項參數混搭並支援歷史紀錄查看，讓每個商業決策精準透明。</div><div class="store-badge"><a href="https://apps.apple.com/app/id6740332215" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
-            <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/RubyDays_icon.png" alt="RubyDays"></div><div class="card-info"><div class="work-title">小主私密日記-經期排卵備孕日曆・老中醫古法調理・無廣告</div><div class="work-sub">養生閣典籍摘錄｜可上鎖手札・週期智能提醒</div><div class="work-desc">經期排卵備孕日曆，搭配可上鎖每日筆記與老中醫養生閣典籍專區。摘錄四部中醫經典，依週期階段提供起居、穴位與飲食參考。全程無廣告。</div><div class="store-badge"><a href="https://apps.apple.com/app/id6752606069" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
-            <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/AIOS_icon.png" alt="艾奧斯海"></div><div class="card-info"><div class="work-title">艾奧斯海</div><div class="work-sub">合併潮印，喚醒女神</div><div class="work-desc">在艾奧斯海乘風啟航，合併潮印、喚醒女神，打撈深淵記憶。經典合併玩法搭配深淵記憶小遊戲與女神法典收集，修復封印、逐關喚醒守護者。</div><div class="store-badge"><a href="https://apps.apple.com/app/id6745821288" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
+            <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/ProfitFairy_icon.png" alt="ProfitFairy"></div><div class="card-info"><div class="work-title">ProfitFairy 成本毛利率利潤試算</div><div class="work-sub">售價與費用結構分析，賣家專用工具</div><div class="work-desc">輸入成本、售價或毛利率，立刻得到最終價格、毛利與毛利率。三欄試算自動連動，支援折扣、平台手續費、含稅與運費等進階參數。內建成本分析頁可產出可分享的毛利結構長圖，歷史紀錄完整保存與批次管理。依裝置地區自動採用熟悉的全球數字格式，涵蓋 12,345.67 等常見寫法。五語系介面，每一筆都算得清楚。</div><div class="store-badge"><a href="https://apps.apple.com/app/id6740332215" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
+            <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/RubyDays_icon.png" alt="RubyDays"></div><div class="card-info"><div class="work-title">小主私密日記，週期月曆與手札</div><div class="work-sub">記錄每一天，溫柔看懂自己的節奏</div><div class="work-desc">週期與備孕月曆、可上鎖手札，以及依週期階段呈現的養生閣典藏。記錄經期、推算排卵與安全期，圖表與提醒助你從容規劃。養生閣融匯《黃帝內經》《本草綱目》《傅青主女科》《針灸甲乙經》精要，依經期階段整理起居、典籍飲食、情緒與日常讀物。資料存於本機，可選 iCloud 私密同步。文字搭配瞬間照片，Face ID 守護個人內容。古籍摘錄僅供日常閱讀參考。全程無廣告。</div><div class="store-badge"><a href="https://apps.apple.com/app/id6752606069" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
+            <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/AIOS_icon.png?v=9cfe6de2" alt="艾奧斯海"></div><div class="card-info"><div class="work-title">艾奧斯海</div><div class="work-sub">合併潮印，喚醒女神</div><div class="work-desc">在艾奧斯海乘風啟航。滑動合併潮印，喚醒三十七位女神，打撈深淵記憶。三大入口涵蓋經典合併關卡、深淵記憶輕鬆小遊戲，以及女神法典圖鑑收集。海洋主題視覺與療癒氛圍，適合碎片時間。Game Center 成就與每日試煉，五語系介面持續更新。</div><div class="store-badge"><a href="https://apps.apple.com/app/id6745821288" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
         </div>
 
         <div id="stickers-title" class="section-header">
             <h2>iMessage 貼圖</h2>
         </div>
-        <div class="grid-4">
+        <div class="grid-stickers">
             <div class="sticker-card"><img class="sticker-icon" src="/images/shiba_icon.png" alt="Taiger Shiba"><div class="sticker-name-zh">【台客柴】阿柴的江湖日常：俗擱有力篇</div><div class="sticker-sub">藍白拖＋復古安全帽＋超派口頭禪，看起來很兇其實超北爛</div><div class="sticker-desc">聊天沒話題？那是因為你少了一隻「台客柴」！本系列收錄江湖吐槽神句與爆笑表情，專門對付已讀不回、需要被狠嗆的朋友。從藍白拖到復古安全帽，超派口頭禪俗擱有力，台到沒朋友。</div><div class="store-badge"><a href="https://apps.apple.com/app/id6761126835" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
+            <div class="sticker-card"><img class="sticker-icon" src="/images/shiba_daily_icon.png" alt="Taiwan Shiba Daily"><div class="sticker-name-zh">【台灣柴】日常純圖篇</div><div class="sticker-sub">40張無字柴犬・藍白拖＋復古安全帽</div><div class="sticker-desc">同一隻超派阿柴，純圖無字更百搭！日常表情、北爛姿態一次收齊，iMessage 聊天不尬聊。8/31 前限時免費。</div></div>
             <div class="sticker-card"><img class="sticker-icon" src="/images/MeowCAT-1_icon.png" alt="MeowCAT-1"><div class="sticker-name-zh">MeowCAT-1: 辦公室貓爪</div><div class="sticker-sub">你的每日可愛劑量 / Your Daily Dose of Cuteness</div><div class="sticker-desc">踏入辦公室日常！冒雨通勤、KPI 奮戰，每個瞬間變得可愛又共鳴。</div><div class="store-badge"><a href="https://apps.apple.com/app/id6755613138" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
             <div class="sticker-card"><img class="sticker-icon" src="/images/MeowCAT-2_icon.png" alt="MeowCAT-2"><div class="sticker-name-zh">MeowCAT-2: 職場崩潰日記</div><div class="sticker-sub">囂張不改，崩潰常來 / Sassy &amp; Stressed-out</div><div class="sticker-desc">收件箱九頭蛇、老闆緊急要求，辦公貓魂壓力山大，嗆辣態度陪你度過崩潰日常。</div><div class="store-badge"><a href="https://apps.apple.com/app/id6755665538" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
             <div class="sticker-card"><img class="sticker-icon" src="/images/MeowCAT-3_icon.png" alt="MeowCAT-3"><div class="sticker-name-zh">MeowCAT-3: 隔間喵趣</div><div class="sticker-sub">用一聲喵，說一切 / Say It with a Meow</div><div class="sticker-desc">無限會議、鍵盤旁睏倦小貓，肉球擊掌慶祝成功，毛茸茸夥伴療癒日常。</div><div class="store-badge"><a href="https://apps.apple.com/app/id6755676294" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>

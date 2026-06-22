@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const fs = require("fs");
 const path = require("path");
+const crypto = require("crypto");
 
 const ROOT = path.join(__dirname, "..");
 const SITE = "https://www.anselbi.com";
@@ -26,6 +27,13 @@ const privacyContent = require("../content/privacy");
 const homeCss = fs.readFileSync(path.join(ROOT, "assets/home.css"), "utf8");
 const privacyCss = fs.readFileSync(path.join(ROOT, "assets/privacy.css"), "utf8");
 
+const aiosIconPath = path.join(ROOT, "images/AIOS_icon.png");
+const aiosIconSrc = `/images/AIOS_icon.png?v=${crypto
+  .createHash("md5")
+  .update(fs.readFileSync(aiosIconPath))
+  .digest("hex")
+  .slice(0, 8)}`;
+
 const faviconHead = `    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">`;
@@ -49,6 +57,11 @@ function esc(text) {
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
+}
+
+function stickerStoreBadge(appId) {
+  if (!appId) return "";
+  return `<div class="store-badge"><a href="https://apps.apple.com/app/id${esc(appId)}" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div>`;
 }
 
 function hreflangTags(currentLang, pageType) {
@@ -159,14 +172,15 @@ ${analyticsHead}
         <div class="grid-3">
             <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/ProfitFairy_icon.png" alt="ProfitFairy"></div><div class="card-info"><div class="work-title">${esc(c.pf_title)}</div><div class="work-sub">${esc(c.pf_sub)}</div><div class="work-desc">${esc(c.pf_desc)}</div><div class="store-badge"><a href="https://apps.apple.com/app/id6740332215" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
             <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/RubyDays_icon.png" alt="RubyDays"></div><div class="card-info"><div class="work-title">${esc(c.ruby_title)}</div><div class="work-sub">${esc(c.ruby_sub)}</div><div class="work-desc">${esc(c.ruby_desc)}</div><div class="store-badge"><a href="https://apps.apple.com/app/id6752606069" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
-            <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/AIOS_icon.png" alt="${esc(c.aios_title)}"></div><div class="card-info"><div class="work-title">${esc(c.aios_title)}</div><div class="work-sub">${esc(c.aios_sub)}</div><div class="work-desc">${esc(c.aios_desc)}</div><div class="store-badge"><a href="https://apps.apple.com/app/id6745821288" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
+            <div class="work-card"><div class="card-media"><img class="app-icon" src="${aiosIconSrc}" alt="${esc(c.aios_title)}"></div><div class="card-info"><div class="work-title">${esc(c.aios_title)}</div><div class="work-sub">${esc(c.aios_sub)}</div><div class="work-desc">${esc(c.aios_desc)}</div><div class="store-badge"><a href="https://apps.apple.com/app/id6745821288" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
         </div>
 
         <div id="stickers-title" class="section-header">
             <h2>${esc(c.sticker_title)}</h2>
         </div>
-        <div class="grid-4">
+        <div class="grid-stickers">
             <div class="sticker-card"><img class="sticker-icon" src="/images/shiba_icon.png" alt="Taiger Shiba"><div class="sticker-name-zh">${esc(c.taiger_name)}</div><div class="sticker-sub">${esc(c.taiger_sub)}</div><div class="sticker-desc">${esc(c.taiger_desc)}</div><div class="store-badge"><a href="https://apps.apple.com/app/id6761126835" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
+            <div class="sticker-card"><img class="sticker-icon" src="/images/shiba_daily_icon.png" alt="Taiwan Shiba Daily"><div class="sticker-name-zh">${esc(c.shiba_daily_name)}</div><div class="sticker-sub">${esc(c.shiba_daily_sub)}</div><div class="sticker-desc">${esc(c.shiba_daily_desc)}</div>${stickerStoreBadge(c.shiba_daily_app_id)}</div>
             <div class="sticker-card"><img class="sticker-icon" src="/images/MeowCAT-1_icon.png" alt="MeowCAT-1"><div class="sticker-name-zh">${esc(c.meow1_name)}</div><div class="sticker-sub">${esc(c.meow1_sub)}</div><div class="sticker-desc">${esc(c.meow1_desc)}</div><div class="store-badge"><a href="https://apps.apple.com/app/id6755613138" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
             <div class="sticker-card"><img class="sticker-icon" src="/images/MeowCAT-2_icon.png" alt="MeowCAT-2"><div class="sticker-name-zh">${esc(c.meow2_name)}</div><div class="sticker-sub">${esc(c.meow2_sub)}</div><div class="sticker-desc">${esc(c.meow2_desc)}</div><div class="store-badge"><a href="https://apps.apple.com/app/id6755665538" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
             <div class="sticker-card"><img class="sticker-icon" src="/images/MeowCAT-3_icon.png" alt="MeowCAT-3"><div class="sticker-name-zh">${esc(c.meow3_name)}</div><div class="sticker-sub">${esc(c.meow3_sub)}</div><div class="sticker-desc">${esc(c.meow3_desc)}</div><div class="store-badge"><a href="https://apps.apple.com/app/id6755676294" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" style="height:36px;" alt="App Store"></a></div></div>
@@ -317,5 +331,12 @@ Allow: /
 Sitemap: ${SITE}/sitemap.xml
 `
 );
+
+const securityTxt = `Contact: mailto:hi@anselbi.com
+Expires: 2027-06-17T00:00:00.000Z
+Preferred-Languages: zh-TW, en
+Canonical: ${SITE}/.well-known/security.txt
+`;
+writeFile(".well-known/security.txt", securityTxt);
 
 console.log("Done.");
