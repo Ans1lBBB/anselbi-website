@@ -1,8 +1,8 @@
 name: Deploy to Cloudflare Pages
 
+# Local deploy is default: scripts/deploy-cloudflare.sh (see .cursorrules 0-H).
+# This workflow is manual-only and does not run on push.
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 jobs:
