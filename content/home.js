@@ -43,10 +43,10 @@ module.exports = {
     taiger_desc:
       "聊天沒話題？那是因為你少了一隻「台客柴」！本系列收錄江湖吐槽神句與爆笑表情，專門對付已讀不回、需要被狠嗆的朋友。從藍白拖到復古安全帽，超派口頭禪俗擱有力，台到沒朋友。",
     shiba_daily_name: "【台灣柴】日常純圖篇",
-    shiba_daily_sub: "40張無字柴犬・藍白拖＋復古安全帽",
+    shiba_daily_sub: "藍白拖柴犬・無字純圖40張",
     shiba_daily_desc:
-      "同一隻超派阿柴，純圖無字更百搭！日常表情、北爛姿態一次收齊，iMessage 聊天不尬聊。8/31 前限時免費。",
-    shiba_daily_app_id: "",
+      "同一隻超派阿柴，純圖無字更百搭！藍白拖、復古安全帽，日常表情與北爛姿態一次收齊，聊天不漏接。",
+    shiba_daily_app_id: "6783024876",
     meow1_name: "MeowCAT-1: 辦公室貓爪",
     meow1_sub: "你的每日可愛劑量 / Your Daily Dose of Cuteness",
     meow1_desc: "踏入辦公室日常！冒雨通勤、KPI 奮戰，每個瞬間變得可愛又共鳴。",
@@ -124,10 +124,10 @@ module.exports = {
     taiger_desc:
       "聊天没话题？那是因为你少了一只「台客柴」！本系列收录江湖吐槽神句与爆笑表情，专门对付已读不回、需要被狠呛的朋友。从蓝白拖到复古安全帽，超派口头禅俗搁有力，台到没朋友。",
     shiba_daily_name: "【台湾柴】日常纯图篇",
-    shiba_daily_sub: "40张无字柴犬・蓝白拖＋复古安全帽",
+    shiba_daily_sub: "蓝白拖柴犬・无字纯图40张",
     shiba_daily_desc:
-      "同一只超派阿柴，纯图无字更百搭！日常表情、北烂姿态一次收齐，iMessage 聊天不尬聊。8/31 前限时免费。",
-    shiba_daily_app_id: "",
+      "同一只超派阿柴，纯图无字更百搭！蓝白拖、复古安全帽，日常表情与北烂姿态一次收齐，聊天不漏接。",
+    shiba_daily_app_id: "6783024876",
     meow1_name: "MeowCAT-1: 办公室猫爪",
     meow1_sub: "你的每日可爱剂量 / Your Daily Dose of Cuteness",
     meow1_desc: "踏入办公室日常！冒雨通勤、KPI 奋战，每个瞬间变得可爱又共鸣。",
@@ -204,11 +204,11 @@ module.exports = {
     taiger_sub: "Blue slippers + retro helmet + gangster phrases. Looks fierce but hilariously silly",
     taiger_desc:
       "No chat topics? You're missing Taiger Shiba! Gangster one-liners and hilarious expressions for ghosting friends and spicy group chats. Blue slippers, retro helmet, Taiwan swagger—collect them all.",
-    shiba_daily_name: "Taiwan Shiba: Daily Expressions",
-    shiba_daily_sub: "40 text-free Shiba stickers for iMessage",
+    shiba_daily_name: "Taiwan Shiba Daily Expressions",
+    shiba_daily_sub: "40 text-free Shiba stickers",
     shiba_daily_desc:
-      "Same fierce Taiwan Shiba—zero text on the art. Everyday reactions and poses with blue slippers and a retro helmet. FREE until Aug 31.",
-    shiba_daily_app_id: "",
+      "Same fierce Taiwan Shiba—zero text on the art. Blue slippers, retro helmet, and everyday reactions for any chat.",
+    shiba_daily_app_id: "6783024876",
     meow1_name: "MeowCAT-1: Office Paws",
     meow1_sub: "Your Daily Dose of Cuteness",
     meow1_desc: "Office life reimagined! Rainy commutes, KPI battles—every moment cuter and more relatable.",
@@ -286,10 +286,10 @@ module.exports = {
     taiger_desc:
       "話題に困った？台客柴がいないだけかも！台湾スラングの名セリフと爆笑スタンプで、既読スルーや辛口チャットに最適。ビーチサンダルからレトロヘルメットまで、台湾のノリ満載。",
     shiba_daily_name: "台湾柴：デイリー表情",
-    shiba_daily_sub: "文字なし柴犬ステッカー40枚",
+    shiba_daily_sub: "文字なし柴犬40枚・日常",
     shiba_daily_desc:
-      "同じ台湾柴キャラの文字なし版。ビーチサンダル＋レトロヘルメットの日常表情。2026年8月31日まで無料。",
-    shiba_daily_app_id: "",
+      "同じ台湾柴、今回は文字なし。ビーチサンダルとレトロヘルメットの柴犬が、日常のリアクションを届けます。",
+    shiba_daily_app_id: "6783024876",
     meow1_name: "MeowCAT-1: オフィスネコ",
     meow1_sub: "あなたの毎日の可愛さの摂取量",
     meow1_desc: "オフィスライフを再解釈！雨の通勤、KPIとの戦い—すべての瞬間がもっとかわいく、共感できるように。",
@@ -367,10 +367,10 @@ module.exports = {
     taiger_desc:
       "대화 주제가 없나요? 타이거 시바가 없어서 그렇습니다! 대만식 명대사와 웃긴 이모티콘으로 읽씹 친구와 매운맛 채팅에 딱 맞습니다. 슬리퍼부터 레트로 헬멧까지, 대만 감성 가득.",
     shiba_daily_name: "타이완 시바: 데일리 스티커",
-    shiba_daily_sub: "글자 없는 시바 스티커 40장",
+    shiba_daily_sub: "글자 없는 시바 40장・일상",
     shiba_daily_desc:
-      "같은 타이완 시바 캐릭터의 글자 없는 버전. 슬리퍼+레트로 헬멧 일상 표정. 2026년 8월 31일까지 무료.",
-    shiba_daily_app_id: "",
+      "같은 타이완 시바, 이번엔 글자 없이. 슬리퍼와 레트로 헬멧을 쓴 시바가 일상 리액션을 전해 드립니다.",
+    shiba_daily_app_id: "6783024876",
     meow1_name: "MeowCAT-1: 사무실 고양이",
     meow1_sub: "당신의 매일 매력 복용량",
     meow1_desc: "오피스 라이프를 새롭게! 비 오는 출근, KPI 전투—모든 순간이 더 귀엽고 공감되게.",
