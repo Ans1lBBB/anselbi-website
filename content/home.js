@@ -30,7 +30,7 @@ module.exports = {
     pf_sub: "售價與費用結構分析，賣家專用工具",
     pf_desc:
       "輸入成本、售價或毛利率，立刻得到最終價格、毛利與毛利率。三欄試算自動連動，支援折扣、平台手續費、含稅與運費等進階參數。內建成本分析頁可產出可分享的毛利結構長圖，歷史紀錄完整保存與批次管理。依裝置地區自動採用熟悉的全球數字格式，涵蓋 12,345.67 等常見寫法。五語系介面，每一筆都算得清楚。",
-    ruby_title: "小主私密日記，週期月曆與手札",
+    ruby_title: "小主私密日記 · 老中醫月經養生週期手札",
     ruby_sub: "記錄每一天，溫柔看懂自己的節奏",
     ruby_desc:
       "週期與備孕月曆、可上鎖手札，以及依週期階段呈現的養生閣典藏。記錄經期、推算排卵與安全期，圖表與提醒助你從容規劃。養生閣融匯《黃帝內經》《本草綱目》《傅青主女科》《針灸甲乙經》精要，依經期階段整理起居、典籍飲食、情緒與日常讀物。資料存於本機，可選 iCloud 私密同步。文字搭配瞬間照片，Face ID 守護個人內容。古籍摘錄僅供日常閱讀參考。全程無廣告。",
@@ -111,7 +111,7 @@ module.exports = {
     pf_sub: "售价与费用结构分析，卖家专用工具",
     pf_desc:
       "输入成本、售价或毛利率，立刻得到最终价格、毛利与毛利率。三栏试算自动联动，支持折扣、平台手续费、含税与运费等进阶参数。内置成本分析页可产出可分享的毛利结构长图，历史记录完整保存与批次管理。依装置地区自动采用熟悉的全球数字格式，涵盖 12,345.67 等常见写法。五语系界面，每一笔都算得清楚。",
-    ruby_title: "小主私密日记，周期月历与手札",
+    ruby_title: "小主私密日记 · 老中医月经养生周期手札",
     ruby_sub: "记录每一天，温柔看懂自己的节奏",
     ruby_desc:
       "周期与备孕月历、可上锁手札，以及依周期阶段呈现的养生阁典藏。记录经期、推算排卵与安全期，图表与提醒助你从容规划。养生阁融汇《黄帝内经》《本草纲目》《傅青主女科》《针灸甲乙经》精要，依经期阶段整理起居、典籍饮食、情绪与日常读物。资料存于本机，可选 iCloud 私密同步。文字搭配瞬间照片，Face ID 守护个人内容。古籍摘录仅供日常阅读参考。全程无广告。",
@@ -192,7 +192,7 @@ module.exports = {
     pf_sub: "Price and fee structure tool",
     pf_desc:
       "Enter cost, sale price, or target margin to see final price, profit, and margin instantly. Three linked fields with advanced options for discounts, platform fees, tax, and shipping. Built-in cost analysis exports shareable breakdown images; full history with sort, filter, and batch actions. Follows your device region for global number formats such as 12,345.67. Available in five languages.",
-    ruby_title: "RubyDays · Cycle Calendar & Private Diary",
+    ruby_title: "RubyDays · Classical Menstrual Wellness Journal",
     ruby_sub: "Record each day. Gently understand your rhythm.",
     ruby_desc:
       "Cycle and fertility calendar, lockable diary, and the Wellness Pavilion with curated excerpts for each phase. Track periods, estimate ovulation, and plan with charts and reminders. The Pavilion draws on four classical texts, including seasonal living rhythms, herbal dietary notes, women's classical readings, and meridian literature. Data stays on device with optional private iCloud sync. Words with Moment photos, protected by Face ID. Excerpts are for daily reading reference only. Completely ad free.",
@@ -273,7 +273,7 @@ module.exports = {
     pf_sub: "売価と費用構成の連動分析ツール",
     pf_desc:
       "原価、販売価格、利益率のいずれかを入力するだけで、最終価格、粗利、利益率を即表示。3項目連動計算と割引、手数料、税、送料などの高度な設定に対応。原価分析ページから共有可能な粗利内訳長画像を出力。履歴の保存、並べ替え、一括管理も可能。端末の地域設定に合わせた数字表記に対応し、12,345.67 などの表記もそのまま利用できます。5言語対応。",
-    ruby_title: "小主私密日記 · 周期カレンダーと手札",
+    ruby_title: "小主私密日記 · 古典養生の月経周期手帳",
     ruby_sub: "毎日を記録し、自分のリズムをやさしく読み解く",
     ruby_desc:
       "周期と妊活カレンダー、ロック可能な手札、周期段階に合わせた養生閣の典蔵。生理記録、排卵と安全期の推定、グラフとリマインダーで計画をサポート。養生閣は『黄帝内経』『本草綱目』『傅青主女科』『鍼灸甲乙経』の精要を融合し、起居、典籍的な食事、気持ちの読み物を段階ごとに整理。データは端末内保存、iCloud プライベート同期に対応。文字と「瞬間」写真、Face ID で保護。古籍の摘録は日常の参考用。広告なし。",
@@ -354,7 +354,7 @@ module.exports = {
     pf_sub: "판매가와 비용 구조 연동 분석",
     pf_desc:
       "원가, 판매가, 목표 마진 중 하나만 입력하면 최종 가격, 이익, 이익률을 즉시 확인할 수 있습니다. 3항목 연동 계산과 할인, 수수료, 세금, 배송비 등 고급 옵션을 지원합니다. 원가 분석 페이지에서 공유 가능한 마진 내역 긴 이미지를 출력하고, 기록 저장과 일괄 관리도 가능합니다. 기기 지역 설정에 맞는 숫자 표기를 지원하며 12,345.67 같은 형식도 그대로 사용할 수 있습니다. 5개 언어 지원.",
-    ruby_title: "小主私密日記 · 주기 달력과手札",
+    ruby_title: "小主私密日記 · 전통 양생 생리 주기 수첩",
     ruby_sub: "매일을 기록하고, 나만의 리듬을 부드럽게 읽어가세요",
     ruby_desc:
       "주기와 임신 준비 달력, 잠금 가능한手札, 주기 단계에 맞춘 양생각 고전 발췌. 생리 기록, 배란과 안전 기간 추정, 차트와 알림으로 계획을 돕습니다. 양생각은 『황제내경』『본초강목』『부청주여과』『침구갑을경』의 요지를 담아, 단계별로 일상, 고전 식문, 마음의 읽을거리를 정리합니다. 데이터는 기기 저장, iCloud 비공개 동기화 선택 가능. 글과 「순간」 사진, Face ID 보호. 고전 발췌는 일상 참고용. 광고 없음.",
