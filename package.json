@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "build": "node scripts/resolve-analytics.js && node scripts/build.js",
-    "stats": "node scripts/website-stats.js"
+    "stats": "node scripts/website-stats.js",
+    "harden": "bash scripts/harden-security.sh"
   }
 }

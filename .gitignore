@@ -2,3 +2,6 @@
 *.log
 node_modules/
 .cf-analytics-token
+.env
+.env.*
+!.env.example

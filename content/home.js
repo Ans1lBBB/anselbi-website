@@ -38,12 +38,12 @@ module.exports = {
     aios_sub: "合併潮印，喚醒女神",
     aios_desc:
       "在艾奧斯海乘風啟航。滑動合併潮印，喚醒三十七位女神，打撈深淵記憶。三大入口涵蓋經典合併關卡、深淵記憶輕鬆小遊戲，以及女神法典圖鑑收集。海洋主題視覺與療癒氛圍，適合碎片時間。Game Center 成就與每日試煉，五語系介面持續更新。",
-    taiger_name: "【台客柴】阿柴的江湖日常：俗擱有力篇",
+    taiger_name: "《台客柴：江湖日常》",
     taiger_sub: "藍白拖＋復古安全帽＋超派口頭禪，看起來很兇其實超北爛",
     taiger_desc:
       "聊天沒話題？那是因為你少了一隻「台客柴」！本系列收錄江湖吐槽神句與爆笑表情，專門對付已讀不回、需要被狠嗆的朋友。從藍白拖到復古安全帽，超派口頭禪俗擱有力，台到沒朋友。",
     shiba_daily_name: "台客柴：日常篇",
-    shiba_daily_sub: "藍白拖+復古安全帽・無字純圖40張",
+    shiba_daily_sub: "藍白拖+復古安全帽，無字純圖40張",
     shiba_daily_desc:
       "聊天室缺一位狠角色嗎。台客柴日常篇來了。四十張純圖無字貼圖，藍白拖和復古安全帽，超派表情一次收齊。沒有台詞綁死你，已讀不回、朋友北爛、群組失控，用一張貼圖就把心情喊出來。深淺色聊天背景都清楚。愛台味愛柴犬的你，這包會天天開。",
     shiba_daily_app_id: "6783024876",
@@ -119,12 +119,12 @@ module.exports = {
     aios_sub: "合并潮印，唤醒女神",
     aios_desc:
       "在艾奥斯海乘风启航。滑动合并潮印，唤醒三十七位女神，打捞深渊记忆。三大入口涵盖经典合并关卡、深渊记忆轻松小游戏，以及女神法典图鉴收集。海洋主题视觉与治愈氛围，适合碎片时间。Game Center 成就与每日试炼，五语系界面持续更新。",
-    taiger_name: "【台客柴】阿柴的江湖日常：俗搁有力篇",
+    taiger_name: "台客柴：江湖日常",
     taiger_sub: "蓝白拖＋复古安全帽＋超派口头禅，看起来很凶其实超北烂",
     taiger_desc:
       "聊天没话题？那是因为你少了一只「台客柴」！本系列收录江湖吐槽神句与爆笑表情，专门对付已读不回、需要被狠呛的朋友。从蓝白拖到复古安全帽，超派口头禅俗搁有力，台到没朋友。",
     shiba_daily_name: "台客柴：日常篇",
-    shiba_daily_sub: "蓝白拖+复古安全帽・无字纯图40张",
+    shiba_daily_sub: "蓝白拖+复古安全帽，无字纯图40张",
     shiba_daily_desc:
       "聊天室缺一位狠角色吗。台客柴日常篇来了。四十张纯图无字贴纸，蓝白拖和复古安全帽，超派表情一次收齐。没有台词绑死你，已读不回、朋友北烂、群组失控，用一张贴纸就把心情喊出来。深浅色聊天背景都清楚。爱台味爱柴犬的你，这包会天天开。",
     shiba_daily_app_id: "6783024876",
@@ -169,7 +169,7 @@ module.exports = {
     description:
       "Curator and indie app developer Ansel Bi. Nearly 20 years curating ~60 exhibitions across four continents. Bringing curatorial aesthetics to original apps and iMessage stickers.",
     keywords:
-      "Ansel Bi, curator, indie developer, ProfitFairy, RubyDays, AIOS Sea, Taiger Shiba, MeowCAT",
+      "Ansel Bi, curator, indie developer, ProfitFairy, RubyDays, AIOS Sea, Taiwan Shiba, MeowCAT",
     chinese_name: "",
     name_en: "Ansel Bi",
     nav_brand: "Ansel Bi",
@@ -200,14 +200,14 @@ module.exports = {
     aios_sub: "Merge tides, awaken goddesses",
     aios_desc:
       "Set sail on AIOS Sea. Merge tide-marks, awaken thirty-seven goddesses, and recover memories from the abyss. Three gateways cover classic merge stages, Abyss Memories minigames, and the Goddess Codex collection. Ocean themed visuals with a calm mood for short sessions. Game Center achievements, daily trials, and five-language support with ongoing updates.",
-    taiger_name: "Taiger Shiba: Jianghu Daily",
+    taiger_name: "Taiwan Shiba: Gangster Life",
     taiger_sub: "Blue slippers + retro helmet + gangster phrases. Looks fierce but hilariously silly",
     taiger_desc:
-      "No chat topics? You're missing Taiger Shiba! Gangster one-liners and hilarious expressions for ghosting friends and spicy group chats. Blue slippers, retro helmet, Taiwan swagger—collect them all.",
-    shiba_daily_name: "Taiger Shiba: Daily",
+      "No chat topics? You're missing Taiwan Shiba! Gangster one-liners and hilarious expressions for ghosting friends and spicy group chats. Blue slippers, retro helmet, Taiwan swagger. Collect them all.",
+    shiba_daily_name: "Taiwan Shiba: Daily",
     shiba_daily_sub: "Blue slippers retro helmet text free 40 stickers",
     shiba_daily_desc:
-      "Your group chat needs a louder voice. Taiger Shiba Daily brings forty text free stickers with blue slippers and a retro helmet. No slogans on the art. Just bold poses for ghosting friends, chaotic groups, and everyday meltdowns. Crisp on light and dark backgrounds. Collect it if you live in memes.",
+      "Your group chat needs a louder voice. Taiwan Shiba: Daily brings forty text free stickers with blue slippers and a retro helmet. No slogans on the art. Just bold poses for ghosting friends, chaotic groups, and everyday meltdowns. Crisp on light and dark backgrounds. Collect it if you live in memes.",
     shiba_daily_app_id: "6783024876",
     meow1_name: "MeowCAT-1: Office Paws",
     meow1_sub: "Your Daily Dose of Cuteness",
@@ -281,14 +281,14 @@ module.exports = {
     aios_sub: "潮を合わせ女神を醒めよう",
     aios_desc:
       "AIOS Sea を渡り、潮印を合わせ、37 柱の女神を醒め、深淵の記憶を取り戻せ。クラシックなマージ、深淵の記憶ミニゲーム、女神法典の図鑑収集の3つの入口。海をテーマにした癒しのビジュアルでスキマ時間に最適。Game Center 実績とデイリークエスト、5言語対応で継続的に更新。",
-    taiger_name: "【台客柴】阿柴的江湖日常：俗擱有力篇",
+    taiger_name: "Taiwan Shiba: Gangster Life",
     taiger_sub: "藍白拖＋復古安全帽＋超派口頭禪，看起來很兇其實超北爛",
     taiger_desc:
-      "話題に困った？台客柴がいないだけかも！台湾スラングの名セリフと爆笑スタンプで、既読スルーや辛口チャットに最適。ビーチサンダルからレトロヘルメットまで、台湾のノリ満載。",
-    shiba_daily_name: "台客柴：日常篇",
+      "話題に困った？Taiwan Shiba がいないだけかも！台湾スラングの名セリフと爆笑スタンプで、既読スルーや辛口チャットに最適。ビーチサンダルからレトロヘルメットまで、台湾のノリ満載。",
+    shiba_daily_name: "Taiwan Shiba: Daily",
     shiba_daily_sub: "青ビーチサンダル復古ヘルメット無字純図40枚",
     shiba_daily_desc:
-      "グループトークに強い味方が欲しいなら。台客柴日常篇。文字なしピュア表情40枚。青ビーチサンダルとレトロヘルメットの柴犬が、既読スルーから日常のツッコミまで一発で伝わる。セリフなしだから言語も世代も選ばない。ライトもダークも見やすい。柴犬好きは毎日使いたくなる。",
+      "グループトークに強い味方が欲しいなら。Taiwan Shiba: Daily。文字なしピュア表情40枚。青ビーチサンダルとレトロヘルメットの柴犬が、既読スルーから日常のツッコミまで一発で伝わる。セリフなしだから言語も世代も選ばない。ライトもダークも見やすい。柴犬好きは毎日使いたくなる。",
     shiba_daily_app_id: "6783024876",
     meow1_name: "MeowCAT-1: オフィスネコ",
     meow1_sub: "あなたの毎日の可愛さの摂取量",
@@ -331,7 +331,7 @@ module.exports = {
     description:
       "큐레이터이자 인디 앱 개발자 Ansel Bi. 약 20년간 4대륙에서 약 60회의 전시를 기획했습니다. 큐레이션 미학을 오리지널 앱과 iMessage 스티커에 담습니다.",
     keywords:
-      "Ansel Bi, 큐레이터, 인디 개발자, ProfitFairy, RubyDays, AIOS Sea, 타이거 시바, MeowCAT",
+      "Ansel Bi, 큐레이터, 인디 개발자, ProfitFairy, RubyDays, AIOS Sea, Taiwan Shiba, MeowCAT",
     chinese_name: "",
     name_en: "Ansel Bi",
     nav_brand: "Ansel Bi",
@@ -362,14 +362,14 @@ module.exports = {
     aios_sub: "조수를 합치고 여신을 깨우세요",
     aios_desc:
       "AIOS Sea를 항해하며 조수 표식을 합치고, 37명의 여신을 깨우며 심연의 기억을 되찾으세요. 클래식 머지, 심연의 기억 미니게임, 여신 법전 도감 수집의 세 가지 입구. 바다 테마의 힐링 비주얼로 짧은 휴식에 적합합니다. Game Center 업적과 일일 퀘스트, 5개 언어 지원으로 지속 업데이트.",
-    taiger_name: "【台客柴】阿柴的江湖日常：俗擱有力篇",
+    taiger_name: "Taiwan Shiba: Gangster Life",
     taiger_sub: "藍白拖＋復古安全帽＋超派口頭禪，看起來很兇其實超北爛",
     taiger_desc:
-      "대화 주제가 없나요? 타이거 시바가 없어서 그렇습니다! 대만식 명대사와 웃긴 이모티콘으로 읽씹 친구와 매운맛 채팅에 딱 맞습니다. 슬리퍼부터 레트로 헬멧까지, 대만 감성 가득.",
-    shiba_daily_name: "台客柴：日常篇",
+      "대화 주제가 없나요? Taiwan Shiba가 없어서 그렇습니다! 대만식 명대사와 웃긴 이모티콘으로 읽씹 친구와 매운맛 채팅에 딱 맞습니다. 슬리퍼부터 레트로 헬멧까지, 대만 감성 가득.",
+    shiba_daily_name: "Taiwan Shiba: Daily",
     shiba_daily_sub: "슬리퍼 레트로 헬멧 무글 순수 40장",
     shiba_daily_desc:
-      "단톡방에 목소리 큰 친구가 필요하다면. 타이거 시바 일상편. 글자 없는 순수 표정 40장. 슬리퍼와 레트로 헬멧을 쓴 시바가 읽씹과 일상 드립을 한 장으로 끝낸다. 문구 없이 그림만 있어 어떤 대화에도 잘 어울린다. 라이트와 다크 배경 모두 선명하다. 시바 좋아하면 매일 꺼내 쓰게 된다.",
+      "단톡방에 목소리 큰 친구가 필요하다면. Taiwan Shiba: Daily. 글자 없는 순수 표정 40장. 슬리퍼와 레트로 헬멧을 쓴 시바가 읽씹과 일상 드립을 한 장으로 끝낸다. 문구 없이 그림만 있어 어떤 대화에도 잘 어울린다. 라이트와 다크 배경 모두 선명하다. 시바 좋아하면 매일 꺼내 쓰게 된다.",
     shiba_daily_app_id: "6783024876",
     meow1_name: "MeowCAT-1: 사무실 고양이",
     meow1_sub: "당신의 매일 매력 복용량",
