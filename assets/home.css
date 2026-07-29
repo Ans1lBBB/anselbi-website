@@ -243,6 +243,20 @@ html[lang="zh-CN"] .sticker-name-zh {
 .contact-email-link { display: inline-block; background: transparent; border: 1px solid #c9aa7b; padding: 12px 36px; font-size: 0.8rem; letter-spacing: 2px; color: #c9aa7b; text-decoration: none; transition: 0.2s; border-radius: 40px; }
 .contact-email-link:hover { background: #c9aa7b; color: #121212; }
 .contact-note { margin-top: 16px; font-size: 0.7rem; color: #9e9589; }
+.contact-linkedin {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    color: #9e9589;
+    text-decoration: none;
+    transition: color 0.2s, transform 0.2s;
+}
+.contact-linkedin:hover {
+    color: #c9aa7b;
+    transform: translateY(-1px);
+}
+.contact-linkedin svg { display: block; }
 .privacy-footer { text-align: center; margin-top: 16px; padding-bottom: 32px; }
 .privacy-link { color: #9e9589; text-decoration: none; font-size: 0.7rem; border-bottom: 1px dashed rgba(201,170,123,0.4); }
 footer { text-align: center; padding: 24px 0 40px; font-size: 0.7rem; color: #6a6258; border-top: 1px solid rgba(230,226,218,0.08); }
