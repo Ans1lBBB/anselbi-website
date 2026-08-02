@@ -26,10 +26,10 @@ module.exports = {
     stat3_txt: "大洲足跡",
     apps_title: "原創應用",
     sticker_title: "iMessage 貼圖",
-    pf_title: "ProfitFairy 成本毛利率利潤試算",
-    pf_sub: "售價與費用結構分析，賣家專用工具",
+    pf_title: "ProfitFairy 毛利率和定價計算機",
+    pf_sub: "成本、售價、折扣、平台費與淨利試算",
     pf_desc:
-      "輸入成本、售價或毛利率，立刻得到最終價格、毛利與毛利率。三欄試算自動連動，支援折扣、平台手續費、含稅與運費等進階參數。內建成本分析頁可產出可分享的毛利結構長圖，歷史紀錄完整保存與批次管理。依裝置地區自動採用熟悉的全球數字格式，涵蓋 12,345.67 等常見寫法。五語系介面，每一筆都算得清楚。",
+      "給一個人或兩三人小團隊的定價決策工具。報價前先看清真實毛利，把成本、售價、折扣、平台費、運費與稅務收進同一張全景圖。三欄聯動試算，支援正向與逆向定價。內建成本分析與高清長圖匯出，歷史紀錄完整保存。依裝置地區採用熟悉的數字格式，例如\u00A012,345.67。五語系介面，攤商、店面、接案與小團隊都能用。",
     ruby_title: "小主私密日記 · 老中醫月經養生週期手札",
     ruby_sub: "記錄每一天，溫柔看懂自己的節奏",
     ruby_desc:
@@ -107,10 +107,10 @@ module.exports = {
     stat3_txt: "大洲足迹",
     apps_title: "原创应用",
     sticker_title: "iMessage 贴图",
-    pf_title: "ProfitFairy 成本毛利率利润试算",
-    pf_sub: "售价与费用结构分析，卖家专用工具",
+    pf_title: "ProfitFairy 毛利率和定价计算器",
+    pf_sub: "成本、售价、折扣、平台费与净利润试算",
     pf_desc:
-      "输入成本、售价或毛利率，立刻得到最终价格、毛利与毛利率。三栏试算自动联动，支持折扣、平台手续费、含税与运费等进阶参数。内置成本分析页可产出可分享的毛利结构长图，历史记录完整保存与批次管理。依装置地区自动采用熟悉的全球数字格式，涵盖 12,345.67 等常见写法。五语系界面，每一笔都算得清楚。",
+      "给一个人或两三个人小团队的定价决策工具。报价前先看清真实毛利，把成本、售价、折扣、平台费、运费与税务收进同一张全景图。三栏联动试算，支持正向与逆向定价。内置成本分析与高清长图导出，历史记录完整保存。依装置地区采用熟悉的数字格式，例如\u00A012,345.67。五语系界面，摊商、店面、接案与小团队都能用。",
     ruby_title: "小主私密日记 · 老中医月经养生周期手札",
     ruby_sub: "记录每一天，温柔看懂自己的节奏",
     ruby_desc:
@@ -188,10 +188,10 @@ module.exports = {
     stat3_txt: "Continents",
     apps_title: "Original Apps",
     sticker_title: "iMessage Stickers",
-    pf_title: "ProfitFairy Cost Margin Calc",
-    pf_sub: "Price and fee structure tool",
+    pf_title: "ProfitFairy Margin Calculator",
+    pf_sub: "Cost, Price, Fees and Profit",
     pf_desc:
-      "Enter cost, sale price, or target margin to see final price, profit, and margin instantly. Three linked fields with advanced options for discounts, platform fees, tax, and shipping. Built-in cost analysis exports shareable breakdown images; full history with sort, filter, and batch actions. Follows your device region for global number formats such as 12,345.67. Available in five languages.",
+      "A pricing decision tool for one person or a tiny team of two or three. See real margin before you quote, with cost, price, discounts, platform fees, shipping, and tax in one picture. Three linked fields support forward and reverse pricing. Cost analysis exports shareable long images, with full history saved. Follows your device region for formats such as\u00A012,345.67. Five languages. Built for stalls, storefronts, freelancers, and small teams.",
     ruby_title: "RubyDays · Classical Menstrual Wellness Journal",
     ruby_sub: "Record each day. Gently understand your rhythm.",
     ruby_desc:
@@ -269,10 +269,10 @@ module.exports = {
     stat3_txt: "大陸の足跡",
     apps_title: "オリジナルアプリ",
     sticker_title: "iMessage ステッカー",
-    pf_title: "ProfitFairy 原価粗利率利益試算",
-    pf_sub: "売価と費用構成の連動分析ツール",
+    pf_title: "ProfitFairy 粗利率と価格設定計算機",
+    pf_sub: "原価、販売価格、割引、手数料、純利益を計算",
     pf_desc:
-      "原価、販売価格、利益率のいずれかを入力するだけで、最終価格、粗利、利益率を即表示。3項目連動計算と割引、手数料、税、送料などの高度な設定に対応。原価分析ページから共有可能な粗利内訳長画像を出力。履歴の保存、並べ替え、一括管理も可能。端末の地域設定に合わせた数字表記に対応し、12,345.67 などの表記もそのまま利用できます。5言語対応。",
+      "ひとり起業や少人数チームのための定価意思決定ツール。見積前に本当の粗利を確認し、原価、販売価格、割引、手数料、送料、税金を一つの全景図にまとめます。3項目連動で順方向と逆算に対応。原価分析と高精細な縦長画像の書き出し、履歴保存も可能。端末の地域設定に合わせた数字表記に対応し、例えば\u00A012,345.67。5言語対応。屋台、店舗、フリーランス、小規模チーム向け。",
     ruby_title: "小主私密日記 · 古典養生の月経周期手帳",
     ruby_sub: "毎日を記録し、自分のリズムをやさしく読み解く",
     ruby_desc:
@@ -350,10 +350,10 @@ module.exports = {
     stat3_txt: "대륙 발자취",
     apps_title: "오리지널 앱",
     sticker_title: "iMessage 스티커",
-    pf_title: "ProfitFairy 원가마진수익 분석기",
-    pf_sub: "판매가와 비용 구조 연동 분석",
+    pf_title: "ProfitFairy 마진율 및 가격 계산기",
+    pf_sub: "원가, 판매가, 할인, 수수료, 순이익 계산",
     pf_desc:
-      "원가, 판매가, 목표 마진 중 하나만 입력하면 최종 가격, 이익, 이익률을 즉시 확인할 수 있습니다. 3항목 연동 계산과 할인, 수수료, 세금, 배송비 등 고급 옵션을 지원합니다. 원가 분석 페이지에서 공유 가능한 마진 내역 긴 이미지를 출력하고, 기록 저장과 일괄 관리도 가능합니다. 기기 지역 설정에 맞는 숫자 표기를 지원하며 12,345.67 같은 형식도 그대로 사용할 수 있습니다. 5개 언어 지원.",
+      "1인 창업자와 2~3명 소규모 팀을 위한 가격 결정 도구입니다. 견적 전에 실제 마진을 확인하고, 원가, 판매가, 할인, 플랫폼 수수료, 배송비, 세금을 한눈에 모읍니다. 3항목 연동으로 정방향과 역산을 지원합니다. 원가 분석과 고화질 세로 이미지 내보내기, 기록 저장도 가능합니다. 기기 지역에 맞는 숫자 표기를 지원하며 예를 들어\u00A012,345.67. 5개 언어. 노점, 매장, 프리랜서, 소규모 팀에 적합합니다.",
     ruby_title: "小主私密日記 · 전통 양생 생리 주기 수첩",
     ruby_sub: "매일을 기록하고, 나만의 리듬을 부드럽게 읽어가세요",
     ruby_desc:
