@@ -33,6 +33,12 @@ const aiosIconSrc = `/images/AIOS_icon.png?v=${crypto
   .update(fs.readFileSync(aiosIconPath))
   .digest("hex")
   .slice(0, 8)}`;
+const rubyIconPath = path.join(ROOT, "images/RubyDays_icon.png");
+const rubyIconSrc = `/images/RubyDays_icon.png?v=${crypto
+  .createHash("md5")
+  .update(fs.readFileSync(rubyIconPath))
+  .digest("hex")
+  .slice(0, 8)}`;
 
 const faviconHead = `    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
@@ -171,7 +177,7 @@ ${analyticsHead}
         </div>
         <div class="grid-3">
             <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/ProfitFairy_icon.png" alt="ProfitFairy"></div><div class="card-info"><div class="work-title">${esc(c.pf_title)}</div><div class="work-sub">${esc(c.pf_sub)}</div><div class="work-desc">${esc(c.pf_desc)}</div><div class="store-badge"><a href="https://apps.apple.com/app/id6740332215" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
-            <div class="work-card"><div class="card-media"><img class="app-icon" src="/images/RubyDays_icon.png" alt="RubyDays"></div><div class="card-info"><div class="work-title">${esc(c.ruby_title)}</div><div class="work-sub">${esc(c.ruby_sub)}</div><div class="work-desc">${esc(c.ruby_desc)}</div><div class="store-badge"><a href="https://apps.apple.com/app/id6752606069" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
+            <div class="work-card"><div class="card-media"><img class="app-icon" src="${rubyIconSrc}" alt="${esc(c.ruby_title)}"></div><div class="card-info"><div class="work-title">${esc(c.ruby_title)}</div><div class="work-sub">${esc(c.ruby_sub)}</div><div class="work-desc">${esc(c.ruby_desc)}</div><div class="store-badge"><a href="https://apps.apple.com/app/id6752606069" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
             <div class="work-card"><div class="card-media"><img class="app-icon" src="${aiosIconSrc}" alt="${esc(c.aios_title)}"></div><div class="card-info"><div class="work-title">${esc(c.aios_title)}</div><div class="work-sub">${esc(c.aios_sub)}</div><div class="work-desc">${esc(c.aios_desc)}</div><div class="store-badge"><a href="https://apps.apple.com/app/id6745821288" target="_blank" rel="noopener"><img src="/images/Download_on_the_App_Store_Badge.png" alt="App Store"></a></div></div></div>
         </div>
 

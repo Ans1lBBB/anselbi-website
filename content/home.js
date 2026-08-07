@@ -7,7 +7,7 @@ module.exports = {
     description:
       "策展人 Ansel Bi，近二十年策展經歷，策劃近六十場展覽，足跡遍及亞洲、歐洲、美洲、澳洲。將策展美學注入獨立開發的 APP 與貼圖。",
     keywords:
-      "畢弘偉, Ansel Bi, 策展人, 獨立開發者, ProfitFairy, 小主私密日記, 艾奧斯海, 台客柴, MeowCAT",
+      "畢弘偉, Ansel Bi, 策展人, 獨立開發者, ProfitFairy, 小主日記, 艾奧斯海, 台客柴, MeowCAT",
     chinese_name: "畢弘偉",
     name_en: "Ansel Bi",
     nav_brand: "畢弘偉",
@@ -30,8 +30,8 @@ module.exports = {
     pf_sub: "成本、售價、折扣、平台費與淨利試算",
     pf_desc:
       "給一個人或兩三人小團隊的定價決策工具。報價前先看清真實毛利，把成本、售價、折扣、平台費、運費與稅務收進同一張全景圖。三欄聯動試算，支援正向與逆向定價。內建成本分析與高清長圖匯出，歷史紀錄完整保存。依裝置地區採用熟悉的數字格式，例如\u00A012,345.67。五語系介面，攤商、店面、接案與小團隊都能用。",
-    ruby_title: "小主私密日記 · 老中醫月經養生週期手札",
-    ruby_sub: "記錄每一天，溫柔看懂自己的節奏",
+    ruby_title: "小主日記：老中醫月事養生",
+    ruby_sub: "看古籍，讀節奏，願天下女子皆得自在",
     ruby_desc:
       "週期與備孕月曆、可上鎖手札，以及依週期階段呈現的養生閣典藏。記錄經期、推算排卵與安全期，圖表與提醒助你從容規劃。養生閣融匯《黃帝內經》《本草綱目》《傅青主女科》《針灸甲乙經》精要，依經期階段整理起居、典籍飲食、情緒與日常讀物。資料存於本機，可選 iCloud 私密同步。文字搭配瞬間照片，Face ID 守護個人內容。古籍摘錄僅供日常閱讀參考。全程無廣告。",
     aios_title: "艾奧斯海",
@@ -61,7 +61,7 @@ module.exports = {
     curator_p1:
       "策展是一條長河\n\n學會的不是如何展示\n而是如何聆聽\n聆聽作品自身的語言\n聆聽空間的呼吸\n聆聽觀者沉默的凝視\n\n真正的展覽\n是讓這三者找到共振的頻率",
     curator_p2:
-      "後來\n這份聆聽被帶進數位世界\n\n每一個App 每一款貼圖\n都不再只是單方面的設計\n像從前聆聽作品那樣\n聆聽每一個使用者的聲音\n他們的想法 困惑 期盼\n一點一滴滲進程式碼裡\n\n這些作品\n是使用者與創作者共同完成的形狀\n\n從來不是那個單獨塑造氛圍的人\n試著站在不同的位置上\n去感受 去揣摩 去共振\n\n小主私密日記是一個例子\n\n一個男性\n要如何設計一個陪伴女性生理期的工具\n沒有答案\n只能去聽 去讀\n去想像那些永遠無法親身經歷的日常\n\n正是這種未知\n讓創作有了溫柔的可能\n\nApp也是這樣\n它們不是被封裝的成品\n而是等待被聆聽 被共鳴 被一起完成的\n\n如同當年曼哈頓\n那盞燈亮起之後\n\n有人安靜地站在父親的作品前\n\n看了很久\n\n策展如此\n創作亦如此\n\n永不落幕",
+      "後來\n這份聆聽被帶進數位世界\n\n每一個App 每一款貼圖\n都不再只是單方面的設計\n像從前聆聽作品那樣\n聆聽每一個使用者的聲音\n他們的想法 困惑 期盼\n一點一滴滲進程式碼裡\n\n這些作品\n是使用者與創作者共同完成的形狀\n\n從來不是那個單獨塑造氛圍的人\n試著站在不同的位置上\n去感受 去揣摩 去共振\n\n小主日記是一個例子\n\n一個男性\n要如何設計一個陪伴女性生理期的工具\n沒有答案\n只能去聽 去讀\n去想像那些永遠無法親身經歷的日常\n\n正是這種未知\n讓創作有了溫柔的可能\n\nApp也是這樣\n它們不是被封裝的成品\n而是等待被聆聽 被共鳴 被一起完成的\n\n如同當年曼哈頓\n那盞燈亮起之後\n\n有人安靜地站在父親的作品前\n\n看了很久\n\n策展如此\n創作亦如此\n\n永不落幕",
     expo_role1: "個展策劃 / Solo Exhibitions",
     expo_detail1: "足跡橫跨亞洲、歐洲、美洲、澳洲，為多位藝術家策劃個人展覽",
     expo_role2: "聯展統籌 / Group Shows",
@@ -88,7 +88,7 @@ module.exports = {
     description:
       "策展人 Ansel Bi，近二十年策展经历，策划近六十场展览，足迹遍及亚洲、欧洲、美洲、澳洲。将策展美学注入独立开发的 APP 与贴图。",
     keywords:
-      "毕弘伟, Ansel Bi, 策展人, 独立开发者, ProfitFairy, 小主私密日记, 艾奥斯海, 台客柴, MeowCAT",
+      "毕弘伟, Ansel Bi, 策展人, 独立开发者, ProfitFairy, 小主日记, 艾奥斯海, 台客柴, MeowCAT",
     chinese_name: "毕弘伟",
     name_en: "Ansel Bi",
     nav_brand: "毕弘伟",
@@ -111,8 +111,8 @@ module.exports = {
     pf_sub: "成本、售价、折扣、平台费与净利润试算",
     pf_desc:
       "给一个人或两三个人小团队的定价决策工具。报价前先看清真实毛利，把成本、售价、折扣、平台费、运费与税务收进同一张全景图。三栏联动试算，支持正向与逆向定价。内置成本分析与高清长图导出，历史记录完整保存。依装置地区采用熟悉的数字格式，例如\u00A012,345.67。五语系界面，摊商、店面、接案与小团队都能用。",
-    ruby_title: "小主私密日记 · 老中医月经养生周期手札",
-    ruby_sub: "记录每一天，温柔看懂自己的节奏",
+    ruby_title: "小主日记：老中医月事养生",
+    ruby_sub: "看古籍，读节奏，愿天下女子皆得自在",
     ruby_desc:
       "周期与备孕月历、可上锁手札，以及依周期阶段呈现的养生阁典藏。记录经期、推算排卵与安全期，图表与提醒助你从容规划。养生阁融汇《黄帝内经》《本草纲目》《傅青主女科》《针灸甲乙经》精要，依经期阶段整理起居、典籍饮食、情绪与日常读物。资料存于本机，可选 iCloud 私密同步。文字搭配瞬间照片，Face ID 守护个人内容。古籍摘录仅供日常阅读参考。全程无广告。",
     aios_title: "艾奥斯海",
@@ -142,7 +142,7 @@ module.exports = {
     curator_p1:
       "策展是一条长河\n\n学会的不是如何展示\n而是如何聆听\n聆听作品自身的语言\n聆听空间的呼吸\n聆听观者沉默的凝视\n\n真正的展览\n是让这三者找到共振的频率",
     curator_p2:
-      "后来\n这份聆听被带进数字世界\n\n每一个App 每一款贴图\n都不再只是单方面的设计\n像从前聆听作品那样\n聆听每一个使用者的声音\n他们的想法 困惑 期盼\n一点一滴渗进代码里\n\n这些作品\n是使用者与创作者共同完成的形状\n\n从来不是那个单独塑造氛围的人\n试着站在不同的位置上\n去感受 去揣摩 去共振\n\n小主私密日记是一个例子\n\n一个男性\n要如何设计一个陪伴女性生理期的工具\n没有答案\n只能去听 去读\n去想象那些永远无法亲身经历的日常\n\n正是这种未知\n让创作有了温柔的可能\n\nApp也是这样\n它们不是被封装的成品\n而是等待被聆听 被共鸣 被一起完成的\n\n如同当年曼哈顿\n那盏灯亮起之后\n\n有人安静地站在父亲的作品前\n\n看了很久\n\n策展如此\n创作亦如此\n\n永不落幕",
+      "后来\n这份聆听被带进数字世界\n\n每一个App 每一款贴图\n都不再只是单方面的设计\n像从前聆听作品那样\n聆听每一个使用者的声音\n他们的想法 困惑 期盼\n一点一滴渗进代码里\n\n这些作品\n是使用者与创作者共同完成的形状\n\n从来不是那个单独塑造氛围的人\n试着站在不同的位置上\n去感受 去揣摩 去共振\n\n小主日记是一个例子\n\n一个男性\n要如何设计一个陪伴女性生理期的工具\n没有答案\n只能去听 去读\n去想象那些永远无法亲身经历的日常\n\n正是这种未知\n让创作有了温柔的可能\n\nApp也是这样\n它们不是被封装的成品\n而是等待被聆听 被共鸣 被一起完成的\n\n如同当年曼哈顿\n那盏灯亮起之后\n\n有人安静地站在父亲的作品前\n\n看了很久\n\n策展如此\n创作亦如此\n\n永不落幕",
     expo_role1: "个展策划 / Solo Exhibitions",
     expo_detail1: "足迹横跨亚洲、欧洲、美洲、澳洲，为多位艺术家策划个人展览",
     expo_role2: "联展统筹 / Group Shows",
@@ -192,8 +192,8 @@ module.exports = {
     pf_sub: "Cost, Price, Fees and Profit",
     pf_desc:
       "A pricing decision tool for one person or a tiny team of two or three. See real margin before you quote, with cost, price, discounts, platform fees, shipping, and tax in one picture. Three linked fields support forward and reverse pricing. Cost analysis exports shareable long images, with full history saved. Follows your device region for formats such as\u00A012,345.67. Five languages. Built for stalls, storefronts, freelancers, and small teams.",
-    ruby_title: "RubyDays · Classical Menstrual Wellness Journal",
-    ruby_sub: "Record each day. Gently understand your rhythm.",
+    ruby_title: "RubyDays: Classical TCM Menstrual Wellness",
+    ruby_sub: "Read the classics. Know your rhythm. May every woman find ease.",
     ruby_desc:
       "Cycle and fertility calendar, lockable diary, and the Wellness Pavilion with curated excerpts for each phase. Track periods, estimate ovulation, and plan with charts and reminders. The Pavilion draws on four classical texts, including seasonal living rhythms, herbal dietary notes, women's classical readings, and meridian literature. Data stays on device with optional private iCloud sync. Words with Moment photos, protected by Face ID. Excerpts are for daily reading reference only. Completely ad free.",
     aios_title: "AIOS Sea",
@@ -273,8 +273,8 @@ module.exports = {
     pf_sub: "原価、販売価格、割引、手数料、純利益を計算",
     pf_desc:
       "ひとり起業や少人数チームのための定価意思決定ツール。見積前に本当の粗利を確認し、原価、販売価格、割引、手数料、送料、税金を一つの全景図にまとめます。3項目連動で順方向と逆算に対応。原価分析と高精細な縦長画像の書き出し、履歴保存も可能。端末の地域設定に合わせた数字表記に対応し、例えば\u00A012,345.67。5言語対応。屋台、店舗、フリーランス、小規模チーム向け。",
-    ruby_title: "小主私密日記 · 古典養生の月経周期手帳",
-    ruby_sub: "毎日を記録し、自分のリズムをやさしく読み解く",
+    ruby_title: "小主日記：老中医の月事養生",
+    ruby_sub: "古籍を読み、リズムを知り、すべての女性が自在でありますように",
     ruby_desc:
       "周期と妊活カレンダー、ロック可能な手札、周期段階に合わせた養生閣の典蔵。生理記録、排卵と安全期の推定、グラフとリマインダーで計画をサポート。養生閣は『黄帝内経』『本草綱目』『傅青主女科』『鍼灸甲乙経』の精要を融合し、起居、典籍的な食事、気持ちの読み物を段階ごとに整理。データは端末内保存、iCloud プライベート同期に対応。文字と「瞬間」写真、Face ID で保護。古籍の摘録は日常の参考用。広告なし。",
     aios_title: "AIOS Sea",
@@ -354,8 +354,8 @@ module.exports = {
     pf_sub: "원가, 판매가, 할인, 수수료, 순이익 계산",
     pf_desc:
       "1인 창업자와 2~3명 소규모 팀을 위한 가격 결정 도구입니다. 견적 전에 실제 마진을 확인하고, 원가, 판매가, 할인, 플랫폼 수수료, 배송비, 세금을 한눈에 모읍니다. 3항목 연동으로 정방향과 역산을 지원합니다. 원가 분석과 고화질 세로 이미지 내보내기, 기록 저장도 가능합니다. 기기 지역에 맞는 숫자 표기를 지원하며 예를 들어\u00A012,345.67. 5개 언어. 노점, 매장, 프리랜서, 소규모 팀에 적합합니다.",
-    ruby_title: "小主私密日記 · 전통 양생 생리 주기 수첩",
-    ruby_sub: "매일을 기록하고, 나만의 리듬을 부드럽게 읽어가세요",
+    ruby_title: "小主日記：전통 한의학 월사 양생",
+    ruby_sub: "고의를 읽고, 리듬을 알며, 모든 여성이 자재하기를",
     ruby_desc:
       "주기와 임신 준비 달력, 잠금 가능한手札, 주기 단계에 맞춘 양생각 고전 발췌. 생리 기록, 배란과 안전 기간 추정, 차트와 알림으로 계획을 돕습니다. 양생각은 『황제내경』『본초강목』『부청주여과』『침구갑을경』의 요지를 담아, 단계별로 일상, 고전 식문, 마음의 읽을거리를 정리합니다. 데이터는 기기 저장, iCloud 비공개 동기화 선택 가능. 글과 「순간」 사진, Face ID 보호. 고전 발췌는 일상 참고용. 광고 없음.",
     aios_title: "AIOS Sea",
