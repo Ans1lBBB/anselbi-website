@@ -162,7 +162,6 @@ ${analyticsHead}
             <div class="hero-slogan">${esc(c.slogan)}</div>
             <div class="name-title">
                 ${nameHeading(c)}
-                <div class="title-role">${esc(c.role)}</div>
             </div>
         </div>
 

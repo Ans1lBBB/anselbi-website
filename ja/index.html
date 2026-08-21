@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Ansel Bi，スキンヘッドのおじさん</title>
+    <title>Ansel Bi</title>
     <meta name="description" content="キュレーター兼インディーアプリ開発者 Ansel Bi。15年以上、四大陸で約60の展覧会を企画。キュレーションの美学をオリジナルアプリとiMessageステッカーに注ぐ。">
     <meta name="keywords" content="Ansel Bi, キュレーター, インディー開発者, ProfitFairy, RubyDays, AIOS Sea, 台客柴, MeowCAT">
     <link rel="alternate" hreflang="zh-Hant" href="https://www.anselbi.com/zh-tw/">
@@ -15,7 +15,7 @@
     <link rel="canonical" href="https://www.anselbi.com/ja/">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.anselbi.com/ja/">
-    <meta property="og:title" content="Ansel Bi，スキンヘッドのおじさん">
+    <meta property="og:title" content="Ansel Bi">
     <meta property="og:description" content="キュレーター兼インディーアプリ開発者 Ansel Bi。15年以上、四大陸で約60の展覧会を企画。キュレーションの美学をオリジナルアプリとiMessageステッカーに注ぐ。">
     <meta property="og:locale" content="ja_JP">
     <meta property="og:image" content="https://www.anselbi.com/apple-touch-icon.png">
@@ -157,7 +157,7 @@ html[lang="zh-CN"] .sticker-name-zh {
 }
 .lang-btn:hover { color: #9e9589; }
 .lang-btn.active { color: #c9aa7b; font-weight: 500; }
-.hero { padding: 60px 0 40px; }
+.hero { padding: 60px 0 12px; }
 .hero-photo { margin-bottom: 2.5rem; }
 .portrait-frame {
     width: 200px;
@@ -180,20 +180,23 @@ html[lang="zh-CN"] .sticker-name-zh {
     color: #c9aa7b;
     margin-bottom: 1.25rem;
 }
-.name-title { margin-bottom: 1.25rem; }
+.name-title { margin-bottom: 0; }
 .name-title h1 {
     font-size: 3rem;
     font-weight: 600;
     line-height: 1.1;
     letter-spacing: -0.02em;
     color: #e6e2da;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
 }
 .name-title h1 .chinese-name { color: #c9aa7b; }
 .title-role {
     font-size: 0.75rem;
     letter-spacing: 3px;
     color: #9e9589;
+}
+.hero + .section-header {
+    margin-top: 36px;
 }
 .hero-desc {
     font-size: 1rem;
@@ -337,6 +340,7 @@ footer { text-align: center; padding: 24px 0 40px; font-size: 0.7rem; color: #6a
     .stat-row { justify-content: center; gap: 2rem; }
     .stat-number { font-size: 1.3rem; }
     .section-header { margin: 50px 0 28px; scroll-margin-top: 80px; }
+    .hero + .section-header { margin-top: 28px; }
     .section-header h2 { font-size: 1.2rem; }
     .curator-head { margin: 50px 0 24px; scroll-margin-top: 80px; }
     .curator-head h3 { font-size: 1.4rem; text-align: center; }
@@ -390,7 +394,6 @@ footer { text-align: center; padding: 24px 0 40px; font-size: 0.7rem; color: #6a
             <div class="hero-slogan">キュレーションの沈黙を、デジタルの詩行へと編む</div>
             <div class="name-title">
                 <h1>Ansel Bi</h1>
-                <div class="title-role">スキンヘッドのおじさん</div>
             </div>
         </div>
 

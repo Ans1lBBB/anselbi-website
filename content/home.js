@@ -3,7 +3,7 @@ module.exports = {
     htmlLang: "zh-TW",
     hreflang: "zh-Hant",
     path: "/zh-tw/",
-    title: "畢弘偉 Ansel Bi，光頭大叔",
+    title: "畢弘偉 Ansel Bi",
     description:
       "策展人 Ansel Bi，超過十五年策展經歷，策劃近六十場展覽，足跡遍及亞洲、歐洲、美洲、澳洲。將策展美學注入獨立開發的 APP 與貼圖。",
     keywords:
@@ -84,7 +84,7 @@ module.exports = {
     htmlLang: "zh-CN",
     hreflang: "zh-Hans",
     path: "/zh-cn/",
-    title: "毕弘伟 Ansel Bi，光头大叔",
+    title: "毕弘伟 Ansel Bi",
     description:
       "策展人 Ansel Bi，超过十五年策展经历，策划近六十场展览，足迹遍及亚洲、欧洲、美洲、澳洲。将策展美学注入独立开发的 APP 与贴图。",
     keywords:
@@ -165,7 +165,7 @@ module.exports = {
     htmlLang: "en",
     hreflang: "en",
     path: "/en/",
-    title: "Ansel Bi, Bald Uncle",
+    title: "Ansel Bi",
     description:
       "Curator and indie app developer Ansel Bi. Over 15 years curating ~60 exhibitions across four continents. Bringing curatorial aesthetics to original apps and iMessage stickers.",
     keywords:
@@ -246,7 +246,7 @@ module.exports = {
     htmlLang: "ja",
     hreflang: "ja",
     path: "/ja/",
-    title: "Ansel Bi，スキンヘッドのおじさん",
+    title: "Ansel Bi",
     description:
       "キュレーター兼インディーアプリ開発者 Ansel Bi。15年以上、四大陸で約60の展覧会を企画。キュレーションの美学をオリジナルアプリとiMessageステッカーに注ぐ。",
     keywords:
@@ -327,7 +327,7 @@ module.exports = {
     htmlLang: "ko",
     hreflang: "ko",
     path: "/ko/",
-    title: "Ansel Bi, 대머리 아저씨",
+    title: "Ansel Bi",
     description:
       "큐레이터이자 인디 앱 개발자 Ansel Bi. 15년 이상 4대륙에서 약 60회의 전시를 기획했습니다. 큐레이션 미학을 오리지널 앱과 iMessage 스티커에 담습니다.",
     keywords:
