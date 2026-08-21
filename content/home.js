@@ -3,7 +3,7 @@ module.exports = {
     htmlLang: "zh-TW",
     hreflang: "zh-Hant",
     path: "/zh-tw/",
-    title: "畢弘偉 Ansel Bi — 策展人 / App 程式設計師",
+    title: "畢弘偉 Ansel Bi，光頭大叔",
     description:
       "策展人 Ansel Bi，超過十五年策展經歷，策劃近六十場展覽，足跡遍及亞洲、歐洲、美洲、澳洲。將策展美學注入獨立開發的 APP 與貼圖。",
     keywords:
@@ -15,7 +15,7 @@ module.exports = {
     nav_stickers: "貼圖",
     nav_curator: "策展",
     slogan: "將策展的沉默，編譯為數位的詩行",
-    role: "策展人 / App 程式設計師",
+    role: "光頭大叔",
     hero_desc:
       "某個倉庫裡\n\n滿倉的畫\n靜止在我面前\n\n不是欣賞\n是打包\n\n打棧板 釘木箱 貼標籤 纏膠帶\n\n然後\n這些大傢伙\n落在比台北慢十二個鐘的曼哈頓\n\n那年是雷曼風暴過後\n等待燈光亮起的2009\n\n策展人是兒子\n藝術家是父親\n\n那是我印象最深的一場策展\n\n我從父親的作品裡學會了聆聽\n不是聆聽掌聲\n而是聆聽一件作品從木箱裡被取出時\n那道細微的 幾乎聽不見的呼吸聲\n\n還有燈亮之後\n有人走進來\n安靜地站在作品前\n那份沉默\n比任何話語都誠實\n\n近二十年過去了\n\n我策劃了近六十場展覽\n足跡走過亞洲 歐洲 美洲 澳洲\n做過私人美術館顧問\n為藝術家策劃過個展與聯展\n也為藏家與機構提供諮詢\n\n但我始終沒有忘記\n沒有忘記在倉庫裡釘木箱打棧板的汗水記憶\n\n如今\n我將那份聆聽那份細膩的節奏\n帶進App與貼圖裡\n它們是我與使用者之間\n一次次無聲的共振\n\n就像當年那盞燈\n輕輕落在父親的作品上\n\n然後\n有人停下來\n\n安靜地\n看了很久\n\n或許\n那個人就是你",
     stat1_num: "15+",
@@ -76,7 +76,7 @@ module.exports = {
     expo_role4: "藝術顧問 / Art Advisor",
     expo_detail4: "私人美術館顧問、藏家與藝術機構策展諮詢",
     expo_note: "超過十五年策展，近六十場展覽，足跡遍及四大洲",
-    contact_btn: "聯絡 / 合作",
+    contact_btn: "聊聊",
     contact_note: "策展合作 · 開發委託 · 品牌聯名 · 用戶反饋",
     privacy_link: "隱私權政策",
   },
@@ -84,7 +84,7 @@ module.exports = {
     htmlLang: "zh-CN",
     hreflang: "zh-Hans",
     path: "/zh-cn/",
-    title: "毕弘伟 Ansel Bi — 策展人 / App 程序员",
+    title: "毕弘伟 Ansel Bi，光头大叔",
     description:
       "策展人 Ansel Bi，超过十五年策展经历，策划近六十场展览，足迹遍及亚洲、欧洲、美洲、澳洲。将策展美学注入独立开发的 APP 与贴图。",
     keywords:
@@ -96,7 +96,7 @@ module.exports = {
     nav_stickers: "贴图",
     nav_curator: "策展",
     slogan: "将策展的沉默，编译为数字的诗行",
-    role: "策展人 / App 程序员",
+    role: "光头大叔",
     hero_desc:
       "某个仓库里\n\n满仓的画\n静止在我面前\n\n不是欣赏\n是打包\n\n打栈板 钉木箱 贴标签 缠胶带\n\n然后\n这些大家伙\n落在比台北慢十二个钟的曼哈顿\n\n那年是雷曼风暴过后\n等待灯光亮起的2009\n\n策展人是儿子\n艺术家是父亲\n\n那是我印象最深的一场策展\n\n我从父亲的作品里学会了聆听\n不是聆听掌声\n而是聆听一件作品从木箱里被取出时\n那道细微的 几乎听不见的呼吸声\n\n还有灯亮之后\n有人走进来\n安静地站在作品前\n那份沉默\n比任何话语都诚实\n\n近二十年过去了\n\n我策划了近六十场展览\n足迹走过亚洲 欧洲 美洲 澳洲\n做过私人美术馆顾问\n为艺术家策划过个展与联展\n也为藏家与机构提供咨询\n\n但我始终没有忘记\n没有忘记在仓库里钉木箱打栈板的汗水记忆\n\n如今\n我将那份聆听那份细腻的节奏\n带进App与贴图里\n它们是我与使用者之间\n一次次无声的共振\n\n就像当年那盏灯\n轻轻落在父亲的作品上\n\n然后\n有人停下来\n\n安静地\n看了很久\n\n或许\n那个人就是你",
     stat1_num: "15+",
@@ -157,7 +157,7 @@ module.exports = {
     expo_role4: "艺术顾问 / Art Advisor",
     expo_detail4: "私人美术馆顾问、藏家与艺术机构策展咨询",
     expo_note: "超过十五年策展，近六十场展览，足迹遍及四大洲",
-    contact_btn: "联络 / 合作",
+    contact_btn: "聊聊",
     contact_note: "策展合作 · 开发委托 · 品牌联名 · 用户反馈",
     privacy_link: "隐私权政策",
   },
@@ -165,7 +165,7 @@ module.exports = {
     htmlLang: "en",
     hreflang: "en",
     path: "/en/",
-    title: "Ansel Bi — Curator / App Developer",
+    title: "Ansel Bi, Bald Uncle",
     description:
       "Curator and indie app developer Ansel Bi. Over 15 years curating ~60 exhibitions across four continents. Bringing curatorial aesthetics to original apps and iMessage stickers.",
     keywords:
@@ -177,7 +177,7 @@ module.exports = {
     nav_stickers: "Stickers",
     nav_curator: "Curating",
     slogan: "Compiling curatorial silence into digital poetry",
-    role: "Curator / App Developer",
+    role: "Bald Uncle",
     hero_desc:
       "Inside a certain warehouse\n\nPaintings filled the room\nStill before me\n\nNot to admire them\nTo pack them\n\nPalletizing nailing crates labeling wrapping tape\n\nThen\nThese heavy giants\nLanded in Manhattan twelve hours behind Taipei\n\nThe year after the Lehman storm\nWaiting for the lights to rise in 2009\n\nThe curator was a son\nThe artist was his father\n\nIt was the curatorial work I remember most vividly\n\nFrom my father's work I learned to listen\nNot to applause\nBut to the faint almost inaudible breath\nOf a piece being lifted from its crate\n\nAnd after the lights came up\nSomeone would walk in\nAnd stand quietly in front of the work\nThat silence\nWas more honest than any words\n\nNearly twenty years have passed\n\nI have curated nearly sixty exhibitions\nTraveling across Asia Europe the Americas and Australia\nServed as a private museum advisor\nCurated solo and group shows for artists\nAnd offered consultation to collectors and institutions\n\nBut I have never forgotten\nNever forgotten the sweaty memory of nailing crates and palletizing in the warehouse\n\nNow\nI bring that same listening that same delicate rhythm\nInto apps and stickers\nThey are the silent resonance\nBetween me and every user\n\nLike that light\nSoftly falling on my father's work\n\nThen\nSomeone stopped\n\nQuietly\nLooked for a long long time\n\nPerhaps\nThat someone is you",
     stat1_num: "15+",
@@ -238,7 +238,7 @@ module.exports = {
     expo_role4: "Art Advisor",
     expo_detail4: "Consulting for private museums collectors and art institutions",
     expo_note: "Over 15 years. Nearly sixty exhibitions across four continents.",
-    contact_btn: "Contact / Collaborate",
+    contact_btn: "Let's chat",
     contact_note: "Curatorial · Development · Brand Collaboration · Feedback",
     privacy_link: "Privacy Policy",
   },
@@ -246,7 +246,7 @@ module.exports = {
     htmlLang: "ja",
     hreflang: "ja",
     path: "/ja/",
-    title: "Ansel Bi — キュレーター / アプリ開発者",
+    title: "Ansel Bi，スキンヘッドのおじさん",
     description:
       "キュレーター兼インディーアプリ開発者 Ansel Bi。15年以上、四大陸で約60の展覧会を企画。キュレーションの美学をオリジナルアプリとiMessageステッカーに注ぐ。",
     keywords:
@@ -258,7 +258,7 @@ module.exports = {
     nav_stickers: "ステッカー",
     nav_curator: "キュレーション",
     slogan: "キュレーションの沈黙を、デジタルの詩行へと編む",
-    role: "キュレーター / アプリ開発者",
+    role: "スキンヘッドのおじさん",
     hero_desc:
       "ある倉庫の中で\n\n倉庫いっぱいの画が\n目の前で静まり返っていた\n\n鑑賞するためではない\n梱包するためだ\n\nパレットに載せ 木箱を釘付け ラベルを貼り テープを巻く\n\nそして\nこの大きな塊たちが\n台北より十二時間遅いマンハッタンに降り立った\n\nそれはリーマンショックのあと\n灯がともるのを待っていた2009年\n\nキュレーターは息子\nアーティストは父\n\n記憶に最も深く残るキュレーションだった\n\n父の作品から私は「聴く」ことを学んだ\n拍手を聴くのではない\n木箱から作品が取り出されるとき\nかすかで ほとんど聞こえない息づかいを聴くのだ\n\nそして灯がともると\n誰かが入ってきて\n作品の前に静かに立つ\nその沈黙は\nどんな言葉よりも誠実だった\n\n二十年近くが過ぎた\n\n私は約六十の展覧会を企画し\nアジア ヨーロッパ 南北アメリカ オーストラリアを歩いてきた\n私立美術館のアドバイザーを務め\nアーティストの個展やグループ展を企画し\nコレクターや機関へのコンサルティングも行ってきた\n\nしかし私は決して忘れていない\n倉庫で木箱を釘付け パレットを組んだ汗の記憶を忘れていない\n\n今\nその聴き方 その繊細なリズムを\nアプリとステッカーに持ち込んでいる\nそれらは私とユーザーとの間の\n何度も重なる無声の共鳴だ\n\nあの頃の灯のように\n父の作品にそっと降り注ぐように\n\nそして\n誰かが立ち止まり\n\n静かに\n長いあいだ見つめた\n\nもしかしたら\nその人はあなたかもしれない",
     stat1_num: "15+",
@@ -319,7 +319,7 @@ module.exports = {
     expo_role4: "アートアドバイザー / Art Advisor",
     expo_detail4: "私立美術館、コレクター、美術機関へのキュレーションコンサルティング",
     expo_note: "15年以上のキュレーション、約六十の展覧会、四大陸の足跡",
-    contact_btn: "お問い合わせ / コラボレーション",
+    contact_btn: "話そう",
     contact_note: "キュレーション · 開発委託 · ブランドコラボ · フィードバック",
     privacy_link: "プライバシーポリシー",
   },
@@ -327,7 +327,7 @@ module.exports = {
     htmlLang: "ko",
     hreflang: "ko",
     path: "/ko/",
-    title: "Ansel Bi — 큐레이터 / 앱 개발자",
+    title: "Ansel Bi, 대머리 아저씨",
     description:
       "큐레이터이자 인디 앱 개발자 Ansel Bi. 15년 이상 4대륙에서 약 60회의 전시를 기획했습니다. 큐레이션 미학을 오리지널 앱과 iMessage 스티커에 담습니다.",
     keywords:
@@ -339,7 +339,7 @@ module.exports = {
     nav_stickers: "스티커",
     nav_curator: "큐레이션",
     slogan: "큐레이션의 침묵을 디지털 시로 엮다",
-    role: "큐레이터 / 앱 개발자",
+    role: "대머리 아저씨",
     hero_desc:
       "어느 창고 안에서\n\n창고 가득 그림이\n내 앞에서 고요했다\n\n감상하기 위함이 아니라\n포장하기 위함이었다\n\n팔레트 적재 나무 상자 못 박기 라벨 붙이기 테이프 감기\n\n그리고\n이 거대한 것들이\n타이베이보다 열두 시간 늦은 맨해튼에 내려앉았다\n\n그해는 리먼 쇼크 이후\n조명이 켜지기를 기다리던 2009년\n\n큐레이터는 아들\n예술가는 아버지\n\n가장 깊이 기억에 남는 큐레이션이었다\n\n아버지의 작품에서 나는 듣는 법을 배웠다\n박수를 듣는 것이 아니라\n상자에서 작품이 꺼내질 때\n거의 들리지 않는 미세한 숨결을 듣는 것이다\n\n그리고 불이 켜진 뒤\n누군가 들어와\n작품 앞에 조용히 서 있었다\n그 침묵은\n어떤 말보다도 진실했다\n\n거의 이십 년이 지났다\n\n나는 약 육십 회의 전시를 기획했고\n아시아 유럽 아메리카 오스트레일리아를 걸었다\n사립 미술관 자문을 맡았고\n예술가의 개인전과 단체전을 기획했으며\n수집가와 기관에 컨설팅을 제공했다\n\n하지만 나는 결코 잊지 않았다\n창고에서 나무 상자에 못을 박고 팔레트를 쌓던 땀의 기억을 잊지 않았다\n\n이제\n그 듣는 방식 그 섬세한 리듬을\n앱과 스티커에 담고 있다\n그것들은 나와 사용자 사이의\n끊임없는 무음의 공명이다\n\n그때 그 불빛처럼\n아버지의 작품 위에 부드럽게 내려앉듯\n\n그리고\n누군가 멈춰 섰다\n\n조용히\n오랫동안 바라보았다\n\n어쩌면\n그 사람이 바로 당신일지도 모른다",
     stat1_num: "15+",
@@ -400,7 +400,7 @@ module.exports = {
     expo_role4: "아트 어드바이저 / Art Advisor",
     expo_detail4: "사립 미술관, 수집가, 미술 기관 큐레이션 컨설팅",
     expo_note: "15년 이상 큐레이션, 약 60회 전시, 4대륙의 발자취",
-    contact_btn: "문의 / 협업",
+    contact_btn: "이야기해요",
     contact_note: "큐레이션 · 개발 의뢰 · 브랜드 콜라보 · 피드백",
     privacy_link: "개인정보 처리방침",
   },
