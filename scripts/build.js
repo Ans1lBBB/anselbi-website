@@ -159,10 +159,12 @@ ${analyticsHead}
                     <img src="/images/ansel_portrait.png" alt="Ansel Bi">
                 </div>
             </div>
-            <div class="hero-slogan">${esc(c.slogan)}</div>
             <div class="name-title">
                 ${nameHeading(c)}
-                <div class="title-role">${esc(c.role)}</div>
+            </div>
+            <div class="hero-epigraph">
+                <p class="hero-slogan">${esc(c.slogan)}</p>
+                <div class="hero-rule" aria-hidden="true"></div>
             </div>
         </div>
 

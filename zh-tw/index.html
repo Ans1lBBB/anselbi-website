@@ -50,6 +50,24 @@ body {
     font-weight: 400;
     font-style: italic;
 }
+html[lang^="zh"] .hero-slogan {
+    font-family: 'Noto Serif TC', 'Noto Serif SC', serif;
+    font-style: normal;
+    font-weight: 500;
+}
+html[lang="zh-CN"] .hero-slogan {
+    font-family: 'Noto Serif SC', 'Noto Serif TC', serif;
+}
+html[lang="ja"] .hero-slogan {
+    font-family: 'Noto Serif TC', 'Noto Sans JP', serif;
+    font-style: normal;
+    font-weight: 500;
+}
+html[lang="ko"] .hero-slogan {
+    font-family: 'Noto Serif TC', 'Noto Sans KR', serif;
+    font-style: normal;
+    font-weight: 500;
+}
 .stat-number {
     font-family: 'Cormorant Garamond', serif;
 }
@@ -157,12 +175,19 @@ html[lang="zh-CN"] .sticker-name-zh {
 }
 .lang-btn:hover { color: #9e9589; }
 .lang-btn.active { color: #c9aa7b; font-weight: 500; }
-.hero { padding: 60px 0 32px; }
-.hero-photo { margin-bottom: 2.5rem; }
+.hero {
+    padding: 72px 0 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.hero-photo { margin-bottom: 2.25rem; }
 .portrait-frame {
-    width: 200px;
-    height: 200px;
-    border: 1px solid rgba(230, 226, 218, 0.2);
+    width: 176px;
+    height: 176px;
+    margin: 0 auto;
+    border: 1px solid rgba(201, 170, 123, 0.38);
     overflow: hidden;
     background: #1a1a1a;
 }
@@ -174,29 +199,45 @@ html[lang="zh-CN"] .sticker-name-zh {
     transition: transform 0.4s ease;
 }
 .portrait-frame:hover img { transform: scale(1.02); }
-.hero-slogan {
-    font-size: 0.85rem;
-    letter-spacing: 1px;
-    color: #c9aa7b;
-    margin-bottom: 1.25rem;
+.hero-epigraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 28rem;
 }
-.name-title { margin-bottom: 0; }
+.hero-slogan {
+    font-size: 1rem;
+    letter-spacing: 0.32em;
+    color: #c9aa7b;
+    margin: 0;
+    line-height: 1.6;
+}
+.hero-rule {
+    width: 36px;
+    height: 1px;
+    margin-top: 1.75rem;
+    background: rgba(201, 170, 123, 0.55);
+}
+.name-title { margin-bottom: 1.35rem; }
 .name-title h1 {
-    font-size: 3rem;
+    font-size: clamp(2.5rem, 4.5vw, 3.35rem);
     font-weight: 600;
-    line-height: 1.1;
+    line-height: 1.12;
     letter-spacing: -0.02em;
     color: #e6e2da;
-    margin-bottom: 0.55rem;
+    margin-bottom: 0;
 }
-.name-title h1 .chinese-name { color: #c9aa7b; }
+.name-title h1 .chinese-name {
+    color: #c9aa7b;
+    margin-right: 0.2em;
+}
 .title-role {
     font-size: 0.72rem;
     letter-spacing: 0.18em;
     color: #8a8074;
 }
 .hero + .section-header {
-    margin-top: 64px;
+    margin-top: 72px;
 }
 .hero-desc {
     font-size: 1rem;
@@ -321,8 +362,8 @@ footer { text-align: center; padding: 24px 0 40px; font-size: 0.7rem; color: #6a
     .container { padding: 0 32px; }
     .grid-3 { grid-template-columns: 1fr 1fr; gap: 28px; }
     .grid-4, .grid-stickers { grid-template-columns: repeat(2, 1fr); gap: 24px; }
-    .portrait-frame { width: 160px; height: 160px; }
-    .name-title h1 { font-size: 2.5rem; }
+    .portrait-frame { width: 152px; height: 152px; }
+    .name-title h1 { font-size: 2.45rem; }
 }
 @media (max-width: 780px) {
     .container { padding: 0 24px; }
@@ -331,16 +372,18 @@ footer { text-align: center; padding: 24px 0 40px; font-size: 0.7rem; color: #6a
     .nav-link { font-size: 0.7rem; letter-spacing: 1.5px; }
     .lang-btn { font-size: 0.62rem; }
     .lang-divider { font-size: 0.58rem; }
-    .hero-photo { text-align: center; }
-    .portrait-frame { width: 140px; height: 140px; margin: 0 auto; }
-    .hero-slogan { text-align: center; font-size: 0.7rem; }
-    .name-title { text-align: center; }
+    .hero { padding: 56px 0 40px; }
+    .hero-photo { text-align: center; margin-bottom: 1.85rem; }
+    .portrait-frame { width: 132px; height: 132px; margin: 0 auto; }
+    .hero-slogan { font-size: 0.88rem; letter-spacing: 0.24em; }
+    .hero-rule { margin-top: 1.35rem; }
+    .name-title { text-align: center; margin-bottom: 1.1rem; }
     .title-role { text-align: center; font-size: 0.7rem; }
     .hero-desc { text-align: left; font-size: 0.9rem; margin-top: 1.5rem; }
     .stat-row { justify-content: center; gap: 2rem; }
     .stat-number { font-size: 1.3rem; }
     .section-header { margin: 50px 0 28px; scroll-margin-top: 80px; }
-    .hero + .section-header { margin-top: 44px; }
+    .hero + .section-header { margin-top: 56px; }
     .section-header h2 { font-size: 1.2rem; }
     .curator-head { margin: 50px 0 24px; scroll-margin-top: 80px; }
     .curator-head h3 { font-size: 1.4rem; text-align: center; }
@@ -391,10 +434,12 @@ footer { text-align: center; padding: 24px 0 40px; font-size: 0.7rem; color: #6a
                     <img src="/images/ansel_portrait.png" alt="Ansel Bi">
                 </div>
             </div>
-            <div class="hero-slogan">把聆聽，做成可以下載的作品</div>
             <div class="name-title">
                 <h1><span class="chinese-name">畢弘偉</span> <span class="name-en">Ansel Bi</span></h1>
-                <div class="title-role">獨立開發的 App 與貼圖</div>
+            </div>
+            <div class="hero-epigraph">
+                <p class="hero-slogan">聞而後作</p>
+                <div class="hero-rule" aria-hidden="true"></div>
             </div>
         </div>
 
