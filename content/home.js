@@ -61,7 +61,7 @@ module.exports = {
     curator_p1:
       "策展是一條長河\n\n學會的不是如何展示\n而是如何聆聽\n聆聽作品自身的語言\n聆聽空間的呼吸\n聆聽觀者沉默的凝視\n\n真正的展覽\n是讓這三者找到共振的頻率",
     curator_p2:
-      "後來\n這份聆聽被帶進數位世界\n\n每一個App 每一款貼圖\n都不再只是單方面的設計\n像從前聆聽作品那樣\n聆聽每一個使用者的聲音\n他們的想法 困惑 期盼\n一點一滴滲進程式碼裡\n\n這些作品\n是使用者與創作者共同完成的形狀\n\n從來不是那個單獨塑造氛圍的人\n試著站在不同的位置上\n去感受 去揣摩 去共振\n\n小主日記是一個例子\n\n一個男性\n要如何設計一個陪伴女性生理期的工具\n沒有答案\n只能去聽 去讀\n去想像那些永遠無法親身經歷的日常\n\n正是這種未知\n讓創作有了溫柔的可能\n\nApp也是這樣\n它們不是被封裝的成品\n而是等待被聆聽 被共鳴 被一起完成的\n\n策展如此\n開發App亦是如此\n\n永不落幕",
+      "後來\n這份聆聽被帶進數位世界\n\n每一個App 每一款貼圖\n都不再只是單方面的設計\n像從前聆聽作品那樣\n聆聽每一個使用者的聲音\n他們的想法 困惑 期盼\n一點一滴滲進程式碼裡\n\n這些全是使用者與獨立開發者的我共同完成的形狀\n而我從來不是那個單獨塑造氛圍的人\n只是試著站在不同的位置上\n去感受 去揣摩 去共振\n正是這種未知\n讓創作有了溫柔的可能\n\n它們不是被封裝的成品\n而是等待被聆聽 被共鳴 被一起完成的\n\n策展如此\n數位商品亦是如此\n\n永不落幕",
     expo_role1: "個展策劃 / Solo Exhibitions",
     expo_detail1: "足跡橫跨亞洲、歐洲、美洲、澳洲，為多位藝術家策劃個人展覽",
     expo_role2: "聯展統籌 / Group Shows",
@@ -142,7 +142,7 @@ module.exports = {
     curator_p1:
       "策展是一条长河\n\n学会的不是如何展示\n而是如何聆听\n聆听作品自身的语言\n聆听空间的呼吸\n聆听观者沉默的凝视\n\n真正的展览\n是让这三者找到共振的频率",
     curator_p2:
-      "后来\n这份聆听被带进数字世界\n\n每一个App 每一款贴图\n都不再只是单方面的设计\n像从前聆听作品那样\n聆听每一个使用者的声音\n他们的想法 困惑 期盼\n一点一滴渗进代码里\n\n这些作品\n是使用者与创作者共同完成的形状\n\n从来不是那个单独塑造氛围的人\n试着站在不同的位置上\n去感受 去揣摩 去共振\n\n小主日记是一个例子\n\n一个男性\n要如何设计一个陪伴女性生理期的工具\n没有答案\n只能去听 去读\n去想象那些永远无法亲身经历的日常\n\n正是这种未知\n让创作有了温柔的可能\n\nApp也是这样\n它们不是被封装的成品\n而是等待被聆听 被共鸣 被一起完成的\n\n策展如此\n开发App亦是如此\n\n永不落幕",
+      "后来\n这份聆听被带进数字世界\n\n每一个App 每一款贴图\n都不再只是单方面的设计\n像从前聆听作品那样\n聆听每一个使用者的声音\n他们的想法 困惑 期盼\n一点一滴渗进代码里\n\n这些全是使用者与独立开发者的我共同完成的形状\n而我从来不是那个单独塑造氛围的人\n只是试着站在不同的位置上\n去感受 去揣摩 去共振\n正是这种未知\n让创作有了温柔的可能\n\n它们不是被封装的成品\n而是等待被聆听 被共鸣 被一起完成的\n\n策展如此\n数字商品亦是如此\n\n永不落幕",
     expo_role1: "个展策划 / Solo Exhibitions",
     expo_detail1: "足迹横跨亚洲、欧洲、美洲、澳洲，为多位艺术家策划个人展览",
     expo_role2: "联展统筹 / Group Shows",
@@ -223,7 +223,7 @@ module.exports = {
     curator_p1:
       "Curating is a long river\n\nWhat I learned was not how to display\nBut how to listen\nTo listen to the language of the work\nThe breath of the space\nThe silent gaze of the viewer\n\nA true exhibition\nIs where these three find a frequency of resonance",
     curator_p2:
-      "Later\nThat listening found its way into the digital world\n\nEvery app every sticker\nIs no longer just a one-sided design\nJust as I once listened to artworks\nI now listen to every user's voice\nTheir thoughts their confusions their hopes\nSeeping into the code drop by drop\n\nThese works\nAre shapes co-created by users and the creator\n\nI am never the one who shapes the atmosphere alone\nI try to stand in different positions\nTo feel to empathize to resonate\n\nRubyDays is one example\n\nHow does a man design a tool\nTo accompany women through their cycles\nI don't have the answer\nI can only listen read\nAnd imagine the daily realities I will never experience firsthand\n\nIt is precisely this unknown\nThat gives creation its gentle possibility\n\nApps are the same\nThey are not sealed finished products\nThey are things waiting to be heard to be resonated with to be completed together\n\nCurating is like this\nSo is developing apps\n\nIt never ends",
+      "Later\nThat listening entered the digital world\n\nEvery app every sticker\nIs no longer a one-sided design\nJust as I once listened to artworks\nI now listen to every user's voice\nTheir thoughts confusions hopes\nSeeping into the code drop by drop\n\nAll of these are shapes completed together\nBy users and by me as an indie developer\nI was never the one who shapes the atmosphere alone\nI only try to stand in different places\nTo feel to sense to resonate\nIt is precisely this unknown\nThat gives creation its gentle possibility\n\nThey are not sealed finished products\nThey wait to be heard to be resonated with to be completed together\n\nCurating is like this\nSo are digital goods\n\nIt never ends",
     expo_role1: "Solo Exhibitions",
     expo_detail1: "Spanning Asia Europe Americas Australia curated solo shows for multiple artists",
     expo_role2: "Group Shows",
@@ -304,7 +304,7 @@ module.exports = {
     curator_p1:
       "キュレーションは長い川のようなもの\n\n学んだのは展示の仕方ではない\n聴くことだ\n作品自身の言葉を聴く\n空間の呼吸を聴く\n観客の沈黙のまなざしを聴く\n\n本当の展覧会とは\nこの三者が共鳴の周波数を見つける場所だ",
     curator_p2:
-      "やがて\nその聴き方はデジタルの世界へと入っていった\n\nすべてのアプリ すべてのステッカーは\nもはや一方的なデザインではない\nかつて作品を聴いたように\n今はすべてのユーザーの声を聴く\n彼らの想い 迷い 期待が\n一滴一滴コードに染み込んでいく\n\nこれらの作品は\nユーザーと創作者がともに形づくるもの\n\n雰囲気を一人で作る者ではない\nさまざまな立場に立ち\n感じ 想像し 共鳴しようとする\n\nRubyDaysはその一例\n\n男性が\n女性の生理周期に寄り添うツールをどう設計するか\n答えはない\n聴き 読み\n決して自分では経験できない日常を想像するしかない\n\nまさにこの未知こそが\n創作にやさしさの可能性を与える\n\nアプリも同じだ\n封じ込められた完成品ではない\n聴かれ 共鳴され ともに完成されるものを待っている\n\nキュレーションも\nアプリ開発も\n\n終わることはない",
+      "やがて\nその聴き方はデジタルの世界へと入っていった\n\nすべてのアプリ すべてのステッカーは\nもはや一方的なデザインではない\nかつて作品を聴いたように\n今はすべてのユーザーの声を聴く\n彼らの想い 迷い 期待が\n一滴一滴コードに染み込んでいく\n\nこれらはすべて\nユーザーとインディー開発者である私とが\nともに形づくるものだ\n私は雰囲気を一人で作る者ではない\nたださまざまな立場に立ち\n感じ 想像し 共鳴しようとする\nまさにこの未知こそが\n創作にやさしさの可能性を与える\n\n封じ込められた完成品ではない\n聴かれ 共鳴され ともに完成されるものを待っている\n\nキュレーションも\nデジタルプロダクトも\n\n終わることはない",
     expo_role1: "個展企画 / Solo Exhibitions",
     expo_detail1: "アジア・ヨーロッパ・南北アメリカ・オーストラリアで複数のアーティストの個展を企画",
     expo_role2: "グループ展統括 / Group Shows",
@@ -385,7 +385,7 @@ module.exports = {
     curator_p1:
       "큐레이션은 긴 강과 같다\n\n배운 것은 어떻게 보여줄 것인가가 아니라\n어떻게 들을 것인가다\n작품 자체의 언어를 듣고\n공간의 숨결을 듣고\n관객의 침묵하는 시선을 듣는다\n\n진정한 전시란\n이 셋이 공명의 주파수를 찾는 곳이다",
     curator_p2:
-      "나중에\n그 듣는 방식은 디지털 세계로 들어갔다\n\n모든 앱 모든 스티커는\n더 이상 일방적인 디자인이 아니다\n예전에 작품을 듣듯\n이제는 모든 사용자의 목소리를 듣는다\n그들의 생각 혼란 기대가\n한 방울씩 코드에 스며든다\n\n이 작품들은\n사용자와 창작자가 함께 완성하는 형태다\n\n분위기를 혼자 만드는 사람이 아니다\n다른 위치에 서서\n느끼고 공감하고 공명하려 한다\n\nRubyDays가 한 예이다\n\n남성이\n여성의 생리 주기를 함께하는 도구를 어떻게 설계할 것인가\n답은 없다\n듣고 읽고\n결코 직접 경험할 수 없는 일상을 상상할 뿐이다\n\n바로 이 미지가\n창작에 부드러운 가능성을 준다\n\n앱도 마찬가지다\n봉인된 완성품이 아니라\n들려지고 공명되고 함께 완성되기를 기다리는 것들이다\n\n큐레이션도\n앱 개발도\n\n끝나지 않는다",
+      "나중에\n그 듣는 방식은 디지털 세계로 들어갔다\n\n모든 앱 모든 스티커는\n더 이상 일방적인 디자인이 아니다\n예전에 작품을 듣듯\n이제는 모든 사용자의 목소리를 듣는다\n그들의 생각 혼란 기대가\n한 방울씩 코드에 스며든다\n\n이 모든 것은\n사용자와 인디 개발자인 내가\n함께 완성하는 형태다\n나는 분위기를 혼자 만드는 사람이 아니다\n다만 다른 위치에 서서\n느끼고 헤아리고 공명하려 한다\n바로 이 미지가\n창작에 부드러운 가능성을 준다\n\n봉인된 완성품이 아니라\n들려지고 공명되고 함께 완성되기를 기다리는 것들이다\n\n큐레이션도\n디지털 상품도\n\n끝나지 않는다",
     expo_role1: "개인전 기획 / Solo Exhibitions",
     expo_detail1: "아시아·유럽·아메리카·오스트레일리아를 아우르며 여러 예술가의 개인전 기획",
     expo_role2: "단체전 기획 / Group Shows",
