@@ -77,7 +77,7 @@ module.exports = {
     expo_detail4: "私人美術館顧問、藏家與藝術機構策展諮詢",
     expo_note: "超過十五年策展，近六十場展覽，足跡遍及四大洲",
     contact_btn: "聊聊",
-    contact_note: "策展合作 · 開發委託 · 品牌聯名 · 用戶反饋",
+    contact_note: "無話不談 / 反饋 / 有話就說",
     privacy_link: "隱私權政策",
   },
   "zh-cn": {
@@ -158,7 +158,7 @@ module.exports = {
     expo_detail4: "私人美术馆顾问、藏家与艺术机构策展咨询",
     expo_note: "超过十五年策展，近六十场展览，足迹遍及四大洲",
     contact_btn: "聊聊",
-    contact_note: "策展合作 · 开发委托 · 品牌联名 · 用户反馈",
+    contact_note: "无话不谈 / 反馈 / 有话就说",
     privacy_link: "隐私权政策",
   },
   en: {
@@ -239,7 +239,7 @@ module.exports = {
     expo_detail4: "Consulting for private museums collectors and art institutions",
     expo_note: "Over 15 years. Nearly sixty exhibitions across four continents.",
     contact_btn: "Let's chat",
-    contact_note: "Curatorial · Development · Brand Collaboration · Feedback",
+    contact_note: "Anything goes / Feedback / Just say it",
     privacy_link: "Privacy Policy",
   },
   ja: {
@@ -320,7 +320,7 @@ module.exports = {
     expo_detail4: "私立美術館、コレクター、美術機関へのキュレーションコンサルティング",
     expo_note: "15年以上のキュレーション、約六十の展覧会、四大陸の足跡",
     contact_btn: "話そう",
-    contact_note: "キュレーション · 開発委託 · ブランドコラボ · フィードバック",
+    contact_note: "何でも話せる / フィードバック / 言いたいことを言おう",
     privacy_link: "プライバシーポリシー",
   },
   ko: {
@@ -401,7 +401,7 @@ module.exports = {
     expo_detail4: "사립 미술관, 수집가, 미술 기관 큐레이션 컨설팅",
     expo_note: "15년 이상 큐레이션, 약 60회 전시, 4대륙의 발자취",
     contact_btn: "이야기해요",
-    contact_note: "큐레이션 · 개발 의뢰 · 브랜드 콜라보 · 피드백",
+    contact_note: "뭐든 이야기해요 / 피드백 / 하고 싶은 말 하세요",
     privacy_link: "개인정보 처리방침",
   },
 };
