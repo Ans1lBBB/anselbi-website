@@ -153,7 +153,25 @@ ${analyticsHead}
 
 <main>
     <div class="container">
-        <div id="apps-title" class="section-header section-header--first">
+        <div class="hero">
+            <div class="hero-photo">
+                <div class="portrait-frame">
+                    <img src="/images/ansel_portrait.png" alt="Ansel Bi">
+                </div>
+            </div>
+            <div class="hero-slogan">${esc(c.slogan)}</div>
+            <div class="name-title">
+                ${nameHeading(c)}
+                <div class="title-role">${esc(c.role)}</div>
+            </div>
+            <div class="stat-row">
+                <div><div class="stat-number">${esc(c.stat1_num)}</div><div class="stat-item">${esc(c.stat1_txt)}</div></div>
+                <div><div class="stat-number">${esc(c.stat2_num)}</div><div class="stat-item">${esc(c.stat2_txt)}</div></div>
+                <div><div class="stat-number">${esc(c.stat3_num)}</div><div class="stat-item">${esc(c.stat3_txt)}</div></div>
+            </div>
+        </div>
+
+        <div id="apps-title" class="section-header">
             <h2>${esc(c.apps_title)}</h2>
         </div>
         <div class="grid-3">
