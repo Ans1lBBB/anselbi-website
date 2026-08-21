@@ -39,6 +39,12 @@ const rubyIconSrc = `/images/RubyDays_icon.png?v=${crypto
   .update(fs.readFileSync(rubyIconPath))
   .digest("hex")
   .slice(0, 8)}`;
+const portraitPath = path.join(ROOT, "images/ansel_portrait.png");
+const portraitSrc = `/images/ansel_portrait.png?v=${crypto
+  .createHash("md5")
+  .update(fs.readFileSync(portraitPath))
+  .digest("hex")
+  .slice(0, 8)}`;
 
 const faviconHead = `    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
@@ -156,7 +162,7 @@ ${analyticsHead}
         <div class="hero">
             <div class="hero-photo">
                 <div class="portrait-frame">
-                    <img src="/images/ansel_portrait.png" alt="Ansel Bi">
+                    <img src="${portraitSrc}" alt="Ansel Bi">
                 </div>
             </div>
             <div class="name-title">
