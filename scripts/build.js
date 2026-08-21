@@ -164,11 +164,6 @@ ${analyticsHead}
                 ${nameHeading(c)}
                 <div class="title-role">${esc(c.role)}</div>
             </div>
-            <div class="stat-row">
-                <div><div class="stat-number">${esc(c.stat1_num)}</div><div class="stat-item">${esc(c.stat1_txt)}</div></div>
-                <div><div class="stat-number">${esc(c.stat2_num)}</div><div class="stat-item">${esc(c.stat2_txt)}</div></div>
-                <div><div class="stat-number">${esc(c.stat3_num)}</div><div class="stat-item">${esc(c.stat3_txt)}</div></div>
-            </div>
         </div>
 
         <div id="apps-title" class="section-header">
@@ -199,6 +194,20 @@ ${analyticsHead}
             <div class="curator-inner">
                 <div class="curator-text">${esc(c.curator_p1)}</div>
                 <div class="curator-text">${esc(c.curator_p2)}</div>
+                <div class="curator-measure">
+                    <div class="measure-item">
+                        <div class="stat-number">${esc(c.stat1_num)}</div>
+                        <div class="stat-item">${esc(c.stat1_txt)}</div>
+                    </div>
+                    <div class="measure-item">
+                        <div class="stat-number">${esc(c.stat2_num)}</div>
+                        <div class="stat-item">${esc(c.stat2_txt)}</div>
+                    </div>
+                    <div class="measure-item">
+                        <div class="stat-number">${esc(c.stat3_num)}</div>
+                        <div class="stat-item">${esc(c.stat3_txt)}</div>
+                    </div>
+                </div>
                 <div class="curated-list">
                     <div class="list-grid">
                         <div class="list-item"><div class="list-role">${esc(c.expo_role1)}</div><div class="list-detail">${esc(c.expo_detail1)}</div></div>
@@ -206,7 +215,6 @@ ${analyticsHead}
                         <div class="list-item"><div class="list-role">${esc(c.expo_role3)}</div><div class="list-detail"><span>${esc(c.expo_fair_note)}</span><span>${esc(c.expo_fair1)}</span><span>${esc(c.expo_fair2)}</span><span>${esc(c.expo_fair3)}</span><span>${esc(c.expo_fair4)}</span><span>${esc(c.expo_fair_more)}</span></div></div>
                         <div class="list-item"><div class="list-role">${esc(c.expo_role4)}</div><div class="list-detail">${esc(c.expo_detail4)}</div></div>
                     </div>
-                    <div class="list-note">${esc(c.expo_note)}</div>
                 </div>
             </div>
         </div>

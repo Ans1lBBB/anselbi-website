@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Ansel Bi — 큐레이터 / 앱 개발자</title>
-    <meta name="description" content="큐레이터이자 인디 앱 개발자 Ansel Bi. 약 20년간 4대륙에서 약 60회의 전시를 기획했습니다. 큐레이션 미학을 오리지널 앱과 iMessage 스티커에 담습니다.">
+    <meta name="description" content="큐레이터이자 인디 앱 개발자 Ansel Bi. 15년 이상 4대륙에서 약 60회의 전시를 기획했습니다. 큐레이션 미학을 오리지널 앱과 iMessage 스티커에 담습니다.">
     <meta name="keywords" content="Ansel Bi, 큐레이터, 인디 개발자, ProfitFairy, RubyDays, AIOS Sea, Taiwan Shiba, MeowCAT">
     <link rel="alternate" hreflang="zh-Hant" href="https://www.anselbi.com/zh-tw/">
     <link rel="alternate" hreflang="zh-Hans" href="https://www.anselbi.com/zh-cn/">
@@ -16,7 +16,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.anselbi.com/ko/">
     <meta property="og:title" content="Ansel Bi — 큐레이터 / 앱 개발자">
-    <meta property="og:description" content="큐레이터이자 인디 앱 개발자 Ansel Bi. 약 20년간 4대륙에서 약 60회의 전시를 기획했습니다. 큐레이션 미학을 오리지널 앱과 iMessage 스티커에 담습니다.">
+    <meta property="og:description" content="큐레이터이자 인디 앱 개발자 Ansel Bi. 15년 이상 4대륙에서 약 60회의 전시를 기획했습니다. 큐레이션 미학을 오리지널 앱과 iMessage 스티커에 담습니다.">
     <meta property="og:locale" content="ko_KR">
     <meta property="og:image" content="https://www.anselbi.com/apple-touch-icon.png">
     <meta name="twitter:card" content="summary">
@@ -260,7 +260,33 @@ html[lang="zh-CN"] .sticker-name-zh {
 .curator-block { background: #161616; border: 1px solid rgba(230,226,218,0.06); padding: 60px 56px; margin: 40px 0 80px; }
 .curator-inner { max-width: 980px; margin: 0 auto; }
 .curator-text { font-size: 1rem; line-height: 1.8; color: #d4cdc0; margin-bottom: 24px; white-space: pre-line; }
-.curated-list { margin: 48px 0 20px; border-top: 1px solid rgba(201,170,123,0.25); padding-top: 40px; }
+.curator-measure {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: clamp(2.5rem, 7vw, 5rem);
+    margin: 48px 0 0;
+    padding: 40px 0 36px;
+    border-top: 1px solid rgba(201,170,123,0.28);
+    border-bottom: 1px solid rgba(230,226,218,0.08);
+}
+.measure-item {
+    text-align: center;
+    min-width: 5.5rem;
+}
+.measure-item .stat-number {
+    font-size: 1.85rem;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.4rem;
+}
+.measure-item .stat-item {
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #8a8074;
+}
+.curated-list { margin: 36px 0 0; padding-top: 8px; border-top: none; }
 .list-grid { display: flex; flex-direction: column; gap: 24px; }
 .list-item { display: flex; flex-wrap: wrap; gap: 28px; border-bottom: 1px solid rgba(230,226,218,0.06); padding-bottom: 20px; }
 .list-role { width: 210px; font-size: 0.8rem; font-weight: 500; color: #c9aa7b; letter-spacing: 1px; }
@@ -318,6 +344,9 @@ footer { text-align: center; padding: 24px 0 40px; font-size: 0.7rem; color: #6a
     .grid-3, .grid-4, .grid-stickers { grid-template-columns: 1fr; }
     .curator-block { padding: 32px 24px; }
     .curator-text { font-size: 0.9rem; }
+    .curator-measure { gap: 1.75rem; padding: 32px 0 28px; margin-top: 36px; }
+    .measure-item .stat-number { font-size: 1.45rem; }
+    .measure-item .stat-item { font-size: 0.6rem; letter-spacing: 0.1em; }
     .list-role { width: 100%; font-size: 0.75rem; }
     .list-detail { font-size: 0.8rem; }
     .list-item { gap: 12px; }
@@ -362,11 +391,6 @@ footer { text-align: center; padding: 24px 0 40px; font-size: 0.7rem; color: #6a
             <div class="name-title">
                 <h1>Ansel Bi</h1>
                 <div class="title-role">큐레이터 / 앱 개발자</div>
-            </div>
-            <div class="stat-row">
-                <div><div class="stat-number">20</div><div class="stat-item">년 큐레이션</div></div>
-                <div><div class="stat-number">≈60</div><div class="stat-item">전시 기획</div></div>
-                <div><div class="stat-number">4</div><div class="stat-item">대륙 발자취</div></div>
             </div>
         </div>
 
@@ -449,6 +473,20 @@ RubyDays가 한 예이다
 창작도
 
 끝나지 않는다</div>
+                <div class="curator-measure">
+                    <div class="measure-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-item">년 큐레이션</div>
+                    </div>
+                    <div class="measure-item">
+                        <div class="stat-number">≈60</div>
+                        <div class="stat-item">전시 기획</div>
+                    </div>
+                    <div class="measure-item">
+                        <div class="stat-number">4</div>
+                        <div class="stat-item">대륙 발자취</div>
+                    </div>
+                </div>
                 <div class="curated-list">
                     <div class="list-grid">
                         <div class="list-item"><div class="list-role">개인전 기획 / Solo Exhibitions</div><div class="list-detail">아시아·유럽·아메리카·오스트레일리아를 아우르며 여러 예술가의 개인전 기획</div></div>
@@ -456,7 +494,6 @@ RubyDays가 한 예이다
                         <div class="list-item"><div class="list-role">아트페어 / Art Fairs</div><div class="list-detail"><span>예: </span><span>ArtExpo New York </span><span>Art Shopping – Carrousel du Louvre </span><span>Art Taipei </span><span>AArt Shanghai </span><span> 등</span></div></div>
                         <div class="list-item"><div class="list-role">아트 어드바이저 / Art Advisor</div><div class="list-detail">사립 미술관, 수집가, 미술 기관 큐레이션 컨설팅</div></div>
                     </div>
-                    <div class="list-note">4대륙에 걸친 발자취 — 약 60회의 전시 기획</div>
                 </div>
             </div>
         </div>
