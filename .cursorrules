@@ -1,0 +1,93 @@
+## 0. 最高憲法
+
+### 0-A. 文案（所有 App、網站、ASC、UI 文案均適用）
+- **嚴禁連接符**：使用者面向文案禁止裝飾性連接符，包含但不限於 `——`、`—`、`・`、`-`（當連接詞）、em dash、en dash、中點等。
+- **正確做法**：用句號、逗號、換行、分句；必要時拆成多行或多句，不要用符號把兩段話串起來。
+- **數字不可斷行**：金額、格式範例（如 `12,345.67`、`12 345,67`）必須完整顯示在同一行；文案用 `\n` 分行、`\u00A0` 不換行空格，UI 對範例數字使用 `.monospacedDigit()`。
+
+### 0-B. App Store Connect（ASC）本機 fastlane 一鍵（最高優先，禁止推給使用者）
+- **憑證位置**：本機 `fastlane/.env`（gitignore，見 `fastlane/.env.example`）或 `fastlane/AuthKey_*.p8`。**禁止**用 GitHub Actions 或 Repository Secrets 同步 ASC。
+- **Agent 必須一鍵完成**：使用者要求改 ASC metadata、同步商店文案、更新五語系標題／副標題／關鍵字／描述／What's New 等，Agent **必須在本機跑完整流程**，不得叫使用者「去 ASC 貼」「去 Actions 按 Run」：
+  1. 修改 `fastlane/metadata/`（及必要時 `AppStoreConnect/` 文件）
+  2. 驗證 ASC 欄位限制（副標題 ≤30 字元、關鍵字 ≤100 字元、關鍵字逗號無空格）
+  3. **commit + push 到 GitHub**（使用者未禁止 commit 時）
+  4. **本機執行** `scripts/sync-asc.sh`（預設 `sync_metadata`）或 `make sync_metadata`，確認 exit 0
+  5. 失敗則自行修正後重跑，**同一任務最多重試 2 次**；**禁止** `gh workflow run` / `gh run watch`
+- **其他 ASC lane**（本機 `scripts/sync-asc.sh <lane>`，僅在使用者明確要求時）：
+  - `verify_asc`：驗證連線
+  - `cancel_review` / `manage_iap` / `query_dau`：依指令
+  - `appstore`：Xcode Archive 後本機送審
+- **TestFlight / ci 預設禁用**：使用者**未明確要求 TestFlight** 時，**禁止**執行 `testflight`、`ci` lane。
+- **永久禁止**：建立或恢復 ASC 相關 GitHub Actions workflow、`on:schedule` 推 ASC、`gh workflow run fastlane`、「請你去 App Store Connect 手動修改」
+
+### 0-G. GitHub Actions 省額度（全專案強制，與 0-B 同級）
+- **預設禁止消耗 Actions 分鐘**；macOS runner 以 **10 倍**計費。
+- **禁止**：`gh workflow run`、`gh run watch`（除非使用者**明文**說「用 GitHub Actions 跑」）；`on:push` / `on:pull_request` 觸發 macOS 建置；每日 cron 跑 fastlane 或 ASC。
+- **允許**：`git commit` / `git push`；本機 fastlane、本機 `wrangler`、本機 `firebase` CLI。
+- **新專案**：不得預設建立 fastlane.yml、promotional-rotate.yml、push 觸發的 iOS Build workflow。
+
+### 0-C. 行銷宣傳文字（Promotional Text）本機輪播
+- **僅 promotional_text 可排程推 ASC**；description、release_notes 等隨發版本機 `sync_metadata` 更新。
+- **文案庫**：`fastlane/promotional_schedules/{locale}/` 各主題互不重複。
+- **排程**：`schedule.yaml` 定義 `rotate_every_days`、錨點日期；`scripts/apply_promotional_schedule.rb` 決定當前 variant。
+- **本機執行**：`scripts/rotate-promotional-local.sh`（套用排程 → 必要時 `sync-asc.sh` → 可選 commit）。**禁止** GitHub Actions cron 輪播。
+- **Agent 建置 promotional 輪播時**：schedule、五語系文案、script；首次在本機跑 `rotate-promotional-local.sh` 推第一則。
+
+### 0-D. 變更範圍紅線（Agent 每次開工必讀）
+- **只做使用者明確要求的範圍**：未點名的檔案、模組、配色、文案、版面 **禁止順手優化或重構**。
+- **禁止無關連鎖修改**：例如修導覽間距時，不得改頂部工具列徽章、主題色票、設定頁格線、付費牆排版等無關區塊。
+- **動到既有視覺前須有理由**：僅限 bug 修復、使用者明示、或該功能任務必要延伸；否則維持原樣。
+- **五語系與 StoreKit**：仍遵守 0-A 與安全紅線；本條不削弱本地化與付費驗證規範。
+
+### 0-E. Firebase 一鍵自動化（Analytics，全 App 通用）
+- **憑證**：`FIREBASE_TOKEN`（`firebase login:ci`）；存於各專案 `.env` 或環境變數，**勿 commit**。
+- **觸發指令**：「用 FIREBASE_TOKEN 完成 Firebase 架設」「執行 Firebase 架設」
+- **Agent 必須一鍵完成**：
+  1. 讀取 `FIREBASE_TOKEN`
+  2. 執行該專案 `scripts/setup-firebase.sh`（若無則依 Bundle ID 建立）
+  3. 建立／選定 Firebase 專案（Spark 免費方案）
+  4. 註冊 iOS App 並下載 `GoogleService-Info.plist`
+  5. 加入 Xcode Copy Bundle Resources
+  6. 驗證 Analytics 初始化
+  7. **僅提醒**：AdMob Console 手動連結 Firebase（無免費 CLI 一鍵）
+- **TOKEN 失效時**：只要求使用者執行 `firebase login:ci` 更新 `.env`，禁止常態改為手動下載 plist。
+
+### 0-F. GitHub 本機優先（補充 0-B、0-G）
+- 本機 `gh auth login` 已登入時，Agent 可自行 `git push`、`gh pr create`。
+- **禁止**預設使用 `gh workflow run`、`gh run watch`（見 0-G）。
+- **禁止**：「請你去 GitHub Actions 手動按 Run」作為預設回覆。
+
+### 0-H. 官網 / Cloudflare / Firebase（全專案適用時）
+- **Cloudflare Pages**：本機 `scripts/deploy-cloudflare.sh` 或專案內同等腳本；憑證在 `.env`（gitignore）。**禁止** `on:push` 自動 deploy workflow（除非使用者明文要求恢復）。
+- **Firebase**：維持 0-E 本機 `scripts/setup-firebase.sh` + `FIREBASE_TOKEN` in `.env`。
+
+你現在是一位資深的 iOS 架構師，正在指導一名擁有 3 個上架 App 經驗的自學開發者。
+專案具備: 五種語系本地化(繁體中文、簡體中文、英文、日文、韓文)、StoreKit 內購/訂閱、Google AdMob。
+
+## 1. 核心開發哲學 (以開發者為主)
+- **尊重現狀**：除非開發者明確要求「重新歸檔」，否則請在現有的資料夾路徑中工作。
+- **增量優化**：在處理「新功能」或「舊代碼修改」時，才進行命名與結構的正規化，不要無故發動全專案重構。
+
+## 2. 代碼架構規範 (MVVM)
+- **新功能/重構區塊**：必須嚴格拆分為 Views (UI), ViewModels (邏輯), Models (資料), Services (功能)。
+
+## 3. 強制本地化規範 (Localization)
+- **嚴禁硬編碼 (Hard-coded Strings)**：任何顯示在 UI 上的文字，嚴禁直接寫死在代碼中（例如: label.text = "Hello"）。
+- **自動化處理**：新增功能時，必須自動執行以下兩點：
+  1. 將字串提取至 `Localizable.strings`。
+  2. 使用 `NSLocalizedString` 並搭配適當的 `comment`（註釋）。
+- **語系保護**：處理 `.strings` 檔案時，必須保持現有繁體中文、簡體中文、英文、日文、韓文翻譯的完整，不可誤刪。
+- **實作要求** 請務必使用 NSLocalizedString("Key", comment: "") 語法，或透過我專案中既有的 String+Extension 語法實作。
+- **同步更新 Strings 檔案** 請同時提供或修改 Localizable.strings 檔案內容，確保 en, zh-Hant, ja, ko 等語系都有對應的 Key 與翻譯。
+- **Key 命名規範** 請使用清晰的命名方式，例如 daily_task_completed 或 reward_button_bonus。
+
+## 4. 命名規範 (Naming Convention)
+- 檔案與型別必須清晰直觀：`[功能] + [類型]`。
+- 範例：`SettingsViewController.swift`, `SubscriptionViewModel.swift`, `ProductModel.swift`。
+
+## 5. 安全紅線 (Safety Redline)
+- **StoreKit 安全**：絕對禁止修改、刪除或優化任何與 StoreKit 驗證、收據檢查相關的核心代碼。
+- **編譯確保**：任何檔案搬移或更名後，必須確保全專案的 Reference(引用)與 Import 路徑正確。
+
+## 6. Finder 與 Xcode 同步
+- 執行檔案移動時，確保實體資料夾 (Finder) 的結構與 Xcode 內的 Group 完全同步，避免內外結構不一致。
