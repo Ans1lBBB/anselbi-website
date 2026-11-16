@@ -30,7 +30,7 @@ module.exports = {
     pf_sub: "成本、售價、折扣、平台費與淨利試算",
     pf_desc:
       "給一個人或兩三人小團隊的定價決策工具。報價前先看清真實毛利，把成本、售價、折扣、平台費、運費與稅務收進同一張全景圖。三欄聯動試算，支援正向與逆向定價。內建成本分析與高清長圖匯出，歷史紀錄完整保存。依裝置地區採用熟悉的數字格式，例如\u00A012,345.67。五語系介面，攤商、店面、接案與小團隊都能用。",
-    ruby_title: "小主日記：老中醫月事養生",
+    ruby_title: "小主日記：老中醫月事養生手扎",
     ruby_sub: "看古籍，讀節奏，願天下女子皆得自在",
     ruby_desc:
       "週期與備孕月曆、可上鎖手札，以及依週期階段呈現的養生閣典藏。記錄經期、推算排卵與安全期，圖表與提醒助你從容規劃。養生閣融匯《黃帝內經》《本草綱目》《傅青主女科》《針灸甲乙經》精要，依經期階段整理起居、典籍飲食、情緒與日常讀物。資料存於本機，可選 iCloud 私密同步。文字搭配瞬間照片，Face ID 守護個人內容。古籍摘錄僅供日常閱讀參考。全程無廣告。",
@@ -111,7 +111,7 @@ module.exports = {
     pf_sub: "成本、售价、折扣、平台费与净利润试算",
     pf_desc:
       "给一个人或两三个人小团队的定价决策工具。报价前先看清真实毛利，把成本、售价、折扣、平台费、运费与税务收进同一张全景图。三栏联动试算，支持正向与逆向定价。内置成本分析与高清长图导出，历史记录完整保存。依装置地区采用熟悉的数字格式，例如\u00A012,345.67。五语系界面，摊商、店面、接案与小团队都能用。",
-    ruby_title: "小主日记：老中医月事养生",
+    ruby_title: "小主日记：老中医月事养生手札",
     ruby_sub: "看古籍，读节奏，愿天下女子皆得自在",
     ruby_desc:
       "周期与备孕月历、可上锁手札，以及依周期阶段呈现的养生阁典藏。记录经期、推算排卵与安全期，图表与提醒助你从容规划。养生阁融汇《黄帝内经》《本草纲目》《傅青主女科》《针灸甲乙经》精要，依经期阶段整理起居、典籍饮食、情绪与日常读物。资料存于本机，可选 iCloud 私密同步。文字搭配瞬间照片，Face ID 守护个人内容。古籍摘录仅供日常阅读参考。全程无广告。",
@@ -192,7 +192,7 @@ module.exports = {
     pf_sub: "Cost, Price, Fees and Profit",
     pf_desc:
       "A pricing decision tool for one person or a tiny team of two or three. See real margin before you quote, with cost, price, discounts, platform fees, shipping, and tax in one picture. Three linked fields support forward and reverse pricing. Cost analysis exports shareable long images, with full history saved. Follows your device region for formats such as\u00A012,345.67. Five languages. Built for stalls, storefronts, freelancers, and small teams.",
-    ruby_title: "RubyDays: Classical TCM Menstrual Wellness",
+    ruby_title: "RubyDays: Classical TCM Menstrual Wellness Journal",
     ruby_sub: "Read the classics. Know your rhythm. May every woman find ease.",
     ruby_desc:
       "Cycle and fertility calendar, lockable diary, and the Wellness Pavilion with curated excerpts for each phase. Track periods, estimate ovulation, and plan with charts and reminders. The Pavilion draws on four classical texts, including seasonal living rhythms, herbal dietary notes, women's classical readings, and meridian literature. Data stays on device with optional private iCloud sync. Words with Moment photos, protected by Face ID. Excerpts are for daily reading reference only. Completely ad free.",
@@ -273,7 +273,7 @@ module.exports = {
     pf_sub: "原価、販売価格、割引、手数料、純利益を計算",
     pf_desc:
       "ひとり起業や少人数チームのための定価意思決定ツール。見積前に本当の粗利を確認し、原価、販売価格、割引、手数料、送料、税金を一つの全景図にまとめます。3項目連動で順方向と逆算に対応。原価分析と高精細な縦長画像の書き出し、履歴保存も可能。端末の地域設定に合わせた数字表記に対応し、例えば\u00A012,345.67。5言語対応。屋台、店舗、フリーランス、小規模チーム向け。",
-    ruby_title: "小主日記：老中医の月事養生",
+    ruby_title: "小主日記：老中医の月事養生手札",
     ruby_sub: "古籍を読み、リズムを知り、すべての女性が自在でありますように",
     ruby_desc:
       "周期と妊活カレンダー、ロック可能な手札、周期段階に合わせた養生閣の典蔵。生理記録、排卵と安全期の推定、グラフとリマインダーで計画をサポート。養生閣は『黄帝内経』『本草綱目』『傅青主女科』『鍼灸甲乙経』の精要を融合し、起居、典籍的な食事、気持ちの読み物を段階ごとに整理。データは端末内保存、iCloud プライベート同期に対応。文字と「瞬間」写真、Face ID で保護。古籍の摘録は日常の参考用。広告なし。",
@@ -282,7 +282,7 @@ module.exports = {
     aios_desc:
       "AIOS Sea を渡り、潮印を合わせ、37 柱の女神を醒め、深淵の記憶を取り戻せ。クラシックなマージ、深淵の記憶ミニゲーム、女神法典の図鑑収集の3つの入口。海をテーマにした癒しのビジュアルでスキマ時間に最適。Game Center 実績とデイリークエスト、5言語対応で継続的に更新。",
     taiger_name: "Taiwan Shiba: Gangster Life",
-    taiger_sub: "藍白拖＋復古安全帽＋超派口頭禪，看起來很兇其實超北爛",
+    taiger_sub: "青白ビーチサンダル＋レトロヘルメット＋超派な決め台詞。見た目は強面、実はポンコツ級にゆるい",
     taiger_desc:
       "話題に困った？Taiwan Shiba がいないだけかも！台湾スラングの名セリフと爆笑スタンプで、既読スルーや辛口チャットに最適。ビーチサンダルからレトロヘルメットまで、台湾のノリ満載。",
     shiba_daily_name: "Taiwan Shiba: Daily",
@@ -354,7 +354,7 @@ module.exports = {
     pf_sub: "원가, 판매가, 할인, 수수료, 순이익 계산",
     pf_desc:
       "1인 창업자와 2~3명 소규모 팀을 위한 가격 결정 도구입니다. 견적 전에 실제 마진을 확인하고, 원가, 판매가, 할인, 플랫폼 수수료, 배송비, 세금을 한눈에 모읍니다. 3항목 연동으로 정방향과 역산을 지원합니다. 원가 분석과 고화질 세로 이미지 내보내기, 기록 저장도 가능합니다. 기기 지역에 맞는 숫자 표기를 지원하며 예를 들어\u00A012,345.67. 5개 언어. 노점, 매장, 프리랜서, 소규모 팀에 적합합니다.",
-    ruby_title: "小主日記：전통 한의학 월사 양생",
+    ruby_title: "小主日記：전통 한의학 월사 양생 수첩",
     ruby_sub: "고의를 읽고, 리듬을 알며, 모든 여성이 자재하기를",
     ruby_desc:
       "주기와 임신 준비 달력, 잠금 가능한手札, 주기 단계에 맞춘 양생각 고전 발췌. 생리 기록, 배란과 안전 기간 추정, 차트와 알림으로 계획을 돕습니다. 양생각은 『황제내경』『본초강목』『부청주여과』『침구갑을경』의 요지를 담아, 단계별로 일상, 고전 식문, 마음의 읽을거리를 정리합니다. 데이터는 기기 저장, iCloud 비공개 동기화 선택 가능. 글과 「순간」 사진, Face ID 보호. 고전 발췌는 일상 참고용. 광고 없음.",
@@ -363,7 +363,7 @@ module.exports = {
     aios_desc:
       "AIOS Sea를 항해하며 조수 표식을 합치고, 37명의 여신을 깨우며 심연의 기억을 되찾으세요. 클래식 머지, 심연의 기억 미니게임, 여신 법전 도감 수집의 세 가지 입구. 바다 테마의 힐링 비주얼로 짧은 휴식에 적합합니다. Game Center 업적과 일일 퀘스트, 5개 언어 지원으로 지속 업데이트.",
     taiger_name: "Taiwan Shiba: Gangster Life",
-    taiger_sub: "藍白拖＋復古安全帽＋超派口頭禪，看起來很兇其實超北爛",
+    taiger_sub: "파란흰 슬리퍼＋레트로 헬멧＋초강성 유행어. 겉은 험상궂지만 속은 완전 허당",
     taiger_desc:
       "대화 주제가 없나요? Taiwan Shiba가 없어서 그렇습니다! 대만식 명대사와 웃긴 이모티콘으로 읽씹 친구와 매운맛 채팅에 딱 맞습니다. 슬리퍼부터 레트로 헬멧까지, 대만 감성 가득.",
     shiba_daily_name: "Taiwan Shiba: Daily",
